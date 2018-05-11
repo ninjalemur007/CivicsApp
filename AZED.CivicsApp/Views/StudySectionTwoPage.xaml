@@ -33,10 +33,10 @@
     </ContentPage.Resources>    
     
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness">
+<!--        <OnPlatform x:TypeArguments="Thickness">
             <On Platform="iOS" Value="0,8,0,0" />
             <On Platform="Android, WinPhone, Windows" Value="0" />
-        </OnPlatform>
+        </OnPlatform> --> 
     </ContentPage.Padding>
     
     <Grid x:Name="outerGrid" 

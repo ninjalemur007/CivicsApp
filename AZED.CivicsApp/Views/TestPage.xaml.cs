@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AZED.CivicsApp.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace AZED.CivicsApp.Views
 {
@@ -15,6 +16,7 @@ namespace AZED.CivicsApp.Views
 		{
 			InitializeComponent ();
             BindingContext = App.Locator.GetViewModel(this);
+            On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
         }
 
         async void aboutPopup(object sender, EventArgs e)

@@ -32,12 +32,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     
-    <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness">
-            <On Platform="iOS" Value="0,8,0,0" />
-            <On Platform="Android, WinPhone, Windows" Value="0" />
-        </OnPlatform>
-    </ContentPage.Padding>
+
     
     <Grid x:Name="outerGrid" 
         RowSpacing="8" ColumnSpacing="8" Padding="8">
@@ -47,7 +42,6 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
-<!--            <RowDefinition Height="44" />-->
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />

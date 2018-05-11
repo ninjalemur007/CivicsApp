@@ -8,7 +8,7 @@
 
 
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness">
+       <OnPlatform x:TypeArguments="Thickness">
             <On Platform="iOS" Value="0,8,0,0" />
             <On Platform="Android, WinPhone, Windows" Value="0" />
         </OnPlatform>
@@ -89,7 +89,7 @@
 
 
                 
-            <StackLayout
+<!--            <StackLayout
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand" 
                     Grid.Row="1">
@@ -172,12 +172,93 @@
                         IconSource="MASTERYicon"/>
 
                     <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="GoToMastery" />
+
                     </Frame.GestureRecognizers>
                         
                   </Frame>       
             </Grid>
-                </StackLayout>
+        </StackLayout>-->
+
+            <FlexLayout
+                x:Name="flexCards"
+                Direction="Column"
+                AlignItems="Center"
+                JustifyContent="SpaceEvenly" 
+                Grid.Row="1">
+
+                <Frame
+                    BackgroundColor="#fff"
+                    HasShadow="false"
+                    Padding="0"
+                    CornerRadius="0"
+                    FlexLayout.Basis="25%">   
+                            
+                    <control:IconCardControl
+                        TitleText="STUDY" 
+                        DescriptionText="Study the questions and answers for all three sections of the test" 
+                        IconSource="STUDYicon" />
+
+                    <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GoToStudy" />
+                    </Frame.GestureRecognizers>
+                 </Frame>
+
+               <Frame
+                    BackgroundColor="#fff"
+                    HasShadow="false"
+                    Padding="0"
+                    CornerRadius="0"
+                    FlexLayout.Basis="25%">  
+                        
+                 <control:IconCardControl 
+                    TitleText="QUIZ" 
+                    DescriptionText="Take 10-question quizzes on each section or from the entire test" 
+                    IconSource="QUIZicon"/>
+
+                    <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GoToQuiz" />
+                    </Frame.GestureRecognizers>
+
+                    </Frame>
+
+               <Frame
+                    BackgroundColor="#fff"
+                    HasShadow="false"
+                    Padding="0" 
+                    CornerRadius="0"
+                    FlexLayout.Basis="25%">  
+                        
+                    <control:IconCardControl 
+                        TitleText="TEST" 
+                        DescriptionText="Take the test" 
+                        IconSource="TESTicon" />
+                    <Frame.GestureRecognizers>
+                            
+                            <TapGestureRecognizer Tapped="GoToTest" />
+                    </Frame.GestureRecognizers>
+
+                    </Frame>
+
+               <Frame
+                    BackgroundColor="#fff"
+                    HasShadow="false"
+                    Padding="0" 
+                    CornerRadius="0"
+                    FlexLayout.Basis="25%">  
+                            
+                     <control:IconCardControl 
+                        TitleText="MASTERY" 
+                        DescriptionText="Check your stats" 
+                        IconSource="MASTERYicon"/>
+
+                    <Frame.GestureRecognizers>
+<!--                            <TapGestureRecognizer Tapped="GoToMastery" />-->
+                    </Frame.GestureRecognizers>
+                        
+                  </Frame>       
+
+              </FlexLayout>
+
             
         </Grid>
 

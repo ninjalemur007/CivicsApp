@@ -1,0 +1,9 @@
+/Users/NinjaLemur/Documents/CodeFun/CivicsApp/AZED.CivicsApp/bin/Debug/netstandard2.0/AZED.CivicsApp.deps.json
+/Users/NinjaLemur/Documents/CodeFun/CivicsApp/AZED.CivicsApp/bin/Debug/netstandard2.0/AZED.CivicsApp.dll
+/Users/NinjaLemur/Documents/CodeFun/CivicsApp/AZED.CivicsApp/bin/Debug/netstandard2.0/AZED.CivicsApp.pdb
+/Users/NinjaLemur/Documents/CodeFun/CivicsApp/AZED.CivicsApp/obj/Debug/netstandard2.0/AZED.CivicsApp.csprojResolveAssemblyReference.cache
+/Users/NinjaLemur/Documents/CodeFun/CivicsApp/AZED.CivicsApp/obj/Debug/netstandard2.0/AZED.CivicsApp.csproj.CoreCompileInputs.cache
+/Users/NinjaLemur/Documents/CodeFun/CivicsApp/AZED.CivicsApp/obj/Debug/netstandard2.0/AZED.CivicsApp.AssemblyInfoInputs.cache
+/Users/NinjaLemur/Documents/CodeFun/CivicsApp/AZED.CivicsApp/obj/Debug/netstandard2.0/AZED.CivicsApp.AssemblyInfo.cs
+/Users/NinjaLemur/Documents/CodeFun/CivicsApp/AZED.CivicsApp/obj/Debug/netstandard2.0/AZED.CivicsApp.dll
+/Users/NinjaLemur/Documents/CodeFun/CivicsApp/AZED.CivicsApp/obj/Debug/netstandard2.0/AZED.CivicsApp.pdb

@@ -32,11 +32,11 @@
             </x:Arguments>
         </NavigationPage>
 
-        <NavigationPage Title="Mastery" Icon="MasteryICONtab">
+<!--        <NavigationPage Title="Mastery" Icon="MasteryICONtab">
             <x:Arguments>
                  <view:QuizAttemptsListPage />
             </x:Arguments>
-        </NavigationPage>
+        </NavigationPage>-->
 
     </TabbedPage.Children> 
     

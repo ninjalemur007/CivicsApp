@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 using Xamarin.Forms.Xaml;
 using AZED.CivicsApp.Models;
 using AZED.CivicsApp.ViewModels;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace AZED.CivicsApp.Views
 {
@@ -16,8 +18,11 @@ namespace AZED.CivicsApp.Views
         public StudySectionOnePage()
         {
             InitializeComponent();
+            On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
 
             BindingContext = App.Locator.GetViewModel(this);
+
+            On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
 
         }
 

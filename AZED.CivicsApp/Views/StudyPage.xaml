@@ -6,12 +6,26 @@
              x:Class="AZED.CivicsApp.Views.StudyPage"
              Title="{Binding PageTitle}" >
     
-    <ContentPage.Padding>
+    <!--<ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness">
             <On Platform="iOS" Value="0,8,0,0" />
             <On Platform="Android, WinPhone, Windows" Value="0" />
         </OnPlatform>
-    </ContentPage.Padding>
+    </ContentPage.Padding>-->
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+             <Style x:Key="frameStyleSectionCard" TargetType="Frame">
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="HasShadow" Value="false" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     
     <Grid x:Name="outerGrid" 
         Style="{StaticResource gridStyleAllEights}">
@@ -64,7 +78,9 @@
 
 <!--  SectionCard 1-->
         <Frame x:Name="frameSectionCard1"
-            Style="{StaticResource frameStyleSectionCard}"
+            HasShadow="false" 
+            Padding="0"
+            CornerRadius="0"
             Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
 
             <control:SectionCardControl

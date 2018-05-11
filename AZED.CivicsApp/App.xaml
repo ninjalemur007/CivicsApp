@@ -265,8 +265,6 @@
 
 
             <Style x:Key="frameStyleSectionCard" TargetType="Frame">
-                <Setter Property="VerticalOptions" Value="FillAndExpand" />
-                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
                 <Setter Property="CornerRadius" Value="0" />
                 <Setter Property="Padding" Value="0" />
                 <Setter Property="HasShadow" Value="false" />

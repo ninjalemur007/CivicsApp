@@ -1,11 +1,5 @@
 ﻿using AZED.CivicsApp.ViewModels;
 using AZED.CivicsApp.Views;
-using AZED.CivicsApp.Models;
-using AZED.CivicsApp.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Xamarin.Forms;
 
 namespace AZED.CivicsApp
@@ -13,7 +7,7 @@ namespace AZED.CivicsApp
     public partial class App : Application
     {
 
-        static QuizAttemptsDatabase database;
+        //static QuizAttemptsDatabase database;
 
         public App()
         {
@@ -52,17 +46,17 @@ namespace AZED.CivicsApp
         }
 
 
-        public static QuizAttemptsDatabase Database
-        {
-            get
-            {
-                if (database == null)
-                {
-                    database = new QuizAttemptsDatabase(DependencyService.Get<ILocalFileHelper>().GetLocalFilePath("QuizAttempts.db3"));
-                }
-                return database;
-            }
-        }
+        //public static QuizAttemptsDatabase Database
+        //{
+        //    get
+        //    {
+        //        if (database == null)
+        //        {
+        //            database = new QuizAttemptsDatabase(DependencyService.Get<ILocalFileHelper>().GetLocalFilePath("QuizAttempts.db3"));
+        //        }
+        //        return database;
+        //    }
+        //}
 
 
         protected override void OnStart()

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 using Xamarin.Forms.Xaml;
 
 namespace AZED.CivicsApp.Views
@@ -13,6 +14,7 @@ namespace AZED.CivicsApp.Views
         public SectionThreeInfoPage()
         {
             InitializeComponent();
+            On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
 
             BindingContext = App.Locator.GetViewModel(this);
 

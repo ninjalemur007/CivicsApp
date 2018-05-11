@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 using Xamarin.Forms.Xaml;
 
 namespace AZED.CivicsApp.Views
@@ -14,9 +15,9 @@ namespace AZED.CivicsApp.Views
         public MainPage()
         {
             InitializeComponent();
+            On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
 
             BindingContext = App.Locator.GetViewModel(this);
-
         }
 
         private double width = 0;
@@ -31,10 +32,12 @@ namespace AZED.CivicsApp.Views
                 this.height = height;
                 if (width > height)
                 {
+					flexCards.Direction = FlexDirection.Row;
                 }
                 else
                 {
-                }
+					flexCards.Direction = FlexDirection.Column;
+				}
             }
         }
 
@@ -54,10 +57,10 @@ namespace AZED.CivicsApp.Views
             await Navigation.PushAsync(new TestPage());
         }
 
-        async void GoToMastery(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new QuizAttemptsListPage());
-        }
+        //async void GoToMastery(object sender, EventArgs e)
+        //{
+        //    await Navigation.PushAsync(new QuizAttemptsListPage());
+        //}
 
     }
 }

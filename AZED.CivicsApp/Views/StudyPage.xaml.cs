@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AZED.CivicsApp.Models;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 using Xamarin.Forms.Xaml;
+using AZED.CivicsApp.ViewModels;
 
 namespace AZED.CivicsApp.Views
 {
@@ -17,6 +20,7 @@ namespace AZED.CivicsApp.Views
 
             BindingContext = App.Locator.GetViewModel(this);
 
+			On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
         }
 
         //Study Info Icon
