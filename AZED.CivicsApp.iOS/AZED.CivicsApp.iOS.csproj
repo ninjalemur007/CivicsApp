@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3756329-3C8E-4D83-B4E6-F323F4BEA3C9}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AZED.CivicsApp.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>AZED.CivicsApp.iOS</AssemblyName>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork@2x" />
+    <None Include="packages.config" />
+    <Compile Include="LocalFileHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon-60%403x.png" />
+    <BundleResource Include="Resources\Icon-76.png" />
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40.png" />
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40%403x.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\Icon-Small%403x.png" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.0.1, Culture=neutral, PublicKeyToken=d9452de2c18e9148, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibsStd10.5.4.0.1-alpha\lib\xamarin.ios10\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibsStd10.5.4.0.1-alpha\lib\xamarin.ios10\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.4.0.280\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.4.0.280\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.4.0.280\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.4.0.280\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\packages\SQLitePCL.raw.0.9.3\lib\Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.10\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.10\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.10\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.10\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AZED.CivicsApp\AZED.CivicsApp.csproj">
+      <Project>{31bbf8c3-9c1a-4e6e-9761-aeddba335c2a}</Project>
+      <Name>AZED.CivicsApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small%402x.png" />
+    <ImageAsset Include="Assets.xcassets\BattleLongIslandCARD.imageset\BattleLongIslandCARDCARD-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\BattleLongIslandCARD.imageset\BattleLongIslandCARDCARD-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\BattleLongIslandCARD.imageset\BattleLongIslandCARDCARD-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\BattleLongIslandCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\BattleLongIslandFULL.imageset\BattleLongIslandFULLFULL-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\BattleLongIslandFULL.imageset\BattleLongIslandFULLFULL-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\BattleLongIslandFULL.imageset\BattleLongIslandFULLFULL-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\BattleLongIslandFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\BetsyRossCARD.imageset\BetsyRossCARD-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\BetsyRossCARD.imageset\BetsyRossCARD-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\BetsyRossCARD.imageset\BetsyRossCARD-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\BetsyRossCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\BetsyRossFULL.imageset\BetsyRossFULL-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\BetsyRossFULL.imageset\BetsyRossFULL-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\BetsyRossFULL.imageset\BetsyRossFULL-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\BetsyRossFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\CaretRight.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\CaretRight.imageset\caret-right %401x.png" />
+    <ImageAsset Include="Assets.xcassets\CaretRight.imageset\caret-right %402x.png" />
+    <ImageAsset Include="Assets.xcassets\CaretRight.imageset\caret-right %403x.png" />
+    <ImageAsset Include="Assets.xcassets\CentennialQuiltCARD.imageset\Artboard 1%401,5x.png" />
+    <ImageAsset Include="Assets.xcassets\CentennialQuiltCARD.imageset\Artboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\CentennialQuiltCARD.imageset\Artboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\CentennialQuiltCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\CentennialQuiltCARD.imageset\Eagle_Quilt.jpg" />
+    <ImageAsset Include="Assets.xcassets\CentennialQuiltFULL.imageset\CentennialQuiltFULL%401x.png" />
+    <ImageAsset Include="Assets.xcassets\CentennialQuiltFULL.imageset\CentennialQuiltFULL%402x.png" />
+    <ImageAsset Include="Assets.xcassets\CentennialQuiltFULL.imageset\CentennialQuiltFULL%403x.png" />
+    <ImageAsset Include="Assets.xcassets\CentennialQuiltFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\EmancipationProclamationCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\EmancipationProclamationCARD.imageset\EmancipationProclamationCARD%401.5x.png" />
+    <ImageAsset Include="Assets.xcassets\EmancipationProclamationCARD.imageset\EmancipationProclamationCARD%402x.png" />
+    <ImageAsset Include="Assets.xcassets\EmancipationProclamationCARD.imageset\EmancipationProclamationCARD%403x.png" />
+    <ImageAsset Include="Assets.xcassets\EmancipationProclamationFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\EmancipationProclamationFULL.imageset\EmancipationProclamationFULL%401x.png" />
+    <ImageAsset Include="Assets.xcassets\EmancipationProclamationFULL.imageset\EmancipationProclamationFULL%402x.png" />
+    <ImageAsset Include="Assets.xcassets\EmancipationProclamationFULL.imageset\EmancipationProclamationFULL%403x.png" />
+    <ImageAsset Include="Assets.xcassets\FourthJulyCARD.imageset\4thJulyCARD-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\FourthJulyCARD.imageset\4thJulyCARD-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\FourthJulyCARD.imageset\4thJulyCARD-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\FourthJulyCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\FourthJulyFULL.imageset\4thJulyFULL-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\FourthJulyFULL.imageset\4thJulyFULL-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\FourthJulyFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\HouseRepresentativesCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\HouseRepresentativesCARD.imageset\HouseRepresentativesCARD-%401,5x.png" />
+    <ImageAsset Include="Assets.xcassets\HouseRepresentativesCARD.imageset\HouseRepresentativesCARD-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\HouseRepresentativesCARD.imageset\HouseRepresentativesCARD-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\HouseRepresentativesFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\HouseRepresentativesFULL.imageset\HouseRepresentativesFULL-%401,5x.png" />
+    <ImageAsset Include="Assets.xcassets\HouseRepresentativesFULL.imageset\HouseRepresentativesFULL-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\HouseRepresentativesFULL.imageset\HouseRepresentativesFULL-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-568h%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default%402x.png" />
+    <ImageAsset Include="Assets.xcassets\OldFlagCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\OldFlagCARD.imageset\OldFlagCARDCARD-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\OldFlagCARD.imageset\OldFlagCARDCARD-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\OldFlagCARD.imageset\OldFlagCARDCARD-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\OldFlagFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\OldFlagFULL.imageset\OldFlagFULL-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\OldFlagFULL.imageset\OldFlagFULL-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\OldFlagFULL.imageset\OldFlagFULL-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\SigningConstitutionCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SigningConstitutionCARD.imageset\SigningConstitutionCARD%401.5x.png" />
+    <ImageAsset Include="Assets.xcassets\SigningConstitutionCARD.imageset\SigningConstitutionCARD%402x.png" />
+    <ImageAsset Include="Assets.xcassets\SigningConstitutionCARD.imageset\SigningConstitutionCARD%403x.png" />
+    <ImageAsset Include="Assets.xcassets\SigningConstitutionFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SigningConstitutionFULL.imageset\SigningConstitutionFULL%401x.png" />
+    <ImageAsset Include="Assets.xcassets\SigningConstitutionFULL.imageset\SigningConstitutionFULL%402x.png" />
+    <ImageAsset Include="Assets.xcassets\SigningConstitutionFULL.imageset\SigningConstitutionFULL%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ViewMississippiCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ViewMississippiCARD.imageset\ViewMississippiCARD-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\ViewMississippiCARD.imageset\ViewMississippiCARD-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ViewMississippiCARD.imageset\ViewMississippiCARD-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ViewMississippiFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ViewMississippiFULL.imageset\ViewMississippiFULL-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\ViewMississippiFULL.imageset\ViewMississippiFULL-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ViewMississippiFULL.imageset\ViewMississippiFULL-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\WWIIPosterCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\WWIIPosterCARD.imageset\WWIIposterCARD-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\WWIIPosterCARD.imageset\WWIIposterCARD-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\WWIIPosterCARD.imageset\WWIIposterCARD-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\WWIIPosterFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\WWIIPosterFULL.imageset\WWIIposterFULL-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\WWIIPosterFULL.imageset\WWIIposterFULL-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\WWIIPosterFULL.imageset\WWIIposterFULL-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\WashingtonDelawareCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\WashingtonDelawareCARD.imageset\WashingtonDelawareCARD-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\WashingtonDelawareCARD.imageset\WashingtonDelawareCARD-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\WashingtonDelawareCARD.imageset\WashingtonDelawareCARD-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\WashingtonDelawareFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\WashingtonDelawareFULL.imageset\WashingtonDelawareFULL-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\WashingtonDelawareFULL.imageset\WashingtonDelawareFULL-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\WashingtonDelawareFULL.imageset\WashingtonDelawareFULL-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\WomanSuffrageCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\WomanSuffrageCARD.imageset\WomanSuffrageCARD-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\WomanSuffrageCARD.imageset\WomanSuffrageCARD-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\WomanSuffrageCARD.imageset\WomanSuffrageCARD-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\WomanSuffrageFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\WomanSuffrageFULL.imageset\WomanSuffrageFULL-%401x.png" />
+    <ImageAsset Include="Assets.xcassets\WomanSuffrageFULL.imageset\WomanSuffrageFULL-%402x.png" />
+    <ImageAsset Include="Assets.xcassets\WomanSuffrageFULL.imageset\WomanSuffrageFULL-%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TimothyMatlockCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TimothyMatlockCARD.imageset\TimothyMatlockCARD%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TimothyMatlockCARD.imageset\TimothyMatlockCARD%402x.png" />
+    <ImageAsset Include="Assets.xcassets\TimothyMatlockCARD.imageset\TimothyMatlockCARD%401-5.png" />
+    <ImageAsset Include="Assets.xcassets\WritingFatherCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\WritingFatherCARD.imageset\CARD %401.png" />
+    <ImageAsset Include="Assets.xcassets\WritingFatherCARD.imageset\CARD %402x.png" />
+    <ImageAsset Include="Assets.xcassets\WritingFatherCARD.imageset\CARD %403x.png" />
+    <ImageAsset Include="Assets.xcassets\WritingFatherFULL.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\WritingFatherFULL.imageset\FULL %401.png" />
+    <ImageAsset Include="Assets.xcassets\WritingFatherFULL.imageset\FULL %402x.png" />
+    <ImageAsset Include="Assets.xcassets\WritingFatherFULL.imageset\FULL %403x.png" />
+    <ImageAsset Include="Assets.xcassets\HomeICONtab.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\StudyICONtab.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\QuizICONtab.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TestICONtab.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\InfoICON.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\InfoICON.imageset\infoArtboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\InfoICON.imageset\infoArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\InfoICON.imageset\infoArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\InfoICONwhite.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\InfoICONwhite.imageset\infoArtboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\InfoICONwhite.imageset\infoArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\InfoICONwhite.imageset\infoArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\RedSchoolHouseCARD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\RedSchoolHouseCARD.imageset\RedSchoolHouseCARD %401-5.png" />
+    <ImageAsset Include="Assets.xcassets\RedSchoolHouseCARD.imageset\RedSchoolHouseCARD %402x.png" />
+    <ImageAsset Include="Assets.xcassets\RedSchoolHouseCARD.imageset\RedSchoolHouseCARD %403x.png" />
+    <ImageAsset Include="Assets.xcassets\CheckboxChecked.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\CheckboxChecked.imageset\CheckboxCheckedArtboard 1%401.5x.png" />
+    <ImageAsset Include="Assets.xcassets\CheckboxChecked.imageset\CheckboxCheckedArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\CheckboxChecked.imageset\CheckboxCheckedArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\CheckboxUnchecked.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\CheckboxUnchecked.imageset\unchecked2Artboard 1%401.5x.png" />
+    <ImageAsset Include="Assets.xcassets\CheckboxUnchecked.imageset\unchecked2Artboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\CheckboxUnchecked.imageset\unchecked2Artboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ImageInfoICON.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ImageInfoICON.imageset\Asset 4%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ImageInfoICON.imageset\Asset 4.png" />
+    <ImageAsset Include="Assets.xcassets\ImageInfoICON.imageset\Asset 4%403x.png" />
+    <ImageAsset Include="Assets.xcassets\FourthJulyFULL.imageset\4thJulyFULL-%401,5x.png" />
+    <ImageAsset Include="Assets.xcassets\ZoomICON.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ZoomICON.imageset\ZoomICONArtboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\ZoomICON.imageset\ZoomICONArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ZoomICON.imageset\ZoomICONArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AZflag.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AZflagscreen.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AZflagscreen.imageset\AZflagFullScreenArtboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\AZflagscreen.imageset\AZflagFullScreenArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AZflagscreen.imageset\AZflagFullScreenArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\bluescreen.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\bluescreen.imageset\bluescreenArtboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\bluescreen.imageset\bluescreenArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\bluescreen.imageset\bluescreenArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AZflag.imageset\flagstretchedArtboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\AZflag.imageset\flagstretchedArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AZflag.imageset\flagstretchedArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\QuizICONtab.imageset\QuizTabICONArtboard 3.png" />
+    <ImageAsset Include="Assets.xcassets\QuizICONtab.imageset\QuizTabICONArtboard 3%402x.png" />
+    <ImageAsset Include="Assets.xcassets\QuizICONtab.imageset\QuizTabICONArtboard 3%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TestICONtab.imageset\Artboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\TestICONtab.imageset\Artboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\TestICONtab.imageset\Artboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\StudyICONtab.imageset\Artboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\StudyICONtab.imageset\Artboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\StudyICONtab.imageset\Artboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\MasteryICONtab.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\MasteryICONtab.imageset\Artboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\MasteryICONtab.imageset\Artboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\MasteryICONtab.imageset\Artboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\HomeICONtab.imageset\Artboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\HomeICONtab.imageset\Artboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\HomeICONtab.imageset\Artboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\QUIZicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\QUIZicon.imageset\Artboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\QUIZicon.imageset\Artboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\QUIZicon.imageset\Artboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TESTicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\MASTERYicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\MASTERYicon.imageset\Artboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\MASTERYicon.imageset\Artboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\MASTERYicon.imageset\Artboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\STUDYicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\STUDYicon.imageset\Artboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\STUDYicon.imageset\Artboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\STUDYicon.imageset\Artboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TESTicon.imageset\stopwatchArtboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\TESTicon.imageset\stopwatchArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\TESTicon.imageset\stopwatchArtboard 1%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\TimothyMatlockCARD.imageset\" />
+    <Folder Include="Assets.xcassets\WritingFatherCARD.imageset\" />
+    <Folder Include="Assets.xcassets\WritingFatherFULL.imageset\" />
+    <Folder Include="Assets.xcassets\RedSchoolHouseCARD.imageset\" />
+    <Folder Include="Assets.xcassets\HomeICONtab.imageset\" />
+    <Folder Include="Assets.xcassets\StudyICONtab.imageset\" />
+    <Folder Include="Assets.xcassets\QuizICONtab.imageset\" />
+    <Folder Include="Assets.xcassets\TestICONtab.imageset\" />
+    <Folder Include="Assets.xcassets\InfoICON.imageset\" />
+    <Folder Include="Assets.xcassets\InfoICONwhite.imageset\" />
+    <Folder Include="Assets.xcassets\RedSchoolHouseCARD.imageset\" />
+    <Folder Include="Assets.xcassets\CheckboxChecked.imageset\" />
+    <Folder Include="Assets.xcassets\CheckboxUnchecked.imageset\" />
+    <Folder Include="Assets.xcassets\ImageInfoICON.imageset\" />
+    <Folder Include="Assets.xcassets\ZoomICON.imageset\" />
+    <Folder Include="Assets.xcassets\AZflag.imageset\" />
+    <Folder Include="Assets.xcassets\AZflagscreen.imageset\" />
+    <Folder Include="Assets.xcassets\bluescreen.imageset\" />
+    <Folder Include="Assets.xcassets\QuizICONBlueCopper.imageset\" />
+    <Folder Include="Assets.xcassets\MasteryICONtab.imageset\" />
+    <Folder Include="Assets.xcassets\QUIZicon.imageset\" />
+    <Folder Include="Assets.xcassets\TESTicon.imageset\" />
+    <Folder Include="Assets.xcassets\MASTERYicon.imageset\" />
+    <Folder Include="Assets.xcassets\STUDYicon.imageset\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" />
+</Project>

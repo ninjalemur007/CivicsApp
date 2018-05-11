@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.QuizPage"
+             Title="{Binding PageTitle}" >
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0,8,0,0" />
+            <On Platform="Android, WinPhone, Windows" Value="0" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+ 
+    <ContentPage.Content>
+
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <StackLayout 
+                Padding="10" x:Name="beginQuizPanel" IsVisible="{Binding CanShowBeginQuiz}">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Label Text="Quiz"
+                        Style="{StaticResource labelViewTitle}" />
+
+                    <Image x:Name="infoIconStudy"
+                        Opacity=".75"
+                        Source="InfoICON"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="Start" 
+                        WidthRequest="24"
+                        HeightRequest="24"
+                        Grid.Row="0" Grid.Column="1">
+
+                    <Image.GestureRecognizers>
+                          <TapGestureRecognizer Tapped="infoQuiz" />
+                     </Image.GestureRecognizers>
+                   </Image>
+                </StackLayout>             
+
+                <Label 
+                Text="Each quiz consists of 10 questions from the chosen test section." 
+                Style="{StaticResource labelViewDescription}"  />
+
+<!--                <StackLayout x:Name="cardLayout"
+                             Orientation="Vertical">-->
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                    </Grid.ColumnDefinitions>
+
+                    <control:QuizSectionCardControl 
+                        ImageSource="SigningConstitutionCARD"
+                        SectionNumber="I"
+                        SectionTitle="American Government" 
+                        Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                        Command="{Binding BeginQuizCommand}" CommandParameter="I" />
+
+                    <control:QuizSectionCardControl
+                        ImageSource="EmancipationProclamationCARD"
+                        SectionNumber="II"
+                        SectionTitle="American History"
+                        Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                        Command="{Binding BeginQuizCommand}" CommandParameter="II" />
+
+                    <control:QuizSectionCardControl
+                        ImageSource="CentennialQuiltCARD"
+                        SectionNumber="III"
+                        SectionTitle="Integrated Civics"
+                        Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                        Command="{Binding BeginQuizCommand}" CommandParameter="III" />
+                     <Image x:Name="infoIcon1"
+                        Opacity=".75"
+                        Source="InfoICONwhite"
+                        Grid.Row="0" Grid.Column="1"
+                        HorizontalOptions="End"
+                        VerticalOptions="Start" >
+                         <Image.GestureRecognizers>
+                              <TapGestureRecognizer Tapped="GoToInfoI" />
+                         </Image.GestureRecognizers>
+                    </Image>
+                    <Image x:Name="infoIcon2"
+                        Opacity=".75"
+                        Source="InfoICONwhite"
+                        Grid.Row="1" Grid.Column="1"
+                        HorizontalOptions="End"
+                        VerticalOptions="Start" >
+                         <Image.GestureRecognizers>
+                              <TapGestureRecognizer Tapped="GoToInfoII" />
+                         </Image.GestureRecognizers>
+                    </Image>
+                    <Image x:Name="infoIcon3"
+                        Opacity=".75"
+                        Source="InfoICONwhite"
+                        Grid.Row="2" Grid.Column="1"
+                        HorizontalOptions="End"
+                        VerticalOptions="Start" >
+                         <Image.GestureRecognizers>
+                              <TapGestureRecognizer Tapped="GoToInfoIII" />
+                         </Image.GestureRecognizers>
+                    </Image>
+
+                    
+                </Grid>
+<!--                </StackLayout>-->
+                    
+            </StackLayout>
+
+            <control:QuestionAnswerControl x:Name="questionAnswerControl" Padding="10" IsVisible="{Binding CanShowQuiz}" 
+                                           VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                                            SectionText="{Binding CurrentSection.DisplayText}"
+                                            QuestionNumberText="{Binding CurrentQuestionNumberText}"
+                                            QuestionText="{Binding CurrentQuestionAnswer.AdeQuestion}"
+                                            AnswerChoiceAText="{Binding CurrentQuestionAnswer.AdeChoiceA}"
+                                            AnswerChoiceBText="{Binding CurrentQuestionAnswer.AdeChoiceB}"
+                                            AnswerChoiceCText="{Binding CurrentQuestionAnswer.AdeChoiceC}"
+                                            AnswerChoiceDText="{Binding CurrentQuestionAnswer.AdeChoiceD}"
+                                            NextQuestionCommand="{Binding NextQuestionCommand}"
+                                            PreviousQuestionCommand="{Binding PreviousQuestionCommand}"
+                                            ViewResultsCommand="{Binding ViewResultsCommand}"
+                                            />
+
+            <Grid Padding="10" x:Name="viewResultsPanel" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" IsVisible="{Binding CanShowViewResults}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="{Binding CurrentSection.DisplayText}" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" />
+                <Label Text="QUIZ SCORE"  FontSize="Large" HorizontalTextAlignment="Center" Grid.Row="2" />
+                <Label Text="{Binding CorrectNumberOfQuestions}" FontSize="Large" HorizontalTextAlignment="Center" Grid.Row="4" />
+                <BoxView WidthRequest="50" HeightRequest="1" HorizontalOptions="Center" Color="Black"  Grid.Row="5" />
+                <Label Text="{Binding MaxNumberOfQuestions}"  FontSize="Large"  HorizontalTextAlignment="Center"  Grid.Row="6" />
+                <Label Text="{Binding ScoreText}"  FontSize="Default"  HorizontalTextAlignment="Center" Grid.Row="8" />
+
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Grid.Row="9"   >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Review Answers" WidthRequest="200" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding ReviewAnswersCommand}" />
+                    <Button Text="All Done" WidthRequest="200" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding CloseQuizCommand}" />
+                </Grid>
+                
+            </Grid>
+                     
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

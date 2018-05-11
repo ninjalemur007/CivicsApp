@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AZED.CivicsApp.Views.InfoQuizPage">
+
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="8,16,8,8" />
+            <On Platform="Android, WinPhone, Windows" Value="8" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+
+        <Frame 
+            Style="{StaticResource infoModal}" >
+
+            <StackLayout>
+
+                <ScrollView>
+                
+                <StackLayout Padding="10" >            
+
+                    <Label
+                            Style="{StaticResource labelSectionTitle}"
+                            HorizontalTextAlignment="Center"
+                            Text="About Quizzes" />
+
+                    <Label
+                            Text="Each quiz consists of 10 questions randomly drawn from the selected section. Multiple quiz attempts may be required to see all questions for that section of the test." />
+
+                    <Label
+                            Style="{StaticResource labelInfoSubtitle}"
+                            Text="Question Format" />
+
+                    <Label
+                            Text="The majority of questions used for the practice test are taken from the Arizona Department of Education's 'Civics Test and Administration Manual' (published 2015), in which the questions from the USCIS citizenship test were rewritten as multiple choice questions. This app has also rewritten the short-answer questions as multiple choice questions, simply for ease of practice." />
+
+
+               </StackLayout> 
+        </ScrollView>
+
+            <Button Text="Okay" Clicked="reversePopup" Style="{StaticResource buttonOkay}"/>
+        </StackLayout>        
+
+
+
+    </Frame>  
+    </ContentPage.Content>
+</ContentPage>

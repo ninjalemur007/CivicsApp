@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailEmancipationPage"
+             Title="{Binding PageTitle}" >
+            
+        
+    <ContentPage.Content>
+            <control:ImageDetailPageControl
+                ImageSource="EmancipationProclamationFULL"
+                ImageTitle="Emancipation Proclamation"
+                ImageArtist="A. A. Lamb"
+                ImageYear="1864 or after"
+                ImageMedium="Oil on canvas"
+                ImageAttribution="National Gallery of Art"
+                ImageDescription="Owned by the National Gallery of Art, little is known about this painting or artist. 
+
+
+            Nevertheless, the painting has enjoyed popularity as a loaner piece since the 1960s, including 27 years in the White House collection, and display during Madeleine Albright's tenures as Ambassador to the U.N. and Secretary of State."
+                />            
+        
+    </ContentPage.Content>
+</ContentPage>

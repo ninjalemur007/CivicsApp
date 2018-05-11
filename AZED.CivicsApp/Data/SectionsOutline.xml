@@ -1,0 +1,50 @@
+﻿<SectionsOutline>
+  <Section
+     Title="American Government"
+     Numeral ="I">
+    <Subsection
+      Letter="A"
+      Title="Principles of American Democracy">
+    </Subsection>
+    <Subsection
+      Letter="B"
+      Title="System of Government">
+    </Subsection>
+    <Subsection
+      Letter="C"
+      Title="Rights and Responsibilities">
+    </Subsection>
+  </Section>
+  <Section
+    Title="American History"
+    Numeral ="II">
+    <Subsection
+      Letter="A"
+      Title="Colonial Period and Independence">
+    </Subsection>
+    <Subsection
+      Letter="B"
+      Title="1800s">
+    </Subsection>
+    <Subsection
+      Letter="C"
+      Title="Recent American History and Other Important Historical Information">
+    </Subsection>
+  </Section>
+  <Section
+    Title="Integrated Civics"
+    Numeral ="III">
+    <Subsection
+      Letter="A"
+      Title="Geography">
+    </Subsection>
+    <Subsection
+      Letter="B"
+      Title="Symbols">
+    </Subsection>
+    <Subsection
+      Letter="C"
+      Title="Holidays">
+    </Subsection>
+  </Section>
+</SectionsOutline>

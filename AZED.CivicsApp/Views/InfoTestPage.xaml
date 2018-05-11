@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AZED.CivicsApp.Views.InfoTestPage">
+
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="8,16,8,8" />
+            <On Platform="Android, WinPhone, Windows" Value="8" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+
+        <Frame 
+            Style="{StaticResource infoModal}" >
+
+
+            <StackLayout>
+
+                <ScrollView>
+                
+                <StackLayout Padding="10" >            
+
+                    <Label
+                            Style="{StaticResource labelSectionTitle}"
+                            HorizontalTextAlignment="Center"
+                            Text="About the Test" />
+
+                    <Label
+                            Text="Take this practice version of the full 100-question Arizona Civics Test and see how well you do!" />
+
+                    <Label
+                            Style="{StaticResource labelInfoSubtitle}"
+                            Text="Question Format" />
+
+                    <Label
+                            Text="The majority of questions used for the practice test are taken from the Arizona Department of Education's 'Civics Test and Administration Manual' (published 2015), in which the questions from the USCIS citizenship test were rewritten as multiple choice questions. This app has also rewritten the short-answer questions as multiple choice questions, simply for ease of practice." />
+
+                    <Label
+                            Style="{StaticResource labelInfoSubtitle}"
+                            Text="Disclaimer" />
+
+                    <Label
+                            Text="Achieving a passing score on the test in this app does NOT count as passing the Arizona Civics Test for the Arizona High School graduation requirement. See your school district for information about taking the official Arizona Civics Test." />
+
+               </StackLayout> 
+        </ScrollView>
+
+            <Button Text="Okay" Clicked="reversePopup" Style="{StaticResource buttonOkay}"/>
+        </StackLayout>        
+
+
+
+    </Frame>  
+    </ContentPage.Content>
+</ContentPage>

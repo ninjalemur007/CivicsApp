@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailWWIIPosterPage"
+             Title="{Binding PageTitle}" >
+            
+        
+    <ContentPage.Content>
+            <control:ImageDetailPageControl
+                ImageSource="WWIIPosterFULL"
+                ImageTitle="Working together for Victory"
+                ImageArtist="War Production Board"
+                ImageYear="1942-43"
+                ImageMedium="Print"
+                ImageAttribution="National Archives and Records Administration"
+                ImageDescription="During World War II, the War Production Board commissioned posters to promote production goals and boost morale. Established in 1942 by President Franklin D. Roosevelt, the WPB was tasked with directing the conversion of American industry from peacetime work to wartime production. Anthracite (coal) mining had declined in the decade leading up to the war, causing the WPB to conduct an intensive 'Drive for Anthracite' campaign in Pennsylvania's coal country in the fall of 1942. WPB propaganda campaigns ranged from promoting scrap metal drives to safety education and morale."
+                />            
+        
+    </ContentPage.Content>
+</ContentPage>

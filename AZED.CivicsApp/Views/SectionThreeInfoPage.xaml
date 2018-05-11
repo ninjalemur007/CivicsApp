@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.SectionThreeInfoPage"
+             Title="{Binding PageTitle}" >
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="8,16,8,8" />
+            <On Platform="Android, WinPhone, Windows" Value="8" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    
+    <ContentPage.Content>
+        
+            <StackLayout>
+           <Frame 
+                Style="{StaticResource frameModal}" >
+
+                <ScrollView>
+
+                    <StackLayout Padding="16,0">
+
+                        <Label Style="{StaticResource labelAboutName}"
+                               Text="III  Integrated Civics" />
+
+
+                    <Frame
+                            HasShadow="false" 
+                            Padding="0"
+                            CornerRadius="0" >
+                    
+                        <control:ImageDetailControl
+                               ImageSource="CentennialQuiltCARD" />
+
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GoToImageDetail" />
+                        </Frame.GestureRecognizers>
+                            
+                    </Frame>
+            
+                        <Label Style="{StaticResource labelAboutName}"
+                               Text="III  Integrated Civics" />
+                        <Label Style="{StaticResource labelAboutText}"
+                               Text="An understanding of America’s geography, symbols, and holidays is important. They provide background and more meaning to historical events and other landmark moments in U.S. history. The following section offers short lessons on our country’s geography, national symbols, and national holidays." />
+                        <Label Style="{StaticResource labelAboutText}"
+                               Text="The geography of the United States is unusual because of the size of the country and the fact that it is bordered by two oceans that create natural boundaries to the east and west. Through visual symbols such as our flag and the Statue of Liberty, the values and history of the United States are often expressed. Finally, you will also learn about our national holidays and why we celebrate them. Most of our holidays honor people who have contributed to our history and to the development of our nation." />
+                        <Label Style="{StaticResource labelAboutText}"
+                               Text="By learning this information, you will develop a deeper understanding of the United States and its geographical boundaries, principles, and freedoms." />
+                        <BoxView
+                                Color="Gray"
+                                HeightRequest="2"
+                                Margin="16,0" />
+                    
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+             <Button Text="Okay" Clicked="goBack" Style="{StaticResource buttonOkay}"/>
+        </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>

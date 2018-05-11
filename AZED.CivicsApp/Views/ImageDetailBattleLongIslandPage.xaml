@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailBattleLongIslandPage"
+             Title="{Binding PageTitle}" >
+            
+        
+    <ContentPage.Content>
+            <control:ImageDetailPageControl
+                ImageSource="BattleLongIslandFULL"
+                ImageTitle="Battle of Long Island"
+                ImageArtist="Domenick D'Andrea"
+                ImageYear="unknown"
+                ImageMedium="Oil on Canvas"
+                ImageAttribution="National Guard Bureau"
+                ImageDescription="Commissioned by the National Guard Bureau as part of its Heritage Series, this painting depicts the Delaware Regiment holding the line during the Battle of Long Island on August 27, 1776. 'At the Battle of Long Island, the actions of the Delaware Regiment kept the American defeat from becoming adisaster. Indeed, the soldiers from tiny Delaware, fighting alongside the 1st Maryland Regiment, may well have prevented the
+capture of the majority of Washington's army, an event which might have ended the colonial rebellion then and there.
+Organized in January, 1776 by Colonel John Haslet, the Delaware Regiment was noteworthy from the start as the best
+uniformed and equipped regiment of the Continental Army. Their blue jackets with red facings and white waistcoat and
+breeches would later become the uniform for all the Continental troops. During the Battle of Long Island, the Delaware and
+Maryland troops were positioned on the right of Washington's line, defending the most direct route from the British landing
+site in south Brooklyn to the American fortifications in Brooklyn Heights. Though they faced the fiercest fighting of the day,
+they held their ground, allowing the remainder of Washington's army to retreat to the safety of the fortifications. When they in
+turn were outflanked and forced to retreat, the Delaware Regiment conducted an orderly retreat through marshland and
+across the Gowanus creek, carrying off with them 23 prisoners. Two nights later, Washington entrusted his Delaware and
+Maryland soldiers to be the rear guard as he secretly withdrew his army from Brooklyn to Manhattan.'"
+                />            
+        
+    </ContentPage.Content>
+</ContentPage>

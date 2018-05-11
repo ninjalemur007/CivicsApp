@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailMississippiRiverPage"
+             Title="{Binding PageTitle}" >
+            
+        
+    <ContentPage.Content>
+            <control:ImageDetailPageControl
+                ImageSource="ViewMississippiFULL"
+                ImageTitle="View on the Mississippi Fifty-Seven Miles Below St. Anthony Falls, Minneapolis"
+                ImageArtist="Ferdinand Richardt"
+                ImageYear="1858"
+                ImageMedium="Oil on canvas"
+                ImageAttribution="White House Historical Association"
+                ImageDescription="Danish American painter Ferdinand Richardt captures a unique moment in the story of American progress. His serene view of one of the Midwest's most important waterways depicts a steam-driven riverboat seemingly puffing its way into the future, soon to pass a timber raft. Even as Richardt completed his painting, such scenes were disappearing from the American landscape. Railroads were rendering river steamboats obsolete and by the 1890s, train cars had replaced log drives in the Midwest."
+                />            
+        
+    </ContentPage.Content>
+</ContentPage>

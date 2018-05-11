@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AZED.CivicsApp.Controls.QuestionAnswerControl"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Name="this">
+    <ContentView.Content>
+
+        <StackLayout>
+            
+            <Label x:Name="sectionLabel" 
+                   Text="{Binding SectionText, Source={x:Reference this}}" 
+                   Style="{StaticResource labelSectionTitle}"
+                   HorizontalOptions="FillAndExpand" />
+
+            <BoxView 
+                    HeightRequest="1"
+                    WidthRequest="200"
+                    Margin="0,8,0,8"
+                    VerticalOptions="End"
+                    HorizontalOptions="CenterAndExpand"
+                    Color="{StaticResource colorMediumGray}" />
+            
+            <Label x:Name="questionNumberLabel" 
+                   Text="{Binding QuestionNumberText, Source={x:Reference this}}" 
+                   Grid.Row="1" Grid.ColumnSpan="2" 
+                   Style="{StaticResource labelQuizQuestionNumber}"
+                   HorizontalOptions="FillAndExpand"  />
+
+            <Frame
+                    HasShadow="false" 
+                    Padding="8"
+                    Margin="8,0"
+                    CornerRadius="0"
+                    OutlineColor="#cccccc"
+                    BackgroundColor="{StaticResource overlayWhite}"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand" >
+
+               <Grid HorizontalOptions="FillAndExpand" >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                
+                    <Label x:Name="questionLabel" 
+                           Text="{Binding QuestionText, Source={x:Reference this}}" 
+                           Style="{StaticResource labelQuestionText}"
+                           Margin="0,0,0,8"
+                           Grid.Row="0" Grid.Column="0"  />
+          
+                    <control:CheckBoxLabelControl x:Name="checkBoxLabelA" 
+                                                  LabelText="{Binding AnswerChoiceAText, Source={x:Reference this}}" 
+                                                  IsChecked="{Binding AnswerChoiceAIsChecked, Source={x:Reference this}, Mode=TwoWay}"
+                                                  Style="labelQuizAnswerChoice"
+                                                  Grid.Row="1" Grid.Column="0"  />
+
+                    <control:CheckBoxLabelControl x:Name="checkBoxLabelB" 
+                                                  LabelText="{Binding AnswerChoiceBText, Source={x:Reference this}}" 
+                                                  IsChecked="{Binding AnswerChoiceBIsChecked, Source={x:Reference this}, Mode=TwoWay}"
+                                                  Style="labelQuizAnswerChoice"
+                                                  Grid.Row="2" Grid.Column="0"  />
+
+                    <control:CheckBoxLabelControl x:Name="checkBoxLabelC" 
+                                                  LabelText="{Binding AnswerChoiceCText, Source={x:Reference this}}" 
+                                                  IsChecked="{Binding AnswerChoiceCIsChecked, Source={x:Reference this}, Mode=TwoWay}"
+                                                  Style="labelQuizAnswerChoice"
+                                                  Grid.Row="3" Grid.Column="0" />
+
+                    <control:CheckBoxLabelControl x:Name="checkBoxLabelD" 
+                                                  LabelText="{Binding AnswerChoiceDText, Source={x:Reference this}}" 
+                                                  IsChecked="{Binding AnswerChoiceDIsChecked, Source={x:Reference this}, Mode=TwoWay}"
+                                                  Style="labelQuizAnswerChoice"
+                                                  Grid.Row="4" Grid.Column="0" />
+
+                </Grid>
+            </Frame>
+
+<Grid HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Grid.Row="8"   >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="resultsButton" Text="See Results" WidthRequest="200" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center"
+                    Command="{Binding ViewResultsCommand, Source={x:Reference this}}" CommandParameter="{Binding ViewResultsCommandParameter, Source={x:Reference this}}" />
+
+                <Button x:Name="previousButton" Text="Previous" WidthRequest="100" Grid.Row="1" Grid.Column="0" HorizontalOptions="StartAndExpand" VerticalOptions="End" 
+                    Command="{Binding PreviousQuestionCommand, Source={x:Reference this}}" CommandParameter="{Binding PreviousQuestionCommandParameter, Source={x:Reference this}}" />
+
+                <Button x:Name="nextButton" Text="Next" WidthRequest="100" Grid.Row="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="End" 
+                    Command="{Binding NextQuestionCommand, Source={x:Reference this}}" CommandParameter="{Binding NextQuestionCommandParameter, Source={x:Reference this}}"/>
+            </Grid>
+
+        </StackLayout>
+        
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AZED.CivicsApp.Views.InfoStudyPage">
+
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="8,16,8,8" />
+            <On Platform="Android, WinPhone, Windows" Value="8" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+
+        <Frame 
+            Style="{StaticResource infoModal}" >
+
+            <StackLayout>
+
+                <ScrollView>
+                
+                <StackLayout Padding="10" >            
+
+                    <Label
+                            Style="{StaticResource labelSectionTitle}"
+                            HorizontalTextAlignment="Center"
+                            Text="About Studying" />
+
+                    <Label
+                            Text="All 100 questions are available to study by section and subsection." />
+
+                    <Label
+                            Style="{StaticResource labelInfoSubtitle}"
+                            Text="Organization" />
+
+                    <Label
+                            Text="Study materials are divided into three main sections (I, II, III), which are in turn divided into three subsections (A, B, C). In order to study all 100 questions, you must study each section and subsection." />
+
+                    <Label
+                            Style="{StaticResource labelInfoSubtitle}"
+                            Text="Source of Study Materials" />
+
+                    <Label
+                            Text="The Study questions and answers are taken directly from the USCIS booklet 'Learn about the United States: Quick Civics Lessons for the Naturalization Test'. The wording of the questions in this section comes from the naturalization test, not the Arizona Civics Test, though the questions perfectly align with one another." />
+
+               </StackLayout> 
+        </ScrollView>
+
+            <Button Text="Okay" Clicked="reversePopup" Style="{StaticResource buttonOkay}"/>
+        </StackLayout>        
+
+
+
+    </Frame>  
+    </ContentPage.Content>
+</ContentPage>

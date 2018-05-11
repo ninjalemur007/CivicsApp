@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailFourthJulyPage"
+             Title="{Binding PageTitle}" >
+            
+        
+    <ContentPage.Content>
+            <control:ImageDetailPageControl
+                ImageSource="FourthJulyFULL"
+                ImageTitle="The Fourth of July, 1916"
+                ImageArtist="Frederick Childe Hassam"
+                ImageYear="1916"
+                ImageMedium="oil on canvas"
+                ImageAttribution="New York Historical Society"
+                ImageDescription="Inspired by a 1916 parade down Fifth Avenue in New York City, this painting is part of the 'Flag series' Hassam created in support of the United States' entry into World War I, which eventually occurred in April 1917. Though created almost as propaganda, the painting reflects Hassam's deserved reputation as one of the great American Impressionists."
+                />            
+        
+    </ContentPage.Content>
+</ContentPage>

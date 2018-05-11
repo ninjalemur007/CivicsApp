@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AZED.CivicsApp.Controls.CheckBoxLabelControl"
+            x:Name="this">
+    <ContentView.Content>
+        <StackLayout x:Name="checkBoxLabelPanel" Orientation="Horizontal">
+            
+
+            <Image 
+                x:Name="checkboxImage" 
+                WidthRequest="16" 
+                HeightRequest="16" 
+                Aspect="AspectFit"
+                />
+
+            <Label 
+                x:Name="checkboxLabel" 
+                Text="{Binding LabelText, Source={x:Reference this}}" 
+                HorizontalTextAlignment="Start" />
+            
+            <StackLayout.GestureRecognizers>
+            </StackLayout.GestureRecognizers>
+            
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

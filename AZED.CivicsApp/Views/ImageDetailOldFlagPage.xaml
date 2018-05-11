@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailOldFlagPage" >
+    <ContentPage.Content>
+        <control:ImageDetailPageControl
+                ImageSource="OldFlagFULL"
+                ImageTitle="The Old Flag Never Touched the Ground"
+                ImageArtist="Rick Reeves"
+                ImageYear="1999"
+                ImageMedium="Oil on canvas"
+                ImageAttribution="National Guard Bureau Heritage Series"
+                ImageDescription="From the National Guard Bureau: 'This painting depicts the 54th Massachusetts Volunteer Infantry Regiment at the attack on Fort Wagner, South Carolina, on July 18, 1863. The regiment suffered 270 casualties in the failed assault, but the greater message was not lost: some 180,000 African-American soldiers followed in the footsteps of these gallant Guardsmen, and proved that African-American soldiers could indeed fight heroically if given the opportunity.'"
+                />
+        
+    </ContentPage.Content>
+</ContentPage>

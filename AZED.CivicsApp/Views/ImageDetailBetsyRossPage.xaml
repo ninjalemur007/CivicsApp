@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailBetsyRossPage"
+             Title="{Binding PageTitle}" >
+            
+        
+    <ContentPage.Content>
+            <control:ImageDetailPageControl
+                ImageSource="BetsyRossFULL"
+                ImageTitle="Betsy Ross 1777"
+                ImageArtist="Jean Leon Gerome Ferris"
+                ImageYear="1932 (ca. 1920)"
+                ImageMedium="print (oil on canvas)"
+                ImageAttribution="Library of Congress (private collection)"
+                ImageDescription="One of 78 paintings in Ferris' series 'The Pageant of a Nation', 'Betsy Ross 1777' depicts Philadelphia seamstress Betsy Ross showing Founding Fathers George Washington, Robert Morris and George Ross the five-pointed stars for the new American flag. While Americans love to credit Betsy Ross with designing and making the first American flag, her placein history was created by her grandson, William J. Canby, in 1870 when he presented a paper based on stories handed down through his family. The most that historians have been able to verify is that Betsy Ross was one of several flag makers in Philadelphia in 1776 and that she may have been the one to replace six-pointed stars with the five-pointed stars we know and love. Then again, historians have also not been able to disprove the popular account. Indeed, the Flag Resolution of 1777 adopted he first congressionally approved design for a U.S. flag, with a description sounding very much like the flag that Betsy Ross is credited with making: 'Resolved, That the flag of the thirteen United States be thirteen stripes, alternate red and white; that the union be thirteen stars, white in a blue field, representing a new constellation.'"
+                />            
+        
+    </ContentPage.Content>
+</ContentPage>

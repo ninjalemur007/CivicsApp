@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:AZED.CivicsApp"
+    x:Class="AZED.CivicsApp.Controls.ImageDetailControl"
+    x:Name="this">
+
+<ContentView.Content>
+<Grid>
+        <Grid.RowDefinitions>
+        <RowDefinition Height="30" />
+        <RowDefinition Height="111" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="36" />
+    </Grid.ColumnDefinitions>
+
+
+    <Image 
+        Source="{Binding ImageSource, Source={x:Reference this}}" 
+        Aspect="AspectFill"
+        HeightRequest="141"
+        Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" />
+
+    <Frame x:Name="frameInfoIcon"                
+        HasShadow="false" 
+        Padding="0"
+        CornerRadius="0"
+        BackgroundColor="{StaticResource overlayGray}"
+        Grid.Row="0" Grid.Column="1" >
+
+        <Image 
+            Source="ImageInfoICON" 
+            Aspect="AspectFit"
+            Grid.Row="0" Grid.Column="1">
+       </Image>
+    </Frame>
+ </Grid>
+        </ContentView.Content>
+    </ContentView>

@@ -1,0 +1,147 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\QuestionsAnswers.xml" />
+    <None Remove="Data\SectionsOutline.xml" />
+    <None Remove="Data\study.json" />
+    <None Remove="Data\StudyByQuestion.xml" />
+    <None Remove="Data\SubsectionsList.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\StudyQuestionPage.xaml" />
+    <EmbeddedResource Remove="Controls\BeginStudyControl.xaml" />
+    <EmbeddedResource Remove="Views\QuizRecordItemPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\QuestionsAnswers.xml" />
+    <EmbeddedResource Include="Data\SectionsOutline.xml" />
+    <EmbeddedResource Include="Data\study.json" />
+    <EmbeddedResource Include="Data\StudyByQuestion.xml" />
+    <EmbeddedResource Include="Data\SubsectionsList.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MvvmLightLibsStd10" Version="5.4.0.1-alpha" />
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.280" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.4.118" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\InfoAboutTestsPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Controls\IconTitleDescriptionControl.xaml.cs">
+      <DependentUpon>IconTitleDescriptionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\QuizSectionCardControl.xaml.cs">
+      <DependentUpon>QuizSectionCardControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\InfoPages\SectionOneInfoPage.xaml.cs">
+      <DependentUpon>SectionOneInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SectionOneInfoPage.xaml.cs">
+      <DependentUpon>SectionOneInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SectionTwoInfoPage.xaml.cs">
+      <DependentUpon>SectionTwoInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SectionThreeInfoPage.xaml.cs">
+      <DependentUpon>SectionThreeInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\ImageDetailControl.xaml.cs">
+      <DependentUpon>ImageDetailControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageDetailSigningConstitutionPage.xaml.cs">
+      <DependentUpon>ImageDetailSigningConstitutionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\ImageDetailPageControl.xaml.cs">
+      <DependentUpon>ImageDetailPageControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\StudyQuestionIndexPage.xaml.cs">
+      <DependentUpon>StudyQuestionIndexPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageDetailEmancipationPage.xaml.cs">
+      <DependentUpon>ImageDetailEmancipationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageDetailQuiltPage.xaml.cs">
+      <DependentUpon>ImageDetailQuiltPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\StudyQAControl.xaml.cs">
+      <DependentUpon>StudyQAControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\StudyQAPage.xaml.cs">
+      <DependentUpon>StudyQAPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\QuizDB.xaml.cs">
+      <DependentUpon>QuizRecordItemPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\QuizDBReturns.xaml.cs">
+      <DependentUpon>QuizRecordListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\FAKEQuizAttemptPage.xaml.cs">
+      <DependentUpon>FAKEQuizAttemptPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageDetailOldFlagPage.xaml.cs">
+      <DependentUpon>ImageDetailOldFlagPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageDetailCrossingDelawarePage.xaml.cs">
+      <DependentUpon>ImageDetailCrossingDelawarePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageDetailHouseRepresentativesPage.xaml.cs">
+      <DependentUpon>ImageDetailHouseRepresentativesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageDetailBattleLongIslandPage.xaml.cs">
+      <DependentUpon>ImageDetailBattleLongIslandPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageDetailWWIIPosterPage.xaml.cs">
+      <DependentUpon>ImageDetailWWIIPosterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageDetailMississippiRiverPage.xaml.cs">
+      <DependentUpon>ImageDetailMississippiRiverPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageDetailBetsyRossPage.xaml.cs">
+      <DependentUpon>ImageDetailBetsyRossPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ImageDetailFourthJulyPage.xaml.cs">
+      <DependentUpon>ImageDetailFourthJulyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\InfoTESTPage.xaml.cs">
+      <DependentUpon>InfoTestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\InfoTestPage.xaml.cs">
+      <DependentUpon>InfoTestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\InfoStudyPage.xaml.cs">
+      <DependentUpon>InfoStudyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\InfoQuizPage.xaml.cs">
+      <DependentUpon>InfoQuizPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\IconCardControl.xaml.cs">
+      <DependentUpon>IconCardControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Controls\IconTitleDescriptionControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="AZED.CivicsApp.csproj" />
+  </ItemGroup>
+</Project>

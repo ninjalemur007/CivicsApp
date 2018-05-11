@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             x:Class="AZED.CivicsApp.Controls.IconCardControl"
+             x:Name="this">
+    <ContentView.Content>
+
+
+       <Grid x:Name="cardGrid" 
+                  ColumnSpacing="0"
+                  RowSpacing="0"
+                  Padding="0">
+            <Grid.RowDefinitions >
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <Image x:Name="iconSource" Source="{Binding IconSource, Source={x:Reference this}}" 
+                   Aspect="AspectFit" 
+                   Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" 
+                   HorizontalOptions="Start"
+                   Margin="16,4"/>
+            <Label x:Name="titleLabel" Text="{Binding TitleText, Source={x:Reference this}}" Style="{StaticResource labelMainCardTitle}"  Grid.Row="0" Grid.Column="1" />
+            <Label x:Name="descriptionLabel" Text="{Binding DescriptionText, Source={x:Reference this}}" Style="{StaticResource labelMainCardDescription}" Grid.Row="1" Grid.Column="1"  />
+            
+         </Grid>
+    </ContentView.Content>
+</ContentView>

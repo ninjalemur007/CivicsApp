@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.StudyPage"
+             Title="{Binding PageTitle}" >
+    
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0,8,0,0" />
+            <On Platform="Android, WinPhone, Windows" Value="0" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    
+    <Grid x:Name="outerGrid" 
+        Style="{StaticResource gridStyleAllEights}">
+
+       <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="24" />
+        </Grid.ColumnDefinitions>
+        
+        <Image x:Name="bigIcon"
+            Source="STUDYicon"
+            HeightRequest="75"
+            Grid.Row="0" Grid.Column="0"  Grid.RowSpan="2"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Aspect="AspectFit" />
+            
+        
+        <Label x:Name="studyTitle"
+               Text="Study"
+               Style="{StaticResource labelViewTitle}"
+               Grid.Row="0" Grid.Column="1"  />
+
+          <Image x:Name="infoIconStudy"
+                Opacity=".75"
+                Source="InfoICON"
+                HorizontalOptions="End"
+                VerticalOptions="Start" 
+                Grid.Row="0" Grid.Column="2">
+
+            <Image.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="infoStudy" />
+             </Image.GestureRecognizers>
+         </Image>
+        
+        <Label
+            x:Name="descriptionLabel"
+            Text="Study questions are organized by section and subsection. Choose a subject to begin." 
+            Style="{StaticResource labelViewDescription}"
+            Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" />
+
+
+<!--  SectionCard 1-->
+        <Frame x:Name="frameSectionCard1"
+            Style="{StaticResource frameStyleSectionCard}"
+            Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+
+            <control:SectionCardControl
+                ImageSource="SigningConstitutionCARD"
+                SectionNumber="I"
+                SectionTitle="American Government" />
+
+            <Frame.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="GoToSectionI" />
+             </Frame.GestureRecognizers>
+        </Frame>
+        
+         <Image x:Name="infoIcon1"
+                Opacity=".75"
+                Source="InfoICONwhite"
+                Grid.Row="2" Grid.Column="2"
+                HorizontalOptions="End"
+                VerticalOptions="Start" >
+             <Image.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="GoToInfoI" />
+             </Image.GestureRecognizers>
+         </Image>
+            
+
+<!--  SectionCard 2-->   
+        <Frame x:Name="frameSectionCard2"
+            Style="{StaticResource frameStyleSectionCard}"
+            Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
+
+            <control:SectionCardControl
+                ImageSource="EmancipationProclamationCARD"
+                SectionNumber="II"
+                SectionTitle="American History"  />
+
+             <Frame.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="GoToSectionII" />
+             </Frame.GestureRecognizers>
+        </Frame>    
+
+         <Image x:Name="infoIcon2" 
+                Opacity=".75"
+                Source="InfoICONwhite"
+                Grid.Row="3" Grid.Column="2"
+                HorizontalOptions="End"
+                VerticalOptions="Start" >
+             <Image.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="GoToInfoII" />
+             </Image.GestureRecognizers>
+         </Image>
+
+<!--  SectionCard 3-->
+        <Frame x:Name="frameSectionCard3"
+            Style="{StaticResource frameStyleSectionCard}"
+            Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3">
+
+            <control:SectionCardControl
+                ImageSource="CentennialQuiltCARD"
+                SectionNumber="III"
+                SectionTitle="Integrated Civics"
+                    />
+
+            <Frame.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="GoToSectionIII" />
+             </Frame.GestureRecognizers>
+       </Frame>  
+
+        <Image x:Name="infoIcon3" 
+                Opacity=".75"
+                Source="InfoICONwhite"
+                Grid.Row="4" Grid.Column="2"
+                HorizontalOptions="End"
+                VerticalOptions="Start" >
+             <Image.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="GoToInfoIII" />
+             </Image.GestureRecognizers>
+         </Image>
+
+        
+    </Grid>
+
+
+
+    
+</ContentPage>

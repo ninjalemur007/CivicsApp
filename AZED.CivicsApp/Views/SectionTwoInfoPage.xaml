@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.SectionTwoInfoPage"
+             Title="{Binding PageTitle}" >
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="8,16,8,8" />
+            <On Platform="Android, WinPhone, Windows" Value="8" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    
+    <ContentPage.Content>
+        
+            <StackLayout>
+           <Frame 
+            Style="{StaticResource frameModal}" >
+
+                <ScrollView>
+
+                    <StackLayout Padding="16,0">
+
+                    <Frame
+                            HasShadow="false" 
+                            Padding="0"
+                            CornerRadius="0" >
+                    
+                        <control:ImageDetailControl
+                               ImageSource="EmancipationProclamationCARD" />
+
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GoToImageDetail" />
+                        </Frame.GestureRecognizers>
+                            
+                    </Frame>
+
+                        <Label Style="{StaticResource labelAboutName}"
+                               Text="II  American History" />
+                        <Label Style="{StaticResource labelAboutText}"
+                               Text="For more than 200 years, the United States has strived to become a “more perfect union.” Its history has been one of expansive citizenship for all Americans. By learning about our shared history, you will be able to understand our nation’s traditions, milestones, and common civic values." />
+                        <Label Style="{StaticResource labelAboutText}"
+                               Text="Our country is independent because of the strength, unity, and determination of our forefathers. It is important for future Americans to know this story. We are people working toward great ideals and principles guided by equality and fairness. This is important to keep our country free. As Americans, we have been committed to each other and our country throughout our history." />
+                        <Label Style="{StaticResource labelAboutText}"
+                               Text="The following section will help you understand American history from the colonial period and independence to the Civil War and other important events during the 1800s, 1900s, and today." />
+                        <BoxView
+                                Color="Gray"
+                                HeightRequest="2"
+                                Margin="16,0" />
+                    
+                    </StackLayout>
+                </ScrollView>
+                </Frame>
+               <Button Text="Okay" Clicked="goBack" Style="{StaticResource buttonOkay}"/>
+            </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>

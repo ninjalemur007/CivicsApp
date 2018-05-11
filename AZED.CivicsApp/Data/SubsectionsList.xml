@@ -1,0 +1,47 @@
+﻿<SubsectionsList>
+    <Subsection
+      Letter="A"
+      Title="Principles of American Democracy"
+      SectionNumber="I-A">
+    </Subsection>
+    <Subsection
+      Letter="B"
+      Title="System of Government"
+      SectionNumber="I-B">
+    </Subsection>
+    <Subsection
+      Letter="C"
+      Title="Rights and Responsibilities"
+      SectionNumber="I-C">
+    </Subsection>
+    <Subsection
+      Letter="A"
+      Title="Geography"
+      SectionNumber="III-A">
+    </Subsection>
+    <Subsection
+      Letter="B"
+      Title="Symbols"
+      SectionNumber="III-B">
+    </Subsection>
+    <Subsection
+      Letter="C"
+      Title="Holidays"
+      SectionNumber="III-C">
+    </Subsection>
+    <Subsection
+      Letter="A"
+      Title="Colonial Period and Independence"
+      SectionNumber="II-A">
+    </Subsection>
+    <Subsection
+      Letter="B"
+      Title="1800s"
+      SectionNumber="II-B">
+    </Subsection>
+    <Subsection
+      Letter="C"
+      Title="Recent American History and Other Important Historical Information"
+      SectionNumber="II-C">
+    </Subsection>
+</SubsectionsList>

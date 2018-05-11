@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             x:Class="AZED.CivicsApp.Controls.MainCardControl"
+             x:Name="this">
+
+    <ContentView.Content>
+
+        <Frame 
+            Padding="0"
+            HasShadow="false" 
+            CornerRadius="0"
+            OutlineColor="#cccccc"
+            BackgroundColor="{StaticResource overlayWhite}"
+            x:Name="frameGoSomewhere" >
+            
+            <Grid x:Name="controlGrid" 
+                  ColumnSpacing="0"
+                  RowSpacing="0"
+                  Padding="0">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="3*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <BoxView x:Name="grayBox" Color="#BFE5E7EA"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" />
+                <Label x:Name="titleLabel" Text="{Binding TitleText, Source={x:Reference this}}" Style="{StaticResource labelMainCardTitle}"  Grid.Row="0" Grid.Column="1" />
+                <Label x:Name="descriptionLabel" Text="{Binding DescriptionText, Source={x:Reference this}}" Style="{StaticResource labelMainCardDescription}" Grid.Row="1" Grid.Column="1"  />
+                <Image x:Name="imageObject" Source="{Binding ImageSource, Source={x:Reference this}}" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Aspect="AspectFill"/>
+            </Grid>
+        </Frame>
+
+    </ContentView.Content>
+</ContentView>

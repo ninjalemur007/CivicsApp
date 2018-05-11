@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:AZED.CivicsApp"
+    x:Class="AZED.CivicsApp.Controls.QuizSectionCardControl"
+    x:Name="this"
+      VerticalOptions="FillAndExpand"
+      HorizontalOptions="FillAndExpand">
+
+
+    
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="44" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="24" />
+                </Grid.ColumnDefinitions>
+
+                <Image 
+                    Source="{Binding ImageSource, Source={x:Reference this}}" 
+                    Aspect="AspectFill"
+                    HeightRequest="141"
+                    Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="3" />
+                   
+               <Frame x:Name="frameQuizSectionCardControl"                
+                    HasShadow="false" 
+                    Padding="0"
+                    CornerRadius="0"
+                    OutlineColor="#cccccc"
+                    BackgroundColor="{StaticResource overlayWhite}"
+                    Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="4" >
+
+                 <Grid Padding="0">
+                    <Grid.RowDefinitions>                       
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <Label Text="{Binding SectionNumber, Source={x:Reference this}}" 
+                        Style="{StaticResource labelSectionNumber}"
+                        Grid.Row="0" Grid.Column="0" />
+
+                    <Label x:Name="labelTitle"
+                        Text="{Binding SectionTitle, Source={x:Reference this}}" 
+                        Style="{StaticResource labelSectionTitle}"
+                        Grid.Row="0" Grid.Column="1" />
+
+                    <Image
+                        Source="CaretRight"
+                        Aspect="AspectFit"
+                        HorizontalOptions="End"
+                        Grid.Row="0" Grid.Column="2" 
+                        />
+                
+                </Grid>
+
+            <Frame.GestureRecognizers>
+            </Frame.GestureRecognizers>
+           </Frame>
+ 
+    </Grid>

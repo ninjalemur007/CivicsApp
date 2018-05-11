@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.StudyQAPage"
+             Title="{Binding PageTitle}" 
+             x:Name="this">
+
+     <ContentView>
+
+           <Grid HorizontalOptions="FillAndExpand" Padding="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="24" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="44" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="24" />
+                </Grid.ColumnDefinitions>
+
+                    
+                    <Image Source="InfoICON" 
+                           Grid.Row="0" Grid.Column="2">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="infoStudy" />
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                    <Label Text="{Binding CurrentSection.SectionId}" 
+                           Style="{StaticResource labelStudyQASectionTitle}"
+                           Grid.Row="1" Grid.Column="0" />
+            
+                    <Label Text="{Binding CurrentSection.Title}" 
+                           Style="{StaticResource labelStudyQASectionTitle}"
+                           Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" />
+
+                    <Label Text="{Binding CurrentSubsection.Letter}" 
+                           Style="{StaticResource labelStudyQASubsectionTitle}"
+                           Grid.Row="2" Grid.Column="0" />
+            
+                    <Label Text="{Binding CurrentSubsection.Title}" 
+                           Style="{StaticResource labelStudyQASubsectionTitle}"
+                           Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" />
+            
+                   <StackLayout
+                        x:Name="StudyQAIntro" 
+                        IsVisible="{Binding StartStudying}"
+                        Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
+
+                        <Button Text="Begin Studying"
+                            Command="{Binding PassSectionDesignatorCommand}" 
+                            CommandParameter="{Binding Source={x:Reference this}, Path=NumberLetter}" 
+                            Style="{StaticResource buttonSolid}" />
+
+                
+                   </StackLayout>
+          
+
+                   <StackLayout 
+                        x:Name="StudyQAReturn"
+                        HorizontalOptions="FillAndExpand"
+                        IsVisible="{Binding ShowStudyQuestions}"
+                        Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" >
+
+
+<!--            
+                <Label Text="Number Study Questions" />
+                <Label Text="{Binding NumberStudyQuestions}" />
+                <Label Text="Question # =" />
+                <Label Text="{Binding CurrentStudyQuestionIndex}" />-->
+
+
+                        <control:StudyQAControl
+                            x:Name="StudyQAControl"
+                            VerticalOptions="FillAndExpand" 
+                            HorizontalOptions="FillAndExpand"
+                            UscisNumber = "{Binding CurrentStudyQuestion.UscisNumber}"
+                            UscisQuestion = "{Binding CurrentStudyQuestion.UscisQuestion}"
+                            UscisAnswer = "{Binding CurrentStudyQuestion.UscisAnswer}"
+                            UscisStudytext = "{Binding CurrentStudyQuestion.UscisStudytext}"
+                            NextQuestionCommand="{Binding NextQuestionCommand}"
+                            PreviousQuestionCommand="{Binding PreviousQuestionCommand}"
+                            ShowAnswerCommand = "{Binding ShowAnswerCommand}"
+                             />
+                
+                </StackLayout>
+            </Grid>
+        </ContentView>
+</ContentPage>

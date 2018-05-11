@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailHouseRepresentativesPage">
+    <ContentPage.Content>
+            <control:ImageDetailPageControl
+                ImageSource="HouseRepresentativesFULL"
+                ImageTitle="The House of Representatives"
+                ImageArtist="Samuel F. B. Morse"
+                ImageYear="1822-23"
+                ImageMedium="Oil on Canvas"
+                ImageAttribution="National Gallery of Art, Corcoran Collection"
+                ImageDescription="Morse's grand yet intimate painting shows the House chamber being prepared for an evening session of the House of Representatives in 1822. The interior was as impressive as the exterior, with wall-to-wall carpets, damask draperies, and mahogany desks and chairs warming the impressive marble columns and statues. Lighting was provided by candles, lamps, and impressive oil-burning chandeliers. The Capitol had been badly damaged by the British in 1814, but by the time of this painting the building had been almost completely restored and rebuilt. The painter is the same Samuel Morse who invented the single-wire telegraph, which he demonstrated in the Capitol in 1842."
+                />            
+    </ContentPage.Content>
+</ContentPage>

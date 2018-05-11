@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:view="clr-namespace:AZED.CivicsApp.Views"
+    x:Class="AZED.CivicsApp.Views.MasterTabbedNavPage" 
+    Title="{Binding AppTitle}">
+
+    
+    <TabbedPage.Children>   
+
+        <NavigationPage Title="Main" Icon="HomeICONtab">
+            <x:Arguments>
+                 <view:MainPage />
+            </x:Arguments>
+        </NavigationPage>
+        
+        <NavigationPage Title="Study" Icon="StudyICONtab">
+            <x:Arguments>
+                 <view:StudyPage />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Quiz" Icon="QuizICONtab">
+            <x:Arguments>
+                 <view:QuizPage />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Test" Icon="TestICONtab">
+            <x:Arguments>
+                 <view:TestPage />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Mastery" Icon="MasteryICONtab">
+            <x:Arguments>
+                 <view:QuizAttemptsListPage />
+            </x:Arguments>
+        </NavigationPage>
+
+    </TabbedPage.Children> 
+    
+</TabbedPage>

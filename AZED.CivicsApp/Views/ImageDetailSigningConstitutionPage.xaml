@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailSigningConstitutionPage"
+             Title="{Binding PageTitle}" >
+            
+        
+    <ContentPage.Content>
+            <control:ImageDetailPageControl
+                ImageSource="SigningConstitutionFULL"
+                ImageTitle="Declaration of Independence"
+                ImageArtist="John Trumball"
+                ImageYear="1818"
+                ImageMedium="Oil on canvas"
+                ImageAttribution="United States Capitol, installed by artist in 1826"
+                ImageDescription="Located in the rotunda of the U.S. Capitol, this painting depicts the moment on June 28, 1776, when the first draft of the Declaration of Independence was presented to the Second Continental
+Congress. The document stated the principles for which the Revolutionary War was being fought and which remain fundamental to the nation. Less than a week later, on July 4, 1776, the Declaration was officially adopted. It was later
+signed on August 2, 1776."
+                />            
+        
+    </ContentPage.Content>
+</ContentPage>

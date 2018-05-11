@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:AZED.CivicsApp"
+    x:Class="AZED.CivicsApp.Controls.SectionCardControl"
+    x:Name="this"
+      VerticalOptions="FillAndExpand">
+
+       
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="44" />
+        </Grid.ColumnDefinitions>
+
+                <Image x:Name="imageSectionCardPainting"
+                    Source="{Binding ImageSource, Source={x:Reference this}}" 
+                    Aspect="AspectFill"
+                    HeightRequest="141"
+                    Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="3" />
+
+
+               <Frame x:Name="frameGoToSection"                
+                    HasShadow="false" 
+                    Padding="0"
+                    CornerRadius="0"
+                    OutlineColor="#cccccc"
+                    BackgroundColor="{StaticResource overlayWhite}"
+                    Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" >
+
+                 <Grid Padding="0">
+                    <Grid.RowDefinitions>                       
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="44" />
+                    </Grid.ColumnDefinitions>
+                    
+                        <Label x:Name="labelNumber"
+                            Text="{Binding SectionNumber, Source={x:Reference this}}" 
+                            Style="{StaticResource labelSectionNumber}"
+                            Grid.Row="0" Grid.Column="0" />
+
+                        <Label x:Name="labelTitle"
+                            Text="{Binding SectionTitle, Source={x:Reference this}}" 
+                            Style="{StaticResource labelSectionTitle}"
+                            Grid.Row="0" Grid.Column="1" />
+
+                        <Image x:Name="imageCaret"
+                            Source="CaretRight"
+                            Aspect="AspectFit"
+                            HorizontalOptions="End"
+                            Grid.Row="0" Grid.Column="2" 
+                        />
+                
+                </Grid>        
+            </Frame>
+ 
+    </Grid>

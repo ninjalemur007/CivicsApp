@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             xmlns:service="clr-namespace:AZED.CivicsApp.Services"
+             xmlns:viewmodel="clr-namespace:AZED.CivicsApp.ViewModels"
+             x:Class="AZED.CivicsApp.Views.StudySectionThreePage"
+             Title="{Binding PageTitle}" >
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="frameStyleImageInfoIcon" TargetType="Frame">
+                <Setter Property="HasShadow" Value="false" />
+                <Setter Property="Padding" Value="2" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Start" />
+                <Setter Property="BackgroundColor" Value="{StaticResource overlayGray}" />
+            </Style>
+
+            <Style x:Key="imageStyleImageInfoIcon" TargetType="Image">
+                <Setter Property="Source" Value="ImageInfoICON" />
+                <Setter Property="Aspect" Value="AspectFit" />    
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    
+<!--    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0,8,0,0" />
+            <On Platform="Android, WinPhone, Windows" Value="0" />
+        </OnPlatform>
+    </ContentPage.Padding>-->
+    
+    <Grid x:Name="outerGrid" 
+        Style="{StaticResource gridStyleAllEights}">
+
+       <Grid.RowDefinitions>
+            <RowDefinition Height="44" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+<!--            <RowDefinition Height="44" />-->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="30" />
+        </Grid.ColumnDefinitions>
+        
+ 
+        <Label x:Name="descriptionLabel" 
+            Text="Integrated Civics" 
+            Style="{StaticResource labelViewTitle}"
+            Grid.Row="0" Grid.Column="0" />
+
+
+        <Image x:Name="sectionInfo" 
+            Source="InfoICON"
+               HorizontalOptions="End" 
+               Grid.Row="0" Grid.Column="1">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="GoToInfoIII" />
+            </Image.GestureRecognizers>
+        </Image>
+        
+
+       <Frame x:Name="frameSectionCard1"
+            Style="{StaticResource frameStyleSectionCard}"
+            Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            
+             <control:SectionCardControl
+                x:Name="cardA"
+                ImageSource="ViewMississippiCARD"
+                SectionNumber="A"
+                SectionTitle="Geography"  />
+
+             <Frame.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="GoToStudyQAPageA" />
+             </Frame.GestureRecognizers>
+        </Frame>    
+
+        <Frame  x:Name="infoIcon1"              
+            Style="{StaticResource frameStyleImageInfoIcon}"
+            Grid.Row="1" Grid.Column="1" >
+
+            <Image 
+                Style="{StaticResource imageStyleImageInfoIcon}" >
+                 <Image.GestureRecognizers>
+                      <TapGestureRecognizer Tapped="GoToImageInfoA" />
+                 </Image.GestureRecognizers>
+           </Image>
+        </Frame>
+
+
+<!--  SectionCard 2-->  
+        <Frame x:Name="frameSectionCard2"
+            Style="{StaticResource frameStyleSectionCard}"
+            Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+
+            <control:SectionCardControl
+                x:Name="cardB"
+                ImageSource="BetsyRossCARD"
+                SectionNumber="B"
+                SectionTitle="Symbols"  />
+
+             <Frame.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="GoToStudyQAPageB" />
+             </Frame.GestureRecognizers>
+        </Frame>    
+
+        <Frame  x:Name="infoIcon2"              
+            Style="{StaticResource frameStyleImageInfoIcon}"
+            Grid.Row="2" Grid.Column="1" >
+
+            <Image 
+                Style="{StaticResource imageStyleImageInfoIcon}" >
+                 <Image.GestureRecognizers>
+                      <TapGestureRecognizer Tapped="GoToImageInfoB" />
+                 </Image.GestureRecognizers>
+           </Image>
+        </Frame>
+
+
+<!--  SectionCard 3-->
+        <Frame x:Name="frameSectionCard3"
+            Style="{StaticResource frameStyleSectionCard}"
+            Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
+
+            <control:SectionCardControl
+                x:Name="cardC"
+                ImageSource="FourthJulyCARD"
+                SectionNumber="C"
+                SectionTitle="Holidays"  />
+
+             <Frame.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="GoToStudyQAPageC" />
+             </Frame.GestureRecognizers>
+       </Frame>  
+
+        <Frame  x:Name="infoIcon3"              
+            Style="{StaticResource frameStyleImageInfoIcon}"
+            Grid.Row="3" Grid.Column="1" >
+
+            <Image 
+                Style="{StaticResource imageStyleImageInfoIcon}" >
+                 <Image.GestureRecognizers>
+                      <TapGestureRecognizer Tapped="GoToImageInfoC" />
+                 </Image.GestureRecognizers>
+           </Image>
+        </Frame>
+
+
+        
+<!--       <Button x:Name="buttonStudyRecommendations"
+            Clicked="GoToStudyRecommendations"
+            Text="Study Recommendations" 
+            Style="{StaticResource buttonStudy}"
+            Margin="8,0,8,0"
+            Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" />-->
+
+    </Grid>
+
+
+
+    
+</ContentPage>

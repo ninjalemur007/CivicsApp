@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailCrossingDelawarePage"
+             Title="{Binding PageTitle}" >
+    <ContentPage.Content>
+            <control:ImageDetailPageControl
+                ImageSource="WashingtonDelawareFULL"
+                ImageTitle="Washington Crossing the Delaware"
+                ImageArtist="Emanuel Leutze"
+                ImageYear="1851"
+                ImageMedium="Oil on Canvas"
+                ImageAttribution="Metropolitan Museum of Art, Gift of John Stewart Kennedy, 1897"
+                ImageDescription="Leutze's famous painting of a heroic General George Washington depicts him leading troops across the Delaware River the night of December 25, 1776. Due to severe winter weather, only half of Washington's troops were able to cross the icy river that night. On the morning of the 26th, Washington led just 2,400 men on a nine-mile march to Trenton, New Jersey, surprising the 1,500-man Hessian garrison. After a short, but fierce, battle, the Americans prevailed. Though a numerically small victory, the battle's win proved that the volunteer colonials could defeat trained regular soldiers, giving the entire revolutionary movement a much-needed shot of confidence."
+                />            
+    </ContentPage.Content>
+</ContentPage>

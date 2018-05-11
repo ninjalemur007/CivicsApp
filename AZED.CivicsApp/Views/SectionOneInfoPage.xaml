@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.SectionOneInfoPage"
+             Title="{Binding PageTitle}" >
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="8,16,8,8" />
+            <On Platform="Android, WinPhone, Windows" Value="8" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    
+    <ContentPage.Content>
+
+        
+            <StackLayout>
+
+            <Frame 
+            Style="{StaticResource frameModal}" >
+
+                <ScrollView>
+
+                    <StackLayout Padding="16,0">
+
+
+
+                        <Frame
+                                HasShadow="false" 
+                                Padding="0"
+                                CornerRadius="0" >
+                        
+                            <control:ImageDetailControl
+                                   ImageSource="SigningConstitutionCARD" />
+
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="GoToImageDetail" />
+                            </Frame.GestureRecognizers>
+                        
+                        </Frame>
+                        <Label Style="{StaticResource labelAboutName}"
+                               Text="I  American Government" />
+                        <Label Style="{StaticResource labelAboutText}"
+                               Text="In the United States, the government gets its power to govern from the people. We have a government of the people, by the people, and for the people. Citizens in the United States shape their government and its policies, so they must learn about important public issues and get involved in their communities." />
+                        <Label Style="{StaticResource labelAboutText}"
+                               Text="Learning about American government helps you understand your rights and responsibilities and allows you to fully participate in the American political process. The Founders of this country decided that the United States should be a representative democracy. They wanted a nation ruled by laws, not by men. In a representative democracy, the people choose officials to make laws and represent their views and concerns in government." />
+                        <Label Style="{StaticResource labelAboutText}"
+                               Text="The following section will help you understand the principles of American democracy, the U.S. system of government, and the important rights and responsibilities of U.S. citizenship." />
+                        <BoxView
+                                Color="Gray"
+                                HeightRequest="2"
+                                Margin="16,0" />
+                    
+                    </StackLayout>
+                </ScrollView>
+                </Frame>
+
+             <Button Text="Okay" Clicked="goBack" Style="{StaticResource buttonOkay}"/>
+            </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailQuiltPage"
+             Title="{Binding PageTitle}" >
+            
+        
+    <ContentPage.Content>
+            <control:ImageDetailPageControl
+                ImageSource="CentennialQuiltFULL"
+                ImageTitle="Quilt, Eagle Pattern"
+                ImageArtist="Unknown; Gift of Mrs. Jacob Kaplan"
+                ImageYear="1837-50"
+                ImageMedium="Cotton"
+                ImageAttribution="Metropolitan Museum of Art"
+                ImageDescription="Part of the textiles collection at the Metropolitan Museum of Art, this quilt features an eagle surrounded by 26 stars, perhaps symbolizing the 26 states in the union when the quilt was made."
+                />            
+        
+    </ContentPage.Content>
+</ContentPage>

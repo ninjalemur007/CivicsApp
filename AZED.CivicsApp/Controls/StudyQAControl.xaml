@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:AZED.CivicsApp.ViewModels"
+             x:Class="AZED.CivicsApp.Controls.StudyQAControl"
+             x:Name="this">
+
+    <ContentView.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="8,16,8,8" />
+            <On Platform="Android, WinPhone, Windows" Value="8" />
+        </OnPlatform>
+    </ContentView.Padding>
+   
+    
+    <ContentView.Content>
+
+       <StackLayout
+            VerticalOptions="FillAndExpand" >
+
+        <Frame x:Name="StudyQuestionPart" 
+            HasShadow="false" 
+            Padding="8"
+            CornerRadius="0"
+            OutlineColor="#cccccc"
+            BackgroundColor="{StaticResource colorLtBlue}"
+            Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" >
+
+
+            <Grid HorizontalOptions="FillAndExpand" >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="44" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="44" />
+                </Grid.ColumnDefinitions>
+                    
+
+                <Label x:Name="labelQuestion"
+                       Text="Question"
+                       Style="{StaticResource labelQA}"
+                       Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
+
+<!--                <Label x:Name="labelQuestionNumber"
+                       Text="{Binding UscisNumber, Source={x:Reference this}}" 
+                       Style="{StaticResource labelQuestionNumber}"
+                       Grid.Row="0" Grid.Column="2" />-->
+                
+                <Label x:Name="labelQuestionText"
+                       Text="{Binding UscisQuestion, Source={x:Reference this}}" 
+                       Style="{StaticResource labelQuestionText}" 
+                       Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" />   
+             </Grid>     
+        </Frame>
+
+        <Button 
+            x:Name="buttonShowAnswer"
+            Text="Show Answer"
+            IsVisible="{Binding ShowAnswerButtonBoolian}"
+            Command="{Binding ShowAnswerCommand, Source={x:Reference this}}"
+            Style="{StaticResource buttonSolid}" 
+            Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+        <Frame x:Name="StudyAnswerPart"
+               IsVisible="{Binding ShowAnswerBoolian}"
+            HasShadow="false" 
+            Padding="8"
+            CornerRadius="0"
+            OutlineColor="#cccccc"
+            BackgroundColor="{StaticResource overlayWhite}"
+            Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" >
+
+           <ScrollView>       
+
+            <Grid HorizontalOptions="FillAndExpand" >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="44" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                    
+                <Label x:Name="labelAnswer"
+                       Text="Answer"
+                       Style="{StaticResource labelQA}"
+                       FontAttributes="Italic"
+                       Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
+                
+                <Label x:Name="labelAnswerText"
+                       Text="{Binding UscisAnswer, Source={x:Reference this}}"
+                       Style="{StaticResource labelQuestionText}" 
+                       Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" />   
+
+                <BoxView 
+                        HeightRequest="1"
+                        WidthRequest="200"
+                        VerticalOptions="Start"
+                        HorizontalOptions="CenterAndExpand"
+                        Color="{StaticResource colorMediumGray}"
+                        Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+                        
+                <Label x:Name="labelAnswerStudyText"
+                       Text="{Binding UscisStudytext, Source={x:Reference this}}" 
+                       Style="{StaticResource labelAnswerText}"
+                       Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" />      
+
+           </Grid>     
+          </ScrollView>
+        </Frame>   
+
+       <Grid
+          VerticalOptions="EndAndExpand" >
+                
+              <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            <Button 
+                    x:Name="previousButton" 
+                    Text="Previous" 
+                    HorizontalOptions="StartAndExpand" VerticalOptions="End" 
+                    Command="{Binding PreviousQuestionCommand, Source={x:Reference this}}" 
+                    CommandParameter="{Binding PreviousQuestionCommandParameter, Source={x:Reference this}}" 
+                    Grid.Row="0" Grid.Column="0" />
+            
+            <Button 
+                    x:Name="nextButton" 
+                    Text="Next" 
+                    HorizontalOptions="EndAndExpand" VerticalOptions="End" 
+                    Command="{Binding NextQuestionCommand, Source={x:Reference this}}" 
+                    CommandParameter="{Binding NextQuestionCommandParameter, Source={x:Reference this}}"
+                    Grid.Row="0" Grid.Column="1" />
+
+        </Grid>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:AZED.CivicsApp"
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.ImageDetailSuffragePage"
+             Title="{Binding PageTitle}" >
+    <ContentPage.Content>
+        <control:ImageDetailPageControl
+                ImageSource="WomanSuffrageFULL"
+                ImageTitle="Official program - Woman suffrage procession, Washington, D.C. March 3, 1913"                
+                ImageArtist="Benjamin M. Dale"
+                ImageYear="1913"
+                ImageMedium="Print"
+                ImageAttribution="Library of Congress"
+                ImageDescription="Cover of the program for the National American Women's Suffrage Association-sponsored Woman Suffrage Procession held in Washington D.C. in 1913. Organized to occur the day before President Woodrow Wilson's inauguration, the March 3, 1913 parade saw thousands of women marching in protest of their continued exclusion from the political process. As depicted in the print above, the parade was led by labor lawyer Inez Milholland on a white horse. Counterprotestors and policemen harassed the marchers until National Guardsmen and young men from the Maryland Agricultural College formed a human barrier to protect the women. The parade is considered a significant event in the American suffrage movement, which culminated in 1920 adoption of the Nineteenth Amendment to the U.S. Constitution: 'The right of the citizens of the United States to vote shall not be denied or abridged by the United States or by any State on account of sex.'"
+                />
+    </ContentPage.Content>
+</ContentPage>

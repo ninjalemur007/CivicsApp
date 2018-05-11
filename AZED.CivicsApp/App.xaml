@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AZED.CivicsApp.App">
+	<Application.Resources>
+        <ResourceDictionary>
+        <!--  Colors   -->
+            <Color x:Key="colorDarkBlue">#011136</Color>
+            <Color x:Key="colorBlue">#022169</Color>
+            <Color x:Key="colorTextDefault">#000000</Color>
+            <Color x:Key="colorDarkGray">#47484a</Color>
+            <Color x:Key="colorLtBlue">#eef1f9</Color>
+            <Color x:Key="colorButtonBlue">#33405e</Color>
+            <Color x:Key="colorButtonText">#ffffff</Color>
+            <Color x:Key="overlayWhite">#E6FFFFFF</Color>
+            <Color x:Key="outlineGray">#cccccc</Color>
+            <Color x:Key="colorMediumGray">#d3d3d3</Color>
+            <Color x:Key="overlayGray">#E647484a</Color>
+
+                    <!-- Transparency adds first 2 places to hex: #E6=90%, #D9=85%, #CC=80%, #BF=75%) -->
+
+
+        <!-- BASE STYLES -->
+          
+          <!-- BASE TEXT STYLES -->
+            <Style x:Key="baseText" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="TextColor" Value="#000000" />
+                <Setter Property="HorizontalTextAlignment" Value="Start" />
+                <Setter Property="VerticalTextAlignment" Value="Start" />
+            </Style>
+
+            <Style x:Key="baseSubtext" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+            </Style>
+
+            <Style x:Key="baseTinytext" TargetType="Label" BasedOn="{StaticResource baseText}">
+                <Setter Property="FontSize" Value="Micro" />
+            </Style>
+
+            <Style x:Key="baseTitle" TargetType="Label" BasedOn="{StaticResource baseText}">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+
+            <Style x:Key="baseSubtitle" TargetType="Label" BasedOn="{StaticResource baseTitle}">
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+            </Style>
+
+
+         <!-- BASE BUTTON STYLES -->
+            <Style x:Key="baseButton" TargetType="Button">
+                <Setter Property="BorderColor" Value="{StaticResource colorButtonBlue}" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="FontSize" Value="Medium" />                
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+                <Setter Property="HeightRequest" Value="44" />
+                <Setter Property="WidthRequest" Value="200" />
+                <Setter Property="Margin" Value="8,8" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+
+        <!-- Titles -->
+            <Style x:Key="labelSectionTitle" TargetType="Label" BasedOn="{StaticResource baseTitle}">
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+            </Style>
+
+             <Style x:Key="labelSectionNumber" TargetType="Label" BasedOn="{StaticResource labelSectionTitle}">
+                <Setter Property="Margin" Value="8,0,0,0" />
+            </Style>
+
+            <Style x:Key="labelViewTitle" TargetType="Label" BasedOn="{StaticResource baseTitle}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkGray}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="labelMainCardTitle" TargetType="Label" BasedOn="{StaticResource baseTitle}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+                <Setter Property="FontSize" Value="36" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="16,0" />    
+            </Style>
+
+            <Style x:Key="labelMainTitle" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+                <Setter Property="FontSize" Value="42" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="0,0,0,0" />    
+            </Style>
+
+            <Style x:Key="labelAboutTitle" TargetType="Label" BasedOn="{StaticResource baseTitle}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkGray}" />
+                <Setter Property="Margin" Value="16,8,16,0" />
+            </Style>
+
+            <Style x:Key="labelAboutName" TargetType="Label" BasedOn="{StaticResource baseTitle}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="labelStudyQASectionTitle" TargetType="Label" BasedOn="{StaticResource baseTitle}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="16,0,0,0" />    
+            </Style>
+
+            <Style x:Key="appTitleStyle" TargetType="Label" BasedOn="{StaticResource baseTitle}">
+                <Setter Property="TextColor" Value="#ffffff" />
+                <Setter Property="FontSize" Value="28" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />                
+            </Style>
+            
+        <!-- Subtitles -->
+
+            <Style x:Key="labelQuizQuestionNumber" TargetType="Label" BasedOn="{StaticResource baseSubtitle}">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="0,16,0,8" />
+            </Style>
+
+            <Style x:Key="labelStudyQASubsectionTitle" TargetType="Label" BasedOn="{StaticResource baseSubtitle}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="16,0,0,0" />    
+            </Style>
+
+            <Style x:Key="labelInfoSubtitle" TargetType="Label"  BasedOn="{StaticResource baseSubtitle}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="0,16,0,0" />
+            </Style>
+
+
+        <!-- Field Labels -->
+
+            <Style x:Key="labelQA" TargetType="Label" BasedOn="{StaticResource baseSubtext}">
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="TextColor" Value="{StaticResource colorDarkGray}" />
+            </Style>
+
+            <Style x:Key="labelImageDetailFieldName" TargetType="Label" BasedOn="{StaticResource baseTinytext}" >
+                <Setter Property="TextColor" Value="{StaticResource colorDarkGray}" />
+            </Style>
+
+            <Style x:Key="labelImageDetailFieldValue" TargetType="Label" BasedOn="{StaticResource baseSubtext}" >
+
+            </Style>
+
+            <Style x:Key="labelImageDescription" TargetType="Label" BasedOn="{StaticResource baseText}" >
+
+            </Style>
+
+            <Style x:Key="labelQuizAnswerChoice" TargetType="Label"  BasedOn="{StaticResource baseText}" >
+                <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+            </Style>
+
+            <Style x:Key="labelQuestionFrame" TargetType="Label" BasedOn="{StaticResource baseText}" >
+                <Setter Property="TextColor" Value="{StaticResource colorDarkGray}" />
+                <Setter Property="Label.FontAttributes" Value="Italic" />
+            </Style>
+
+            <Style x:Key="labelQuestionNumber" TargetType="Label" BasedOn="{StaticResource baseText}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkGray}" />
+                <Setter Property="HorizontalTextAlignment" Value="End" />
+            </Style>
+
+        <!-- Text Blocks -->    
+            <Style x:Key="labelPageInfo" TargetType="Label" BasedOn="{StaticResource baseTinytext}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkGray}" />
+                <Setter Property="HorizontalTextAlignment" Value="End" />
+            </Style>
+
+            <Style x:Key="labelSectionInfo" TargetType="Label" BasedOn="{StaticResource baseTinytext}">
+                <Setter Property="TextColor" Value="#ffffff" />
+                <Setter Property="HorizontalTextAlignment" Value="End" />
+                <Setter Property="Margin" Value="0,8,8,0" />
+            </Style>
+
+            <Style x:Key="labelMainCardDescription" TargetType="Label" BasedOn="{StaticResource baseSubtext}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="16,8" />    
+            </Style>
+
+             <Style x:Key="labelMainDescription" TargetType="Label" BasedOn="{StaticResource baseText}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+             <Style x:Key="labelViewDescription" TargetType="Label" BasedOn="{StaticResource baseText}">
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="labelAboutText" TargetType="Label" BasedOn="{StaticResource baseText}">
+                <Setter Property="Margin" Value="0,4" />    
+            </Style>
+
+            <Style x:Key="labelQuestionText" TargetType="Label" BasedOn="{StaticResource baseText}">
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            
+            <Style x:Key="labelAnswerText" TargetType="Label" BasedOn="{StaticResource baseText}">
+                <Setter Property="Margin" Value="0,8,0,0" />
+            </Style>
+
+            
+        <!-- Buttons -->
+
+            <Style x:Key="buttonSolid" TargetType="Button" BasedOn="{StaticResource baseButton}">
+                <Setter Property="BackgroundColor" Value="{StaticResource colorButtonBlue}" />
+                <Setter Property="TextColor" Value="#ffffff" />                
+            </Style>
+
+            <Style x:Key="buttonOkay" TargetType="Button" BasedOn="{StaticResource buttonSolid}">
+                <Setter Property="WidthRequest" Value="100" />
+            </Style>            
+            
+            <Style x:Key="buttonSectionCard" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource overlayWhite}" />
+                <Setter Property="Image" Value="CaretRight" />
+                <Setter Property="ContentLayout" Value="Right, 20" />
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+            </Style>
+
+        <!-- Grids -->
+            <Style x:Key="controlGridStyle" TargetType="Grid">
+                <Setter Property="RowSpacing" Value="0" />
+                <Setter Property="ColumnSpacing" Value="0" />
+                <Setter Property="Padding" Value="0" />
+            </Style>
+
+            <Style x:Key="gridStyleAllEights" TargetType="Grid">
+                <Setter Property="RowSpacing" Value="8" />
+                <Setter Property="ColumnSpacing" Value="8" />
+                <Setter Property="Padding" Value="8" />
+            </Style>
+
+        <!-- Frames -->
+            
+            <Style x:Key="frameModal" TargetType="Frame">
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="CornerRadius" Value="15" />
+                <Setter Property="Margin" Value="10,0" />
+                <Setter Property="Padding" Value="10" />
+                <Setter Property="HasShadow" Value="false" />
+                <Setter Property="OutlineColor" Value="{StaticResource outlineGray}" />
+            </Style>
+
+            <Style x:Key="infoModal" TargetType="Frame" BasedOn="{StaticResource frameModal}">
+                <Setter Property="Margin" Value="10,20,10,10" />
+            </Style>
+
+
+            <Style x:Key="frameStyleSectionCard" TargetType="Frame">
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="HasShadow" Value="false" />
+            </Style>
+            
+        </ResourceDictionary>
+	</Application.Resources>
+</Application>

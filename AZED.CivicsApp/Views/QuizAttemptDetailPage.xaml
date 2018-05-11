@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AZED.CivicsApp.Views.QuizAttemptDetailPage">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".25*" />
+                <ColumnDefinition Width=".45*" />
+                <ColumnDefinition Width=".45*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="12" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="12" />
+                <RowDefinition Height="20" />
+
+            </Grid.RowDefinitions>
+
+        <Label Text="Attempt" Grid.Column="0" Grid.Row="0" />
+        <Label Text="{Binding AttemptDateTime, StringFormat='{0:MM/dd/yy H:mm}'}" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2"/>
+        <Label Text="Section" Grid.Column="0" Grid.Row="1" />
+        <Label Text="{Binding SectionName}" Grid.Column="1" Grid.Row="1"  Grid.ColumnSpan="2" />
+                                      
+        <Label Text="#" Grid.Column="0" Grid.Row="2" />
+        <Label Text="{Binding QuestionID_1}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" />
+        <Label Text="Your Answer" Grid.Row="3" Grid.Column="1" />  
+        <Label Text="Correct Answer" Grid.Row="3" Grid.Column="2" />
+        <Label Text="{Binding CorrectYN_1}" Grid.Column="0" Grid.Row="4" />
+        <Label Text="{Binding GivenAnswer_1}" Grid.Column="1" Grid.Row="4"  />
+
+        <Label Text="#" Grid.Column="0" Grid.Row="5" />
+        <Label Text="{Binding QuestionID_2}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="5" />
+        <Label Text="Your Answer" Grid.Row="6" Grid.Column="1" />  
+        <Label Text="Correct Answer" Grid.Row="6" Grid.Column="2" />
+        <Label Text="{Binding CorrectYN_2}" Grid.Column="0" Grid.Row="7" />
+        <Label Text="{Binding GivenAnswer_2}" Grid.Column="1" Grid.Row="7"  />
+    </Grid>
+
+            
+
+    </ContentPage.Content>
+</ContentPage>

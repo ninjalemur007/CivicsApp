@@ -1,0 +1,541 @@
+<QuestionsAnswers>
+  <QuestionAnswer
+    AdeID="ade1" AdeNumber="1" AdeQuestion="Who lived in America before the Europeans arrived?" AdeAnswer="D" AdeStandard="S1.C2.O1, S1.C3.O1" AdeGrade="K" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="59"
+    AdeChoiceA="Chinese" AdeChoiceB="Russians" AdeChoiceC="Pacific Islanders" AdeChoiceD="American Indians"
+  />
+  <QuestionAnswer
+    AdeID="ade2" AdeNumber="2" AdeQuestion="Who was the first President of the United States?" AdeAnswer="D" AdeStandard="S3.C1.04, S1.C4.O1" AdeGrade="K" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="70"
+    AdeChoiceA="John Hancock" AdeChoiceB="James Madison" AdeChoiceC="Benjamin Franklin" AdeChoiceD="GeorgeWashington"
+  />
+  <QuestionAnswer
+    AdeID="ade3" AdeNumber="3" AdeQuestion="What was one important thing that Abraham Lincoln did?" AdeAnswer="A" AdeStandard="S3.C1.O4" AdeGrade="K" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="B" UscisNumber="75"
+    AdeChoiceA="led the U.S. during the CivilWar" AdeChoiceB="led the U.S. during theWar of 1812" AdeChoiceC="led the U.S. during the American Revolution" AdeChoiceD="led the U.S. during the Mexican-AmericanWar"
+  />
+  <QuestionAnswer
+    AdeID="ade4" AdeNumber="4" AdeQuestion="When is Independence Day celebrated?" AdeAnswer="B" AdeStandard="S1.C4.O2," AdeGrade="K" AdeSubject="Government"
+    UscisSection="III" UscisSubsection="C" UscisNumber="99"
+    AdeChoiceA="April 19" AdeChoiceB="July 4" AdeChoiceC="September 17" AdeChoiceD="November 11"
+  />
+  <QuestionAnswer
+    AdeID="ade5" AdeNumber="5" AdeQuestion="Who is the 'Father of Our Country'?" AdeAnswer="D" AdeStandard="S3.C1.04" AdeGrade="K" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="69"
+    AdeChoiceA="Abraham Lincoln" AdeChoiceB="Thomas Jefferson" AdeChoiceC="Benjamin Franklin" AdeChoiceD="GeorgeWashington"
+  />
+  <QuestionAnswer
+    AdeID="ade6" AdeNumber="6" AdeQuestion="What Ocean is on the East Coast of the United States?" AdeAnswer="D" AdeStandard="S4.C1.05" AdeGrade="K" AdeSubject="Geography"
+    UscisSection="III" UscisSubsection="A" UscisNumber="90"
+    AdeChoiceA="Arctic Ocean" AdeChoiceB="Indian Ocean" AdeChoiceC="Pacific Ocean" AdeChoiceD="Atlantic Ocean"
+  />
+  <QuestionAnswer
+    AdeID="ade7" AdeNumber="7" AdeQuestion="What did Martin Luther King, Jr. do?" AdeAnswer="A" AdeStandard="S1.C9.O1" AdeGrade="1" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="C" UscisNumber="85"
+    AdeChoiceA="fought for civil rights" AdeChoiceB="became the first black U.S. Senator" AdeChoiceC="established the Harvard Law School" AdeChoiceD="ran for President of the United States"
+  />
+  <QuestionAnswer
+    AdeID="ade8" AdeNumber="8" AdeQuestion="Which of the following is one of the two longest rivers in the United States?" AdeAnswer="D" AdeStandard="S4.C1.O4" AdeGrade="1" AdeSubject="Geography"
+    UscisSection="III" UscisSubsection="A" UscisNumber="88"
+    AdeChoiceA="Ohio River" AdeChoiceB="Potomac River" AdeChoiceC="Colorado River" AdeChoiceD="Mississippi River"
+  />
+  <QuestionAnswer
+    AdeID="ade9" AdeNumber="9" AdeQuestion="What do Americans show loyalty to when saying the Pledge of Allegiance?" AdeAnswer="B" AdeStandard="S3.C1.O1" AdeGrade="2" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="C" UscisNumber="52"
+    AdeChoiceA="the state where you live" AdeChoiceB="the United States of America" AdeChoiceC="the Declaration of Independence" AdeChoiceD="the President of the United States of America"
+  />
+  <QuestionAnswer
+    AdeID="ade10" AdeNumber="10" AdeQuestion="Why did the colonists fight the British?" AdeAnswer="A" AdeStandard="S1.C4.O2" AdeGrade="2" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="61"
+    AdeChoiceA="because of high taxes" AdeChoiceB="because the British invaded France" AdeChoiceC="because the colonists wanted a new king" AdeChoiceD="because the colonists wanted religious freedom"
+  />
+  <QuestionAnswer
+    AdeID="ade11" AdeNumber="11" AdeQuestion="Who wrote the Declaration of Independence?" AdeAnswer="C" AdeStandard="S1.C4.O4" AdeGrade="2" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="62"
+    AdeChoiceA="James Madison" AdeChoiceB="Abraham Lincoln" AdeChoiceC="Thomas Jefferson" AdeChoiceD="GeorgeWashington"
+  />
+  <QuestionAnswer
+    AdeID="ade12" AdeNumber="12" AdeQuestion="Which of the following is an American Indian tribe?" AdeAnswer="D" AdeStandard="S1.C10.O3" AdeGrade="2" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="C" UscisNumber="87"
+    AdeChoiceA="Huli" AdeChoiceB="Kikuyu" AdeChoiceC="Maori" AdeChoiceD="Navajo"
+  />
+  <QuestionAnswer
+    AdeID="ade13" AdeNumber="13" AdeQuestion="Why does the American flag have 13 stripes?" AdeAnswer="A" AdeStandard="S3.C1.O1" AdeGrade="2" AdeSubject="Government"
+    UscisSection="III" UscisSubsection="B" UscisNumber="96"
+      AdeChoiceA="They represent the 13 original colonies."
+      AdeChoiceB="They represent the 13 signatures on the U.S. Constitution."
+      AdeChoiceC="They represent the 13 military heroes of the RevolutionaryWar."
+      AdeChoiceD="They represent the 13 members of the Second Continental Congress."
+  />
+  <QuestionAnswer
+    AdeID="ade14" AdeNumber="14" AdeQuestion="Why does the American flag have 50 stars?" AdeAnswer="A" AdeStandard="S3.C1.O1" AdeGrade="2" AdeSubject="Government"
+    UscisSection="III" UscisSubsection="B" UscisNumber="97"
+    AdeChoiceA="One star for each state." AdeChoiceB="One star for each president." AdeChoiceC="One star for each original colony." AdeChoiceD="One star for each constitutional amendment."
+  />
+  <QuestionAnswer
+    AdeID="ade15" AdeNumber="15" AdeQuestion="What is the name of the national anthem?" AdeAnswer="D" AdeStandard="S3.C1.O1" AdeGrade="2" AdeSubject="Government"
+    UscisSection="III" UscisSubsection="B" UscisNumber="98"
+    AdeChoiceA="God Bless the U.S.A." AdeChoiceB="America the Beautiful" AdeChoiceC="My Country Tis of Thee" AdeChoiceD="The Star-Spangled Banner"
+  />
+  <QuestionAnswer
+    AdeID="ade16" AdeNumber="16" AdeQuestion="Which of the following are national U.S. holidays?" AdeAnswer="B" AdeStandard="S3.C1.O3" AdeGrade="2" AdeSubject="Government"
+    UscisSection="III" UscisSubsection="C" UscisNumber="100"
+    AdeChoiceA="Columbus Day and Flag Day" AdeChoiceB="Labor Day and Veterans Day" AdeChoiceC="Memorial Day and Mother's Day" AdeChoiceD="Valentine's Day and Thanksgiving Day"
+  />
+  <QuestionAnswer
+    AdeID="ade17" AdeNumber="17" AdeQuestion="What is one reason colonists came to America?" AdeAnswer="D" AdeStandard="S1.C3.O2" AdeGrade="3" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="58"
+    AdeChoiceA="education" AdeChoiceB="better health" AdeChoiceC="elect a new king" AdeChoiceD="religious freedom"
+  />
+  <QuestionAnswer
+    AdeID="ade18" AdeNumber="18" AdeQuestion="What was the name of the U.S. war between the North and the South?" AdeAnswer="A" AdeStandard="S1.C6.O1" AdeGrade="3" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="B" UscisNumber="73"
+    AdeChoiceA="CivilWar" AdeChoiceB="WorldWar II" AdeChoiceC="War of 1812" AdeChoiceD="RevolutionaryWar"
+  />
+  <QuestionAnswer
+    AdeID="ade19" AdeNumber="19" AdeQuestion="Which of the following reasons led to the Civil War?" AdeAnswer="B" AdeStandard="S1.C6.O1" AdeGrade="3" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="B" UscisNumber="74"
+    AdeChoiceA="taxes" AdeChoiceB="slavery" AdeChoiceC="oil rights" AdeChoiceD="religious freedom"
+  />
+  <QuestionAnswer
+    AdeID="ade20" AdeNumber="20" AdeQuestion="What did Susan B. Anthony do?" AdeAnswer="B" AdeStandard="S1.C9.O1" AdeGrade="3" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="B" UscisNumber="77"
+    AdeChoiceA="founded the Red Cross" AdeChoiceB="fought for women's rights" AdeChoiceC="made the first American flag" AdeChoiceD="established a college for women"
+  />
+  <QuestionAnswer
+    AdeID="ade21" AdeNumber="21" AdeQuestion="Where is the Statue of Liberty located?" AdeAnswer="B" AdeStandard="S3.C1.O1" AdeGrade="3" AdeSubject="Government"
+    UscisSection="III" UscisSubsection="A" UscisNumber="95"
+    AdeChoiceA="Boston, MA" AdeChoiceB="New York, NY" AdeChoiceC="Washington, DC" AdeChoiceD="San Francisco, CA"
+  />
+  <QuestionAnswer
+    AdeID="ade22" AdeNumber="22" AdeQuestion="What is the deadline for filing federal income tax forms?" AdeAnswer="A" AdeStandard="S3.C3.O1, S3.C2.O1" AdeGrade="4" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="C" UscisNumber="56"
+    AdeChoiceA="April 15" AdeChoiceB="June 30" AdeChoiceC="September 15" AdeChoiceD="December 31"
+  />
+  <QuestionAnswer
+    AdeID="ade23" AdeNumber="23" AdeQuestion="Who did the United States fight in World War II?" AdeAnswer="A" AdeStandard="S1.C8.O2" AdeGrade="4" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="C" UscisNumber="81"
+    AdeChoiceA="Japan, Germany, and Italy" AdeChoiceB="Japan, Germany, and France" AdeChoiceC="Russia, China, and Japan" AdeChoiceD="Russia, France, and Great Britain"
+  />
+  <QuestionAnswer
+    AdeID="ade24" AdeNumber="24" AdeQuestion="Which of the following wars was fought by the United States in the 1800s?" AdeAnswer="C" AdeStandard="S1.C5.O3, S1.C5.O1, S1.C6.O1, S1.C6.O1, S1.C7.O10" AdeGrade="4, 5, 7" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="B" UscisNumber="72"
+    AdeChoiceA="KoreanWar" AdeChoiceB="WorldWar I" AdeChoiceC="Spanish-AmericanWar" AdeChoiceD="French and IndianWar"
+  />
+  <QuestionAnswer
+    AdeID="ade25" AdeNumber="25" AdeQuestion="Who is in charge of the executive branch?" AdeAnswer="A" AdeStandard="S3.C2.O1, S3.C2.O2" AdeGrade="4, 8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="15"
+    AdeChoiceA="the President" AdeChoiceB="the Chief Justice" AdeChoiceC="the Majority Leader" AdeChoiceD="the Speaker of the House"
+  />
+  <QuestionAnswer
+    AdeID="ade26" AdeNumber="26" AdeQuestion="What does the judicial branch do?" AdeAnswer="B" AdeStandard="S3.C2.O4, S3.C2.O2" AdeGrade="4, 8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="37"
+    AdeChoiceA="amends the Constitution and overturns laws" AdeChoiceB="decides if a law goes against the Constitution" AdeChoiceC="stipulates the number of Supreme Court Justices" AdeChoiceD="provides legal advice to the President and his staff"
+  />
+  <QuestionAnswer
+    AdeID="ade27" AdeNumber="27" AdeQuestion="Which of the following includes two ways that Americans can participate in their democracy?" AdeAnswer="A" AdeStandard="S3.C4.O3, S3.C4.O3" AdeGrade="4, 8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="C" UscisNumber="55"
+    AdeChoiceA="vote and run for office" AdeChoiceB="read a newspaper and volunteer at the local food bank" AdeChoiceC="get a driver's license and purchase real estate property" AdeChoiceD="go to college and start a career"
+  />
+  <QuestionAnswer
+    AdeID="ade28" AdeNumber="28" AdeQuestion="What group of people was taken to America and sold as slaves?" AdeAnswer="A" AdeStandard="S1.C3.O8" AdeGrade="5" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="60"
+    AdeChoiceA="Africans" AdeChoiceB="Canadians" AdeChoiceC="Spaniards" AdeChoiceD="Italians"
+  />
+  <QuestionAnswer
+    AdeID="ade29" AdeNumber="29" AdeQuestion="When was the Declaration of Independence adopted?" AdeAnswer="B" AdeStandard="S1.C4.O2" AdeGrade="5" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="63"
+    AdeChoiceA="July 4, 1770" AdeChoiceB="July 4, 1776" AdeChoiceC="July 4, 1870" AdeChoiceD="July 4, 1876"
+  />
+  <QuestionAnswer
+    AdeID="ade30" AdeNumber="30" AdeQuestion="Which of the following includes three of the 13 original states?" AdeAnswer="D" AdeStandard="S1.C3.O5" AdeGrade="5" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="64"
+    AdeChoiceA="Georgia, Indiana, New York" AdeChoiceB="Maine, Ohio, andWest Virginia" AdeChoiceC="Vermont, Florida, and Pennsylvania" AdeChoiceD="Maryland, Virginia, and North Carolina"
+  />
+  <QuestionAnswer
+    AdeID="ade31" AdeNumber="31" AdeQuestion="What happened at the Constitutional Convention?" AdeAnswer="A" AdeStandard="S1.C4.O4" AdeGrade="5" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="65"
+    AdeChoiceA="The Constitution was written." AdeChoiceB="The Constitution was ratified." AdeChoiceC="The Magna Carta was signed." AdeChoiceD="The Declaration of Independence was written."
+  />
+  <QuestionAnswer
+    AdeID="ade32" AdeNumber="32" AdeQuestion="When was the U.S. Constitution written?" AdeAnswer="B" AdeStandard="S1.C4.O4" AdeGrade="5" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="66"
+    AdeChoiceA="1776" AdeChoiceB="1787" AdeChoiceC="1812" AdeChoiceD="1865"
+  />
+  <QuestionAnswer
+    AdeID="ade33" AdeNumber="33" AdeQuestion="What is one thing Benjamin Franklin is famous for?" AdeAnswer="D" AdeStandard="S3.C1.O2" AdeGrade="5" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="68"
+    AdeChoiceA="decorated war general" AdeChoiceB="inventor of the telegraph" AdeChoiceC="fourth president of the United States" AdeChoiceD="oldest member of the Constitutional Convention"
+  />
+  <QuestionAnswer
+    AdeID="ade34" AdeNumber="34" AdeQuestion="What territory did the United States buy from France in 1803?" AdeAnswer="D" AdeStandard="S1.C5.O1" AdeGrade="5" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="B" UscisNumber="71"
+    AdeChoiceA="Alaska" AdeChoiceB="Florida" AdeChoiceC="Hawaii" AdeChoiceD="Louisiana"
+  />
+  <QuestionAnswer
+    AdeID="ade35" AdeNumber="35" AdeQuestion="What is one promise made when becoming a citizen of the United States of America?" AdeAnswer="D" AdeStandard="S3.C4.O2" AdeGrade="7" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="C" UscisNumber="53"
+    AdeChoiceA="to register to vote" AdeChoiceB="to get an education" AdeChoiceC="to join a political party" AdeChoiceD="to defend the U.S. Constitution"
+  />
+  <QuestionAnswer
+    AdeID="ade36" AdeNumber="36" AdeQuestion="When must all men register for the Selective Service?" AdeAnswer="C" AdeStandard="S3.C4.O4" AdeGrade="7" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="C" UscisNumber="57"
+    AdeChoiceA="at birth" AdeChoiceB="at age 16" AdeChoiceC="at age 18" AdeChoiceD="men no longer have to register"
+  />
+  <QuestionAnswer
+    AdeID="ade37" AdeNumber="37" AdeQuestion="What did the Emancipation Proclamation do?" AdeAnswer="D" AdeStandard="S1.C6.O2" AdeGrade="7" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="B" UscisNumber="76"
+    AdeChoiceA="called for an end to the CivilWar" AdeChoiceB="called for the creation of state borders" AdeChoiceC="called for an end to Southern Secession" AdeChoiceD="called for the freeing of slaves in the Confederate States"
+  />
+  <QuestionAnswer
+    AdeID="ade38" AdeNumber="38" AdeQuestion="Who was the President during World War I?" AdeAnswer="B" AdeStandard="S1.C7.O13" AdeGrade="7" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="C" UscisNumber="79"
+    AdeChoiceA="Warren Harding" AdeChoiceB="WoodrowWilson" AdeChoiceC="Franklin Roosevelt" AdeChoiceD="Theodore Roosevelt"
+  />
+  <QuestionAnswer
+    AdeID="ade39" AdeNumber="39" AdeQuestion="What stops one branch of government from becoming too powerful?" AdeAnswer="C" AdeStandard="S3.C2.O1, S3.C2.O1" AdeGrade="7,8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="14"
+    AdeChoiceA="the military" AdeChoiceB="the Bill of Rights" AdeChoiceC="checks and balances" AdeChoiceD="the Federal Reserve"
+  />
+  <QuestionAnswer
+    AdeID="ade40" AdeNumber="40" AdeQuestion="What is one responsibility that only applies to United States citizens?" AdeAnswer="C" AdeStandard="S3.C4.O4, S3.C4.O4" AdeGrade="7,8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="C" UscisNumber="49"
+    AdeChoiceA="pay taxes" AdeChoiceB="obey the laws" AdeChoiceC="serve on a jury" AdeChoiceD="attend private school"
+  />
+  <QuestionAnswer
+    AdeID="ade41" AdeNumber="41" AdeQuestion="Which of the following includes two rights of everyone living in the United States?" AdeAnswer="C" AdeStandard="S3.C1.O1, S3.C3.O5" AdeGrade="7,8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="C" UscisNumber="51"
+    AdeChoiceA="freedom to work and freedom of speech" AdeChoiceB="freedom to work and freedom to make laws" AdeChoiceC="freedom of speech and freedom of assembly" AdeChoiceD="freedom to make laws and freedom of assembly"
+  />
+  <QuestionAnswer
+    AdeID="ade42" AdeNumber="42" AdeQuestion="Which war was fought by the United States in the 1900s?" AdeAnswer="B" AdeStandard="S1.C7.O12, S1.C8.O2, S1.C8.O3, S1.C8.O4, S1.C8.O5" AdeGrade="7,8" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="C" UscisNumber="78"
+    AdeChoiceA="CivilWar" AdeChoiceB="WorldWar I" AdeChoiceC="RevolutionaryWar" AdeChoiceD="Mexican-AmericanWar"
+  />
+  <QuestionAnswer
+    AdeID="ade43" AdeNumber="43" AdeQuestion="What is the supreme law of the land?" AdeAnswer="A" AdeStandard="S3.C2.O1" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="A" UscisNumber="1"
+    AdeChoiceA="the U.S. Constitution" AdeChoiceB="the Articles of Confederation" AdeChoiceC="the Emancipation Proclamation" AdeChoiceD="the Declaration of Independence "
+  />
+  <QuestionAnswer
+    AdeID="ade44" AdeNumber="44" AdeQuestion="What does the Constitution do?" AdeAnswer="A" AdeStandard="S3.C2.O1" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="A" UscisNumber="2"
+    AdeChoiceA="sets up and defines the government" AdeChoiceB="draws boundaries of congressional districts" AdeChoiceC="sets codes of conduct for obeying local and federal laws" AdeChoiceD="determines whether citizens are prosecuted to the full extent of the law"
+  />
+  <QuestionAnswer
+    AdeID="ade45" AdeNumber="45" AdeQuestion="The idea of self-government is in the first three words of the Constitution. What are these words?" AdeAnswer="B" AdeStandard="S3.C2.O1" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="A" UscisNumber="3"
+    AdeChoiceA="We the United" AdeChoiceB="We the People" AdeChoiceC="We the Citizens" AdeChoiceD="We the Americans"
+  />
+  <QuestionAnswer
+    AdeID="ade46" AdeNumber="46" AdeQuestion="What is an amendment?" AdeAnswer="A" AdeStandard="S3.C3.O5" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="A" UscisNumber="4"
+    AdeChoiceA="a change to the Constitution" AdeChoiceB="a preamble to the Constitution" AdeChoiceC="an explanation of the Bill of Rights" AdeChoiceD="an introduction to the Bill of Rights"
+  />
+  <QuestionAnswer
+    AdeID="ade47" AdeNumber="47" AdeQuestion="What do we call the first ten amendments to the Constitution?" AdeAnswer="B" AdeStandard="S3.C1.O3" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="A" UscisNumber="5"
+    AdeChoiceA="the Preamble" AdeChoiceB="the Bill of Rights" AdeChoiceC="the Articles of the Confederation" AdeChoiceD="the Declaration of Independence"
+  />
+  <QuestionAnswer
+    AdeID="ade48" AdeNumber="48" AdeQuestion="What did the Declaration of Independence do?" AdeAnswer="C" AdeStandard="S3.C1.O1" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="A" UscisNumber="8"
+    AdeChoiceA="declared freedom for the slaves" AdeChoiceB="declared equal rights for women" AdeChoiceC="declared freedom from Great Britain" AdeChoiceD="declared an end to the war with Great Britain"
+  />
+  <QuestionAnswer
+    AdeID="ade49" AdeNumber="49" AdeQuestion="Which of the following includes two rights stated in the Declaration of Independence?" AdeAnswer="A" AdeStandard="S3.C1.O1" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="A" UscisNumber="9"
+    AdeChoiceA="life and liberty" AdeChoiceB="free speech and justice" AdeChoiceC="bear arms and pay taxes" AdeChoiceD="vote and pursuit of happiness"
+  />
+  <QuestionAnswer
+    AdeID="ade50" AdeNumber="50" AdeQuestion="How many amendments does the Constitution have?" AdeAnswer="B" AdeStandard="S3.C3.O5" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="A" UscisNumber="7"
+    AdeChoiceA="10" AdeChoiceB="27" AdeChoiceC="36" AdeChoiceD="50"
+  />
+  <QuestionAnswer
+    AdeID="ade51" AdeNumber="51" AdeQuestion="Who vetoes bills?" AdeAnswer="A" AdeStandard="S3.C3.O2" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="34"
+    AdeChoiceA="the President" AdeChoiceB="the Majority Leader" AdeChoiceC="the President Pro Tempore" AdeChoiceD="the Speaker of the House of Representatives"
+  />
+  <QuestionAnswer
+    AdeID="ade52" AdeNumber="52" AdeQuestion="What is the 'rule of law'?" AdeAnswer="A" AdeStandard="S3.C2.O1" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="A" UscisNumber="12"
+    AdeChoiceA="Everyone must follow the law." AdeChoiceB="Laws remain the same in every state." AdeChoiceC="Government leaders are above the laws." AdeChoiceD="Laws only apply to United States citizens."
+  />
+  <QuestionAnswer
+    AdeID="ade53" AdeNumber="53" AdeQuestion="What is one branch of the federal government?" AdeAnswer="B" AdeStandard="S3.C2.O2" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="13"
+    AdeChoiceA="governor" AdeChoiceB="judicial" AdeChoiceC="military" AdeChoiceD="treasury"
+  />
+  <QuestionAnswer
+    AdeID="ade54" AdeNumber="54" AdeQuestion="Who makes federal laws?" AdeAnswer="A" AdeStandard="S3.C3.O2" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="16"
+    AdeChoiceA="the Congress" AdeChoiceB="the Supreme Court" AdeChoiceC="the Attorney General" AdeChoiceD="the Justice Department"
+  />
+  <QuestionAnswer
+    AdeID="ade55" AdeNumber="55" AdeQuestion="If the President can no longer serve, who becomes President?" AdeAnswer="A" AdeStandard="S3.C2.O5" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="30"
+    AdeChoiceA="the Vice President" AdeChoiceB="the Secretary of State" AdeChoiceC="the President Pro Tempore" AdeChoiceD="the Speaker of the House of Representatives"
+  />
+  <QuestionAnswer
+    AdeID="ade56" AdeNumber="56" AdeQuestion="Who signs bills to become laws?" AdeAnswer="A" AdeStandard="S3.C3.O2" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="33"
+    AdeChoiceA="the President" AdeChoiceB="the Vice President" AdeChoiceC="the Secretary of State" AdeChoiceD="the Chief Justice of the Supreme Court"
+  />
+  <QuestionAnswer
+    AdeID="ade57" AdeNumber="57" AdeQuestion="What is the highest court in the United States?" AdeAnswer="C" AdeStandard="S3.C2.O2" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="38"
+    AdeChoiceA="the District Court" AdeChoiceB="the Superior Court" AdeChoiceC="the Supreme Court" AdeChoiceD="the Municipal Court"
+  />
+  <QuestionAnswer
+    AdeID="ade58" AdeNumber="58" AdeQuestion="If both the President and the Vice President can no longer serve, who becomes President?" AdeAnswer="D" AdeStandard="S3.C2.O5" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="31"
+    AdeChoiceA="the Secretary of State" AdeChoiceB="the U.S. Attorney General" AdeChoiceC="the President Pro Tempore" AdeChoiceD="the Speaker of the House of Representatives"
+  />
+  <QuestionAnswer
+    AdeID="ade59" AdeNumber="59" AdeQuestion="Under our Constitution, some powers belong to the federal government. What is one power of the federal government?" AdeAnswer="A" AdeStandard="S3.C2.O1" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="41"
+    AdeChoiceA="to make treaties" AdeChoiceB="to issue driver's licenses" AdeChoiceC="to provide public education" AdeChoiceD="to establish police departments"
+  />
+  <QuestionAnswer
+    AdeID="ade60" AdeNumber="60" AdeQuestion="Who is the Commander in Chief of the military?" AdeAnswer="A" AdeStandard="S3.C2.O2" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="32"
+    AdeChoiceA="the President" AdeChoiceB="the Secretary of Defense" AdeChoiceC="the U.S. Attorney General" AdeChoiceD="the Chairman of the Joint Chiefs of Staff"
+  />
+  <QuestionAnswer
+    AdeID="ade61" AdeNumber="61" AdeQuestion="What is the capital of Arizona?" AdeAnswer="B" AdeStandard="S4.C1.O4" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="44"
+    AdeChoiceA="Flagstaff" AdeChoiceB="Phoenix" AdeChoiceC="Prescott" AdeChoiceD="Tucson"
+  />
+  <QuestionAnswer
+    AdeID="ade62" AdeNumber="62" AdeQuestion="What is one right that only applies to United States citizens?" AdeAnswer="D" AdeStandard="S3.C4.O4" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="C" UscisNumber="50"
+    AdeChoiceA="speak freely" AdeChoiceB="own a weapon" AdeChoiceC="practice a religion" AdeChoiceD="run for federal office"
+  />
+  <QuestionAnswer
+    AdeID="ade63" AdeNumber="63" AdeQuestion="How old do citizens have to be to vote for President?" AdeAnswer="B" AdeStandard="S3.C3.O1," AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="C" UscisNumber="54"
+    AdeChoiceA="starting at 16 years of age and older" AdeChoiceB="starting at 18 years of age and older" AdeChoiceC="starting at 21 years of age and older" AdeChoiceD="starting at 35 years of age and older"
+  />
+  <QuestionAnswer
+    AdeID="ade64" AdeNumber="64" AdeQuestion="Under our Constitution, some powers belong to the states. What is one power of the states?" AdeAnswer="D" AdeStandard="S3.C2.O1," AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="42"
+    AdeChoiceA="print money" AdeChoiceB="create an army" AdeChoiceC="issue passports" AdeChoiceD="provide public education"
+  />
+  <QuestionAnswer
+    AdeID="ade65" AdeNumber="65" AdeQuestion="Who is one of the authors of the Federalist Papers?" AdeAnswer="B" AdeStandard="S1.C4.O6, S1.C4.O6" AdeGrade="8" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="A" UscisNumber="67"
+    AdeChoiceA="John Adams" AdeChoiceB="James Madison" AdeChoiceC="Thomas Jefferson" AdeChoiceD="GeorgeWashington"
+  />
+  <QuestionAnswer
+    AdeID="ade66" AdeNumber="66" AdeQuestion="Who was President during both the Great Depression and World War II?" AdeAnswer="D" AdeStandard="S1.C8.O7" AdeGrade="8" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="C" UscisNumber="80"
+    AdeChoiceA="Harry Truman" AdeChoiceB="Calvin Coolidge" AdeChoiceC="WoodrowWilson" AdeChoiceD="Franklin Roosevelt"
+  />
+  <QuestionAnswer
+    AdeID="ade67" AdeNumber="67" AdeQuestion="Before he was President, Eisenhower was a general. What war was he in?" AdeAnswer="C" AdeStandard="S1.C8.O7" AdeGrade="8" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="C" UscisNumber="82"
+    AdeChoiceA="CivilWar" AdeChoiceB="KoreanWar" AdeChoiceC="WorldWar II" AdeChoiceD="Spanish-AmericanWar"
+  />
+  <QuestionAnswer
+    AdeID="ade68" AdeNumber="68" AdeQuestion="During the Cold War, what was the main concern of the United States?" AdeAnswer="B" AdeStandard="S1.C9.O1" AdeGrade="8" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="C" UscisNumber="83"
+    AdeChoiceA="colonialism" AdeChoiceB="communism" AdeChoiceC="imperialism" AdeChoiceD="sectionalism"
+  />
+  <QuestionAnswer
+    AdeID="ade69" AdeNumber="69" AdeQuestion="What movement tried to end racial discrimination?" AdeAnswer="A" AdeStandard="S1.C9.O6" AdeGrade="8" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="C" UscisNumber="84"
+    AdeChoiceA="civil rights movement" AdeChoiceB="progressive movement" AdeChoiceC="temperance movement" AdeChoiceD="women’s suffrage movement"
+  />
+  <QuestionAnswer
+    AdeID="ade70" AdeNumber="70" AdeQuestion="What historical event happened on September 11, 2001 in the United States?" AdeAnswer="C" AdeStandard="S1.C10.O7" AdeGrade="8" AdeSubject="US History"
+    UscisSection="II" UscisSubsection="C" UscisNumber="86"
+    AdeChoiceA="The stock market crashed." AdeChoiceB="Columbia space shuttled exploded." AdeChoiceC="Terrorists attacked the United States." AdeChoiceD="Hurricane Katrina struck New Orleans."
+  />
+  <QuestionAnswer
+    AdeID="ade71" AdeNumber="71" AdeQuestion="What Ocean is on the West Coast of the United States?" AdeAnswer="C" AdeStandard="S4.C1.05" AdeGrade="8" AdeSubject="Geography"
+    UscisSection="III" UscisSubsection="A" UscisNumber="89"
+    AdeChoiceA="Arctic Ocean" AdeChoiceB="Indian Ocean" AdeChoiceC="Pacific Ocean" AdeChoiceD="Atlantic Ocean"
+  />
+  <QuestionAnswer
+    AdeID="ade72" AdeNumber="72" AdeQuestion="Which of the following is a U.S. territory?" AdeAnswer="B" AdeStandard="S2.C8.O3" AdeGrade="8" AdeSubject="Government"
+    UscisSection="III" UscisSubsection="A" UscisNumber="91"
+    AdeChoiceA="Cuba" AdeChoiceB="Guam" AdeChoiceC="Hawaii" AdeChoiceD="Panama"
+  />
+  <QuestionAnswer
+    AdeID="ade73" AdeNumber="73" AdeQuestion="Which U.S. state borders Canada?" AdeAnswer="A" AdeStandard="S4.C1.O4" AdeGrade="8" AdeSubject="Geography"
+    UscisSection="III" UscisSubsection="A" UscisNumber="92"
+    AdeChoiceA="Alaska" AdeChoiceB="Connecticut" AdeChoiceC="Oregon" AdeChoiceD="Wisconsin"
+  />
+  <QuestionAnswer
+    AdeID="ade74" AdeNumber="74" AdeQuestion="Which U.S. state borders Mexico?" AdeAnswer="A" AdeStandard="S4.C1.O4" AdeGrade="8" AdeSubject="Geography"
+    UscisSection="III" UscisSubsection="A" UscisNumber="93"
+    AdeChoiceA="Texas" AdeChoiceB="Arkansas" AdeChoiceC="Louisiana" AdeChoiceD="Alabama"
+  />
+  <QuestionAnswer
+    AdeID="ade75" AdeNumber="75" AdeQuestion="What is the capital of the United States?" AdeAnswer="D" AdeStandard="S4.C1.O4" AdeGrade="8" AdeSubject="Geography"
+    UscisSection="III" UscisSubsection="A" UscisNumber="94"
+    AdeChoiceA="Boston, MA" AdeChoiceB="New York, NY" AdeChoiceC="Philadelphia, PA" AdeChoiceD="Washington, DC"
+  />
+  <QuestionAnswer
+    AdeID="ade76" AdeNumber="76" AdeQuestion="What is one right or freedom from the First Amendment?" AdeAnswer="C" AdeStandard="S3.C3.O5, S3.C4.O1" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="A" UscisNumber="6"
+    AdeChoiceA="to vote" AdeChoiceB="jury trial" AdeChoiceC="free speech" AdeChoiceD="to bear arms "
+  />
+  <QuestionAnswer
+    AdeID="ade77" AdeNumber="77" AdeQuestion="What is freedom of religion?" AdeAnswer="D" AdeStandard="S3.C3.O5, S3.C4.O1" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="A" UscisNumber="10"
+    AdeChoiceA="Religious leaders are exempt from the law." AdeChoiceB="States may choose a religion for the people." AdeChoiceC="Religious institutions do not have to pay taxes." AdeChoiceD="People may or may not choose to practice a religion."
+  />
+  <QuestionAnswer
+    AdeID="ade78" AdeNumber="78" AdeQuestion="What is the economic system in the United States?" AdeAnswer="C" AdeStandard="S5.C1.O4, S5.C1.O3" AdeGrade="8, 12" AdeSubject="Economics"
+    UscisSection="I" UscisSubsection="A" UscisNumber="11"
+    AdeChoiceA="barter or trade economy" AdeChoiceB="socialist or mutual economy" AdeChoiceC="capitalist or market economy" AdeChoiceD="communist or collective economy"
+  />
+  <QuestionAnswer
+    AdeID="ade79" AdeNumber="79" AdeQuestion="What are the two parts of the U.S. Congress?" AdeAnswer="D" AdeStandard="S3.C2.O2, S3.C2.O5" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="17"
+    AdeChoiceA="the President and the Cabinet" AdeChoiceB="the Supreme Court and the Superior Court" AdeChoiceC="the U.S. Treasury and the State Department" AdeChoiceD="the Senate and the House of Representatives"
+  />
+  <QuestionAnswer
+    AdeID="ade80" AdeNumber="80" AdeQuestion="How many U.S. Senators are there?" AdeAnswer="C" AdeStandard="S3.C2.O2, S3.C2.O5" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="18"
+    AdeChoiceA="25" AdeChoiceB="50" AdeChoiceC="100" AdeChoiceD="435"
+  />
+  <QuestionAnswer
+    AdeID="ade81" AdeNumber="81" AdeQuestion="How many years are there in one term of office for a U.S. Senator?" AdeAnswer="C" AdeStandard="S3.C2.O2, S3.C2.O5" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="19"
+    AdeChoiceA="2" AdeChoiceB="4" AdeChoiceC="6" AdeChoiceD="8"
+  />
+  <QuestionAnswer
+    AdeID="ade82" AdeNumber="82" AdeQuestion="The U.S. House of Representatives has how many voting members?" AdeAnswer="C" AdeStandard="S3.C2.O2, S3.C2.O5" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="21"
+    AdeChoiceA="265" AdeChoiceB="380" AdeChoiceC="435" AdeChoiceD="519"
+  />
+  <QuestionAnswer
+    AdeID="ade83" AdeNumber="83" AdeQuestion="How many years are there in one term of office for a U.S. Representative?" AdeAnswer="A" AdeStandard="S3.C2.O2, S3.C2.O5" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="22"
+    AdeChoiceA="2" AdeChoiceB="4" AdeChoiceC="6" AdeChoiceD="8"
+  />
+  <QuestionAnswer
+    AdeID="ade84" AdeNumber="84" AdeQuestion="Who does a U.S. Senator represent?" AdeAnswer="B" AdeStandard="S3.C2.O2, S3.C2.O5" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="24"
+    AdeChoiceA="all people in the United States" AdeChoiceB="all people in the Senator's state" AdeChoiceC="only the people in the state who voted for the Senator" AdeChoiceD="only people who belong to the political party of the Senator"
+  />
+  <QuestionAnswer
+    AdeID="ade85" AdeNumber="85" AdeQuestion="How is the number of U.S. Representatives chosen for each state?" AdeAnswer="B" AdeStandard="S3.C3.O1, S3.C2.O5" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="25"
+    AdeChoiceA="by state location" AdeChoiceB="by state population" AdeChoiceC="by state geographical size" AdeChoiceD="by state political affiliation"
+  />
+  <QuestionAnswer
+    AdeID="ade86" AdeNumber="86" AdeQuestion="How many years are there in one term of office for a U.S. President?" AdeAnswer="B" AdeStandard="S3.C2.O2, S3.C2.O6" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="26"
+    AdeChoiceA="2" AdeChoiceB="4" AdeChoiceC="6" AdeChoiceD="8"
+  />
+  <QuestionAnswer
+    AdeID="ade87" AdeNumber="87" AdeQuestion="In what month is the election day for President?" AdeAnswer="D" AdeStandard="S3.C2.O3, S3.C2.O6" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="27"
+    AdeChoiceA="January" AdeChoiceB="June" AdeChoiceC="August" AdeChoiceD="November"
+  />
+  <QuestionAnswer
+    AdeID="ade88" AdeNumber="88" AdeQuestion="What is the main duty of the President's Cabinet?" AdeAnswer="C" AdeStandard="S3.C2.O2, S3.C2.O6f" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="35"
+    AdeChoiceA="set policy" AdeChoiceB="make laws" AdeChoiceC="advise the President" AdeChoiceD="command the military"
+  />
+  <QuestionAnswer
+    AdeID="ade89" AdeNumber="89" AdeQuestion="Which of the following includes two Cabinet-level positions?" AdeAnswer="D" AdeStandard="S3.C2.O2, S3.C2.O6f" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="36"
+    AdeChoiceA="Secretary of Education and Secretary of History" AdeChoiceB="Secretary of Energy and Secretary of Motor Vehicles" AdeChoiceC="Secretary of Human Affairs and Secretary of the Navy" AdeChoiceD="Secretary of Homeland Security and Secretary of the Treasury"
+  />
+  <QuestionAnswer
+    AdeID="ade90" AdeNumber="90" AdeQuestion="How many justices are on the U.S. Supreme Court?" AdeAnswer="C" AdeStandard="S3.C2.O2, S3.C2.O7" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="39"
+    AdeChoiceA="5" AdeChoiceB="7" AdeChoiceC="9" AdeChoiceD="11"
+  />
+  <QuestionAnswer
+    AdeID="ade91" AdeNumber="91" AdeQuestion="Which of the following includes two major political parties in the United States?" AdeAnswer="C" AdeStandard="S3.C2.O3, S3.C4.O5" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="45"
+    AdeChoiceA="Libertarian Party and Democratic Party" AdeChoiceB="Progressive Party and Libertarian Party" AdeChoiceC="Democratic Party and Republican Party" AdeChoiceD="Progressive Party and Republican Party"
+  />
+  <QuestionAnswer
+    AdeID="ade92" AdeNumber="92" AdeQuestion="There are four amendments to the Constitution about who can vote. Which of the following is true?" AdeAnswer="C" AdeStandard="S3.C3.O5, S3.C4.O1" AdeGrade="8, 12" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="C" UscisNumber="48"
+    AdeChoiceA="Only citizens 21 and older can vote." AdeChoiceB="Only citizens with jobs can vote." AdeChoiceC="Only citizens 18 and older can vote." AdeChoiceD="Only citizens who pay taxes can vote."
+  />
+  <QuestionAnswer
+      AdeID="ade93"
+      AdeNumber="93"
+      AdeQuestion="Who is the current President of the United States?"
+      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeStandard="S3.C2.O1, S3.C2.O2"
+      AdeGrade="K, 8"
+      AdeSubject="Government"
+      UscisSection="I" UscisSubsection="B" UscisNumber="28"
+      AdeChoiceA="Donald J. Trump" AdeChoiceB="Trump" AdeChoiceC="Donald Trump" AdeChoiceD=""
+  />
+  <QuestionAnswer
+    AdeID="ade94" AdeNumber="94" AdeQuestion="Who is the current Governor of Arizona?" AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally" AdeStandard="S3.C2.O1, S3.C3.O4" AdeGrade="K, 8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="43"
+    AdeChoiceA="Douglas Anthony Ducey" AdeChoiceB="Ducey" AdeChoiceC="Doug Ducey" AdeChoiceD=""
+  />
+  <QuestionAnswer
+    AdeID="ade95" AdeNumber="95" AdeQuestion="Who is the current Vice President of the United States?" AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally" AdeStandard="S3.C2.O5" AdeGrade="8" AdeSubject="Government"
+    UscisSection="I" UscisSubsection="B" UscisNumber="29"
+    AdeChoiceA="Michael R. Pence" AdeChoiceB="Pence" AdeChoiceC="Mike Pence" AdeChoiceD=""
+  />
+  <QuestionAnswer
+      AdeID="ade96"
+      AdeNumber="96"
+      AdeQuestion="Name one of the two current U.S. Senators for the state of Arizona."
+      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeStandard="S3.C3.O1, S3.C2.O2"
+      AdeGrade="8, 12"
+      AdeSubject="Government"
+      UscisSection="I" UscisSubsection="B" UscisNumber="20"
+      AdeChoiceA="John McCain" AdeChoiceB="Jeff Flake" AdeChoiceC="" AdeChoiceD=""
+      />
+  <QuestionAnswer
+      AdeID="ade97"
+      AdeNumber="97"
+      AdeQuestion="Who is the current Chief Justice of the United States? "
+      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeStandard="S3.C2.O2, S3.C2.O7"
+      AdeGrade="8, 12"
+      AdeSubject="Government"
+      UscisSection="I" UscisSubsection="B" UscisNumber="40"
+      AdeChoiceA="John Roberts" AdeChoiceB="John G. Roberts" AdeChoiceC="Roberts" AdeChoiceD=""
+      />
+  <QuestionAnswer
+      AdeID="ade98"
+      AdeNumber="98"
+      AdeQuestion="What is the political party of the current President?"
+      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeStandard="S3.C2.O3, S3.C4.O5"
+      AdeGrade="8, 12"
+      AdeSubject="Government"
+      UscisSection="I" UscisSubsection="B" UscisNumber="46"
+      AdeChoiceA="Republican" AdeChoiceB="" AdeChoiceC="" AdeChoiceD=""
+      />
+  <QuestionAnswer
+      AdeID="ade99"
+      AdeNumber="99"
+      AdeQuestion="Who is the current Speaker of the House of Representatives?"
+      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeStandard="S3.C2.O2, S3.C2.O5"
+      AdeGrade="8, 12"
+      AdeSubject="Government"
+      UscisSection="I" UscisSubsection="B" UscisNumber="47"
+      AdeChoiceA="Paul D. Ryan" AdeChoiceB="Paul Ryan" AdeChoiceC="Ryan" AdeChoiceD=""
+      />
+  <QuestionAnswer
+      AdeID="ade100"
+      AdeNumber="100"
+      AdeQuestion="Name one of the nine current U.S. Representatives for the state of Arizona."
+      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeStandard="S3.C2.O2"
+      AdeGrade="12"
+      AdeSubject="Government"  
+      UscisSection="I" UscisSubsection="B" UscisNumber="23"
+      AdeChoiceA="" AdeChoiceB="" AdeChoiceC="" AdeChoiceD=""
+  />
+ </QuestionsAnswers>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:AZED.CivicsApp"
+    x:Class="AZED.CivicsApp.Controls.ImageDetailPageControl"
+    x:Name="this">
+
+
+    <ContentView.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="8,16,8,8" />
+            <On Platform="Android, WinPhone, Windows" Value="8" />
+        </OnPlatform>
+    </ContentView.Padding>
+
+    <ContentView.Content>
+       <StackLayout>   
+
+         <Image 
+           IsVisible="{Binding ShowFullImage}"
+            Source="{Binding ImageSource, Source={x:Reference this}}" 
+            Aspect="AspectFit"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="StartAndExpand" >
+            
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer 
+                    Command="{Binding ShowImageDetailView}" />
+            </Image.GestureRecognizers>        
+         </Image>
+            
+
+        <Frame 
+            Style="{StaticResource frameModal}"
+            IsVisible="{Binding ShowSmallImage}"> 
+
+                
+          <Grid x:Name="outerGrid">
+                <Grid.ColumnDefinitions>
+                   <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                   <RowDefinition Height="200" />
+                   <RowDefinition Height="*" />     
+                 </Grid.RowDefinitions>
+        
+           <Frame
+              x:Name="frameImageGrid"
+              HasShadow="false"
+              Padding="0"
+              Grid.Column="0"  Grid.Row="0">
+
+                            
+           <Grid x:Name="imageGrid"
+                 HorizontalOptions="FillAndExpand" 
+                 Padding="0"
+                 IsVisible="{Binding ShowSmallImage}">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="30" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                </Grid.RowDefinitions>
+
+                <Image x:Name="smallImage"
+                    Source="{Binding ImageSource, Source={x:Reference this}}" 
+                    Aspect="AspectFit"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="Start"
+                    Grid.Column="0" Grid.ColumnSpan="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShowImageFullScreen}" />
+                    </Image.GestureRecognizers>        
+                </Image>
+
+                <Image x:Name="zoom"
+                    Source="ZoomICON"
+                    HeightRequest="24"
+                    WidthRequest="24"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Aspect="AspectFit"
+                    Grid.Column="1" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShowImageFullScreen}" />
+                    </Image.GestureRecognizers>   
+                </Image>
+            </Grid> 
+             </Frame>       
+
+            <ScrollView x:Name="detailScroll"
+                IsVisible="{Binding ShowDetails}"
+                 Grid.Row="1" Grid.Column="0">
+                <Grid
+                    RowSpacing="0"
+                    ColumnSpacing="0"
+                    HorizontalOptions="FillAndExpand" >
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label
+                        Text="Title"
+                        Style="{StaticResource labelImageDetailFieldName}"
+                        Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2"/>
+
+                    <Label
+                        Text="{Binding ImageTitle, Source={x:Reference this}}"
+                        Style="{StaticResource labelImageDetailFieldValue}"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" />
+
+                    <Label
+                        Text="Artist"
+                        Style="{StaticResource labelImageDetailFieldName}"
+                        Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" />
+
+                    <Label
+                        Text="{Binding ImageArtist, Source={x:Reference this}}"
+                        Style="{StaticResource labelImageDetailFieldValue}"
+                        Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" />
+
+                    <Label
+                        Text="Year"
+                        Style="{StaticResource labelImageDetailFieldName}"
+                        Grid.Row="4" Grid.Column="0" />
+
+                    <Label
+                        Text="{Binding ImageYear, Source={x:Reference this}}"
+                        Style="{StaticResource labelImageDetailFieldValue}"
+                        Grid.Row="5" Grid.Column="0"  />
+
+                    <Label
+                        Text="Medium"
+                        Style="{StaticResource labelImageDetailFieldName}"
+                        Grid.Row="4" Grid.Column="1" />
+
+                    <Label
+                        Text="{Binding ImageMedium, Source={x:Reference this}}"
+                        Style="{StaticResource labelImageDetailFieldValue}"
+                        Grid.Row="5" Grid.Column="1"  />
+
+                    <Label
+                        Text="Credit"
+                        Style="{StaticResource labelImageDetailFieldName}"
+                        Grid.Row="6" Grid.Column="0"  Grid.ColumnSpan="2"/>
+
+                    <Label
+                        Text="{Binding ImageAttribution, Source={x:Reference this}}"
+                        Style="{StaticResource labelImageDetailFieldValue}"
+                        Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" />
+
+                    <Label
+                        Text="Description"
+                        Style="{StaticResource labelImageDetailFieldName}"
+                        Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" />
+
+                    <Label
+                        Text="{Binding ImageDescription, Source={x:Reference this}}"
+                        Style="{StaticResource labelImageDescription}"
+                        Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" />
+
+                </Grid>
+            </ScrollView>
+                            
+        </Grid>
+     </Frame>
+        <Button Style="{StaticResource buttonOkay}" Text="Okay" Clicked="goBack" IsVisible="{Binding ShowSmallImage}"/>
+     </StackLayout>    
+
+    </ContentView.Content>
+</ContentView>
