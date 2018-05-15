@@ -170,7 +170,6 @@
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%402x.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76%402x.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40.png" />
@@ -372,6 +371,20 @@
     <ImageAsset Include="Assets.xcassets\TESTicon.imageset\stopwatchArtboard 1.png" />
     <ImageAsset Include="Assets.xcassets\TESTicon.imageset\stopwatchArtboard 1%402x.png" />
     <ImageAsset Include="Assets.xcassets\TESTicon.imageset\stopwatchArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\FlagStarBright.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\FlagStarBright.imageset\fullflagstarArtboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\FlagStarBright.imageset\fullflagstarArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\FlagStarBright.imageset\fullflagstarArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\FlagStarWhiteCopper.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\FlagStarWhiteCopper.imageset\whitestarcopperoutlineArtboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\FlagStarWhiteCopper.imageset\whitestarcopperoutlineArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\FlagStarWhiteCopper.imageset\whitestarcopperoutlineArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\FadedFlagStar.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\FadedFlagStar.imageset\Artboard 1.png" />
+    <ImageAsset Include="Assets.xcassets\FadedFlagStar.imageset\Artboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\FadedFlagStar.imageset\Artboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\fullflagstarArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\fullflagstarArtboard 1%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\TimothyMatlockCARD.imageset\" />
@@ -398,6 +411,9 @@
     <Folder Include="Assets.xcassets\TESTicon.imageset\" />
     <Folder Include="Assets.xcassets\MASTERYicon.imageset\" />
     <Folder Include="Assets.xcassets\STUDYicon.imageset\" />
+    <Folder Include="Assets.xcassets\FlagStarBright.imageset\" />
+    <Folder Include="Assets.xcassets\FlagStarWhiteCopper.imageset\" />
+    <Folder Include="Assets.xcassets\FadedFlagStar.imageset\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.3.0.0.446417\build\netstandard2.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.0.0.446417\build\netstandard2.0\Xamarin.Forms.targets')" />

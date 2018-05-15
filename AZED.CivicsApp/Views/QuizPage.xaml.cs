@@ -20,6 +20,8 @@ namespace AZED.CivicsApp.Views
         public QuizPage ()
 		{
 			InitializeComponent ();
+			On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
+
 
             QuizViewModel viewModel = (QuizViewModel)App.Locator.GetViewModel(this);
             viewModel.Initialize();

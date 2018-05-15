@@ -1,11 +1,17 @@
-﻿<Properties StartupConfiguration="{F3756329-3C8E-4D83-B4E6-F323F4BEA3C9}|Default">
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{F3756329-3C8E-4D83-B4E6-F323F4BEA3C9}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views Status">
+    <Files>
+      <File FileName="AZED.CivicsApp/Views/MainPage.xaml" Line="16" Column="5" />
+      <File FileName="AZED.CivicsApp/App.xaml" Line="28" Column="64" />
+      <File FileName="Views Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.AZED.CivicsApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.58103278-298B-409D-AD5E-7C628F337FBF" />
+  <MonoDevelop.Ide.ItemProperties.AZED.CivicsApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.58103278-298B-409D-AD5E-7C628F337FBF" automaticSigning="False" />
   <MonoDevelop.Ide.ItemProperties.AZED.CivicsApp.Android PreferredExecutionTarget="Android.SelectDevice" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
 </Properties>

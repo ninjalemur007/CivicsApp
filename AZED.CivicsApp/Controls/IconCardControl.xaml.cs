@@ -38,5 +38,7 @@ namespace AZED.CivicsApp.Controls
             set { SetValue(DescriptionTextProperty, value); }
         }
 
+        
+
     }
 }

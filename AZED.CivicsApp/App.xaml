@@ -28,6 +28,7 @@
                 <Setter Property="TextColor" Value="#000000" />
                 <Setter Property="HorizontalTextAlignment" Value="Start" />
                 <Setter Property="VerticalTextAlignment" Value="Start" />
+                <Setter Property="LineBreakMode" Value="WordWrap" />
             </Style>
 
             <Style x:Key="baseSubtext" TargetType="Label">
@@ -112,7 +113,7 @@
 
             <Style x:Key="appTitleStyle" TargetType="Label" BasedOn="{StaticResource baseTitle}">
                 <Setter Property="TextColor" Value="#ffffff" />
-                <Setter Property="FontSize" Value="28" />
+                <Setter Property="FontSize" Value="32" />
                 <Setter Property="VerticalTextAlignment" Value="Center" />
                 <Setter Property="HorizontalTextAlignment" Value="Center" />                
             </Style>
@@ -184,7 +185,7 @@
 
             <Style x:Key="labelMainCardDescription" TargetType="Label" BasedOn="{StaticResource baseSubtext}">
                 <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
-                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="VerticalTextAlignment" Value="Start" />
                 <Setter Property="Margin" Value="16,8" />    
             </Style>
 
@@ -192,6 +193,7 @@
                 <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
                 <Setter Property="VerticalTextAlignment" Value="Center" />
                 <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="LineBreakMode" Value="WordWrap" />
             </Style>
 
              <Style x:Key="labelViewDescription" TargetType="Label" BasedOn="{StaticResource baseText}">
@@ -235,6 +237,12 @@
             </Style>
 
         <!-- Grids -->
+            <Style x:Key="gridBaseStyle" TargetType="Grid">
+                <Setter Property="RowSpacing" Value="0" />
+                <Setter Property="ColumnSpacing" Value="0" />
+                <Setter Property="Padding" Value="0" />
+            </Style>
+
             <Style x:Key="controlGridStyle" TargetType="Grid">
                 <Setter Property="RowSpacing" Value="0" />
                 <Setter Property="ColumnSpacing" Value="0" />
@@ -248,6 +256,21 @@
             </Style>
 
         <!-- Frames -->
+
+            <Style x:Key="frameBaseStyle" TargetType="Frame">
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="HasShadow" Value="false" />
+            </Style>
+
+            <Style x:Key="frameMainPageStyle" TargetType="Frame" BasedOn="{StaticResource frameBaseStyle}">
+                <Setter Property="OutlineColor" Value="{StaticResource outlineGray}" />
+                <Setter Property="Padding" Value="10" />
+                <Setter Property="Margin" Value="10,0" />
+                <Setter Property="CornerRadius" Value="15" />
+            </Style>
             
             <Style x:Key="frameModal" TargetType="Frame">
                 <Setter Property="VerticalOptions" Value="FillAndExpand" />
@@ -265,6 +288,8 @@
 
 
             <Style x:Key="frameStyleSectionCard" TargetType="Frame">
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
                 <Setter Property="CornerRadius" Value="0" />
                 <Setter Property="Padding" Value="0" />
                 <Setter Property="HasShadow" Value="false" />
