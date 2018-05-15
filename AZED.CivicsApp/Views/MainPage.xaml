@@ -9,175 +9,11 @@
 
     <ContentPage.Padding>
        <OnPlatform x:TypeArguments="Thickness">
-            <On Platform="iOS" Value="0,8,0,0" />
+            <On Platform="iOS" Value="10,8,10,0" />
             <On Platform="Android, WinPhone, Windows" Value="0" />
         </OnPlatform>
     </ContentPage.Padding>
-        
-        
-        <StackLayout
-            HorizontalOptions="FillAndExpand"
-            VerticalOptions="FillAndExpand">
-        <Grid x:Name="masterGrid"
-              Padding="0"
-              RowSpacing="0"
-              ColumnSpacing="0" >
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="2*" />
-                <RowDefinition Height="5*" />
-                </Grid.RowDefinitions>
-
-            <Frame
-                    HasShadow="false" 
-                    Padding="0"
-                    Grid.Row="0"
-                    CornerRadius="0"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand">
-
-               <Grid x:Name="titleGrid"
-                    Padding="0"
-                    RowSpacing="0"
-                    ColumnSpacing="0" >   
-
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="3*" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="2*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="2*" />
-                    </Grid.ColumnDefinitions>
-                        
-                    <Image
-                        Source="AZflag"
-                        Aspect="AspectFill"
-                        Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
-
-                     <Label
-                            Text="Civics"
-                            Style="{StaticResource appTitleStyle}"
-                            Grid.Row="1" Grid.Column="0"/>
-
-                     <Label
-                            Text="Test"
-                            Style="{StaticResource appTitleStyle}"
-                            Grid.Row="2" Grid.Column="0"/>
-
-                     <Label
-                            Text="Study"
-                            Style="{StaticResource appTitleStyle}"
-                            Grid.Row="1" Grid.Column="2"/>
-
-                     <Label
-                            Text="App"
-                            Style="{StaticResource appTitleStyle}"
-                            Grid.Row="2" Grid.Column="2"/>
-
-                     <Label
-                            Text="AZ"
-                            Style="{StaticResource appTitleStyle}"
-                            FontSize="36"
-                            Grid.Row="2" Grid.Column="1"/>
-                        
-                </Grid>
-            </Frame>
-
-
-
-                
-<!--            <StackLayout
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand" 
-                    Grid.Row="1">
-
-              <Grid x:Name="stackGrid"
-                  Padding="0,16,0,8"
-                  RowSpacing="8"
-                  ColumnSpacing="0" >
-
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-
-               <Frame
-                    BackgroundColor="#fff"
-                    HasShadow="false"
-                    Padding="0"
-                    CornerRadius="0"
-                    Grid.Row="0">   
-                            
-                    <control:IconCardControl
-                        TitleText="STUDY" 
-                        DescriptionText="Study the questions and answers for all three sections of the test" 
-                        IconSource="STUDYicon" />
-
-                    <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="GoToStudy" />
-                    </Frame.GestureRecognizers>
-                 </Frame>
-
-               <Frame
-                    BackgroundColor="#fff"
-                    HasShadow="false"
-                    Padding="0"
-                    CornerRadius="0"
-                    Grid.Row="1">  
-                        
-                 <control:IconCardControl 
-                    TitleText="QUIZ" 
-                    DescriptionText="Take 10-question quizzes on each section or from the entire test" 
-                    IconSource="QUIZicon"/>
-
-                    <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="GoToQuiz" />
-                    </Frame.GestureRecognizers>
-
-                    </Frame>
-
-               <Frame
-                    BackgroundColor="#fff"
-                    HasShadow="false"
-                    Padding="0" 
-                    CornerRadius="0"
-                    Grid.Row="2">  
-                        
-                    <control:IconCardControl 
-                        TitleText="TEST" 
-                        DescriptionText="Take the test" 
-                        IconSource="TESTicon" />
-                    <Frame.GestureRecognizers>
-                            
-                            <TapGestureRecognizer Tapped="GoToTest" />
-                    </Frame.GestureRecognizers>
-
-                    </Frame>
-
-               <Frame
-                    BackgroundColor="#fff"
-                    HasShadow="false"
-                    Padding="0" 
-                    CornerRadius="0"
-                    Grid.Row="3">  
-                            
-                     <control:IconCardControl 
-                        TitleText="MASTERY" 
-                        DescriptionText="Check your stats" 
-                        IconSource="MASTERYicon"/>
-
-                    <Frame.GestureRecognizers>
-
-                    </Frame.GestureRecognizers>
-                        
-                  </Frame>       
-            </Grid>
-        </StackLayout>-->
 
             <FlexLayout
                 x:Name="flexCards"
@@ -187,69 +23,61 @@
                 Grid.Row="1">
 
                 <Frame
-                    BackgroundColor="#fff"
-                    HasShadow="false"
-                    Padding="0"
-                    CornerRadius="0"
-                    FlexLayout.Basis="25%">   
-                            
-                    <control:IconCardControl
+                    Style="{StaticResource frameMainPageStyle}"
+                    FlexLayout.Basis="22%">   
+
+
+                 <control:IconCardControl 
                         TitleText="STUDY" 
-                        DescriptionText="Study the questions and answers for all three sections of the test" 
+                        DescriptionText="Review the questions and learn more about civics." 
                         IconSource="STUDYicon" />
 
                     <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="GoToStudy" />
                     </Frame.GestureRecognizers>
+
                  </Frame>
 
                <Frame
-                    BackgroundColor="#fff"
-                    HasShadow="false"
-                    Padding="0"
-                    CornerRadius="0"
-                    FlexLayout.Basis="25%">  
-                        
-                 <control:IconCardControl 
-                    TitleText="QUIZ" 
-                    DescriptionText="Take 10-question quizzes on each section or from the entire test" 
-                    IconSource="QUIZicon"/>
+                    Style="{StaticResource frameMainPageStyle}"
+                    FlexLayout.Basis="22%">  
+
+
+                <control:IconCardControl 
+                        TitleText="QUIZ" 
+                        DescriptionText="Take a 10-question quiz on the section of your choice." 
+                        IconSource="QUIZicon" />
 
                     <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="GoToQuiz" />
                     </Frame.GestureRecognizers>
 
-                    </Frame>
+               </Frame>
 
                <Frame
-                    BackgroundColor="#fff"
-                    HasShadow="false"
-                    Padding="0" 
-                    CornerRadius="0"
-                    FlexLayout.Basis="25%">  
-                        
-                    <control:IconCardControl 
+                    Style="{StaticResource frameMainPageStyle}"
+                    FlexLayout.Basis="22%"> 
+
+                   <control:IconCardControl 
                         TitleText="TEST" 
-                        DescriptionText="Take the test" 
+                        DescriptionText="Take the entire 100-question civics test." 
                         IconSource="TESTicon" />
+
                     <Frame.GestureRecognizers>
-                            
                             <TapGestureRecognizer Tapped="GoToTest" />
                     </Frame.GestureRecognizers>
 
                     </Frame>
 
                <Frame
-                    BackgroundColor="#fff"
-                    HasShadow="false"
-                    Padding="0" 
-                    CornerRadius="0"
-                    FlexLayout.Basis="25%">  
-                            
-                     <control:IconCardControl 
+                    Style="{StaticResource frameMainPageStyle}"
+                    FlexLayout.Basis="22%">  
+
+                   <control:IconCardControl 
                         TitleText="MASTERY" 
-                        DescriptionText="Check your stats" 
-                        IconSource="MASTERYicon"/>
+                        DescriptionText="See how well you are mastering the test material." 
+                        IconSource="MASTERYicon" />
+                    
 
                     <Frame.GestureRecognizers>
 <!--                            <TapGestureRecognizer Tapped="GoToMastery" />-->
@@ -260,9 +88,9 @@
               </FlexLayout>
 
             
-        </Grid>
+ <!--           </Grid>
 
-        </StackLayout>
+        </StackLayout>-->
 
 
 </ContentPage>

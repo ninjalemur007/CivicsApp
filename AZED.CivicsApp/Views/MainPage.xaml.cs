@@ -20,26 +20,26 @@ namespace AZED.CivicsApp.Views
             BindingContext = App.Locator.GetViewModel(this);
         }
 
-        private double width = 0;
-        private double height = 0;
+    //    private double width = 0;
+    //    private double height = 0;
 
-        protected override void OnSizeAllocated(double width, double height)
-        {
-            base.OnSizeAllocated(width, height);
-            if (width != this.width || height != this.height)
-            {
-                this.width = width;
-                this.height = height;
-                if (width > height)
-                {
-					flexCards.Direction = FlexDirection.Row;
-                }
-                else
-                {
-					flexCards.Direction = FlexDirection.Column;
-				}
-            }
-        }
+    //    protected override void OnSizeAllocated(double width, double height)
+    //    {
+    //        base.OnSizeAllocated(width, height);
+    //        if (width != this.width || height != this.height)
+    //        {
+    //            this.width = width;
+    //            this.height = height;
+    //            if (width > height)
+    //            {
+				//	flexCards.Direction = FlexDirection.Row;
+    //            }
+    //            else
+    //            {
+				//	flexCards.Direction = FlexDirection.Column;
+				//}
+        //    }
+        //}
 
 
         async void GoToStudy(object sender, EventArgs e)
@@ -61,6 +61,8 @@ namespace AZED.CivicsApp.Views
         //{
         //    await Navigation.PushAsync(new QuizAttemptsListPage());
         //}
+        
+
 
     }
 }
