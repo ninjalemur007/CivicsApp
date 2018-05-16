@@ -19,7 +19,7 @@ namespace AZED.CivicsApp.Views
             On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
         }
 
-        async void aboutPopup(object sender, EventArgs e)
+        async void infoTest(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new InfoTestPage());
         }

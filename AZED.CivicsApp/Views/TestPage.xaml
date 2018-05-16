@@ -4,18 +4,71 @@
              xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
              x:Class="AZED.CivicsApp.Views.TestPage"
              Title="{Binding PageTitle}">
-    
+
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0,8,0,0" />
+            <On Platform="Android, WinPhone, Windows" Value="0" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
     <ContentPage.Content>
         <StackLayout
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand">
  
-            
-           <Button 
-                    Clicked="aboutPopup"
-                    Style="{StaticResource baseButton}"
-                    Text="About the Test" />
+        <Grid
+            Style="{StaticResource gridStyleAllEights}">
+           <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
 
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="24" />
+            </Grid.ColumnDefinitions>
+
+            <Image x:Name="bigIcon"
+                Source="TESTicon"
+                HeightRequest="75"
+                Grid.Row="0" Grid.Column="0"  Grid.RowSpan="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Aspect="AspectFit" />
+                
+            
+            <Label 
+                   Text="Test"
+                   Style="{StaticResource labelViewTitle}"
+                   Grid.Row="0" Grid.Column="1"  />
+
+              <Image x:Name="infoIconTest"
+                    Opacity=".75"
+                    Source="InfoICON"
+                    HorizontalOptions="End"
+                    VerticalOptions="Start" 
+                    Grid.Row="0" Grid.Column="2">
+
+                <Image.GestureRecognizers>
+                      <TapGestureRecognizer Tapped="infoTest" />
+                 </Image.GestureRecognizers>
+             </Image>
+
+            <Label
+                x:Name="descriptionLabel"
+                Text="This practice test contains all 100 questions included in the official Arizona Civics Test." 
+                Style="{StaticResource labelViewDescription}"
+                Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" />
+
+
+            <Button
+                    Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"
+                    Text="Begin Test" />
+        </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
