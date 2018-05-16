@@ -20,68 +20,80 @@
             <StackLayout 
                 Padding="10" x:Name="beginQuizPanel" IsVisible="{Binding CanShowBeginQuiz}">
 
-                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 
-                    <Label Text="Quiz"
-                        Style="{StaticResource labelViewTitle}" />
-
-                    <Image x:Name="infoIconStudy"
-                        Opacity=".75"
-                        Source="InfoICON"
-                        HorizontalOptions="EndAndExpand"
-                        VerticalOptions="Start" 
-                        WidthRequest="24"
-                        HeightRequest="24"
-                        Grid.Row="0" Grid.Column="1">
-
-                    <Image.GestureRecognizers>
-                          <TapGestureRecognizer Tapped="infoQuiz" />
-                     </Image.GestureRecognizers>
-                   </Image>
-                </StackLayout>             
-
-                <Label 
-                Text="Each quiz consists of 10 questions from the chosen test section." 
-                Style="{StaticResource labelViewDescription}"  />
-
-<!--                <StackLayout x:Name="cardLayout"
-                             Orientation="Vertical">-->
-
-                <Grid>
-                    <Grid.RowDefinitions>
+                <Grid
+                    Style="{StaticResource gridStyleAllEights}">
+                   <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="3*" />
                         <ColumnDefinition Width="24" />
                     </Grid.ColumnDefinitions>
 
+                    <Image x:Name="bigIcon"
+                        Source="QUIZicon"
+                        HeightRequest="75"
+                        Grid.Row="0" Grid.Column="0"  Grid.RowSpan="2"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Aspect="AspectFit" />
+                        
+                    
+                    <Label 
+                           Text="Quiz"
+                           Style="{StaticResource labelViewTitle}"
+                           Grid.Row="0" Grid.Column="1"  />
+
+                      <Image x:Name="infoIconStudy"
+                            Opacity=".75"
+                            Source="InfoICON"
+                            HorizontalOptions="End"
+                            VerticalOptions="Start" 
+                            Grid.Row="0" Grid.Column="2">
+
+                        <Image.GestureRecognizers>
+                              <TapGestureRecognizer Tapped="infoQuiz" />
+                         </Image.GestureRecognizers>
+                     </Image>
+        
+                    <Label
+                        x:Name="descriptionLabel"
+                        Text="Each quiz consists of 10 questions from the chosen test section." 
+                        Style="{StaticResource labelViewDescription}"
+                        Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" />
+
+                    
                     <control:QuizSectionCardControl 
                         ImageSource="SigningConstitutionCARD"
                         SectionNumber="I"
                         SectionTitle="American Government" 
-                        Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                        Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"
                         Command="{Binding BeginQuizCommand}" CommandParameter="I" />
 
                     <control:QuizSectionCardControl
                         ImageSource="EmancipationProclamationCARD"
                         SectionNumber="II"
                         SectionTitle="American History"
-                        Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                        Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"
                         Command="{Binding BeginQuizCommand}" CommandParameter="II" />
 
                     <control:QuizSectionCardControl
                         ImageSource="CentennialQuiltCARD"
                         SectionNumber="III"
                         SectionTitle="Integrated Civics"
-                        Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                        Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"
                         Command="{Binding BeginQuizCommand}" CommandParameter="III" />
-                     <Image x:Name="infoIcon1"
+
+                    <Image x:Name="infoIcon1"
                         Opacity=".75"
                         Source="InfoICONwhite"
-                        Grid.Row="0" Grid.Column="1"
+                        Grid.Row="2" Grid.Column="2"
                         HorizontalOptions="End"
                         VerticalOptions="Start" >
                          <Image.GestureRecognizers>
@@ -91,7 +103,7 @@
                     <Image x:Name="infoIcon2"
                         Opacity=".75"
                         Source="InfoICONwhite"
-                        Grid.Row="1" Grid.Column="1"
+                        Grid.Row="3" Grid.Column="2"
                         HorizontalOptions="End"
                         VerticalOptions="Start" >
                          <Image.GestureRecognizers>
@@ -101,7 +113,7 @@
                     <Image x:Name="infoIcon3"
                         Opacity=".75"
                         Source="InfoICONwhite"
-                        Grid.Row="2" Grid.Column="1"
+                        Grid.Row="4" Grid.Column="2"
                         HorizontalOptions="End"
                         VerticalOptions="Start" >
                          <Image.GestureRecognizers>
@@ -111,7 +123,6 @@
 
                     
                 </Grid>
-<!--                </StackLayout>-->
                     
             </StackLayout>
 
