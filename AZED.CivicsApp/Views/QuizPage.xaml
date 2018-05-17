@@ -140,44 +140,62 @@
                                             ViewResultsCommand="{Binding ViewResultsCommand}"
                                             />
 
-            <Grid Padding="10" x:Name="viewResultsPanel" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" IsVisible="{Binding CanShowViewResults}">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="5" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="5" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="5" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
 
-                <Label Text="{Binding CurrentSection.DisplayText}" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" />
-                <Label Text="QUIZ SCORE"  FontSize="Large" HorizontalTextAlignment="Center" Grid.Row="2" />
-                <Label Text="{Binding CorrectNumberOfQuestions}" FontSize="Large" HorizontalTextAlignment="Center" Grid.Row="4" />
-                <BoxView WidthRequest="50" HeightRequest="1" HorizontalOptions="Center" Color="Black"  Grid.Row="5" />
-                <Label Text="{Binding MaxNumberOfQuestions}"  FontSize="Large"  HorizontalTextAlignment="Center"  Grid.Row="6" />
-                <Label Text="{Binding ScoreText}"  FontSize="Default"  HorizontalTextAlignment="Center" Grid.Row="8" />
+            <FlexLayout x:Name="viewResultsPanel" 
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Direction="Column" 
+                        JustifyContent="SpaceBetween"
+                        IsVisible="{Binding CanShowViewResults}">
 
-                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Grid.Row="9"   >
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Button Text="Review Answers" WidthRequest="200" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding ReviewAnswersCommand}" />
-                    <Button Text="All Done" WidthRequest="200" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding CloseQuizCommand}" />
-                </Grid>
+                <Frame Style="{StaticResource frameBaseStyle}" FlexLayout.Basis="15%">
+                    <FlexLayout
+                        Direction="Row"
+                        JustifyContent="Start" >
                 
-            </Grid>
-                     
+                        <Image 
+                                Source="QUIZicon"
+                                HeightRequest="50"
+                                VerticalOptions="Center"
+                                Aspect="AspectFit"
+                               FlexLayout.Basis="25%"/>
+                            
+                        <Label x:Name="sectionLabel" 
+                               Text="{Binding CurrentSection.DisplayText}"
+                               Style="{StaticResource labelSectionTitle}"
+                               VerticalTextAlignment="Start"
+                               HorizontalOptions="FillAndExpand" />
+
+                    </FlexLayout>
+                </Frame>
+
+                <Label Text="Quiz Results" Style="{StaticResource labelAboutTitle}" />
+                
+                <Label Text="{Binding CorrectNumberOfQuestions}" Style="{StaticResource labelMainTitle}"/>
+                <BoxView WidthRequest="50" HeightRequest="3" FlexLayout.AlignSelf="Center" Color="Black" />
+                <Label Text="{Binding MaxNumberOfQuestions}" Style="{StaticResource labelMainTitle}"  />
+                
+                <Label Text="{Binding ScoreText}" 
+                       Style="{StaticResource labelAboutText}" 
+                       FlexLayout.AlignSelf="Center" 
+                       Margin="0,16,0,0"/>
+
+                <Frame Style="{StaticResource frameBaseStyle}" FlexLayout.Grow="1" />
+                <Button Text="Review Answers"  
+                        WidthRequest="200" 
+                        FlexLayout.AlignSelf="Center" 
+                        VerticalOptions="Center" 
+                        Command="{Binding ReviewAnswersCommand}" />
+                
+                <Button Text="All Done"  
+                        WidthRequest="200" 
+                        FlexLayout.AlignSelf="Center"
+                        VerticalOptions="Center" 
+                        Command="{Binding CloseQuizCommand}" />
+
+
+            </FlexLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
