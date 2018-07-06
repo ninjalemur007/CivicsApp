@@ -2,11 +2,10 @@
 using AZED.CivicsApp.Services;
 using AZED.CivicsApp.ViewModels;
 using AZED.CivicsApp.Views;
+
 using GalaSoft.MvvmLight.Ioc;
 using GalaSoft.MvvmLight.Views;
-using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace AZED.CivicsApp
 {
@@ -25,7 +24,9 @@ namespace AZED.CivicsApp
             internal const string S2INFO_PAGE = "SectionTwoInfoPage";
             internal const string S3INFO_PAGE = "SectionThreeInfoPage";
             internal const string STUDYQA_PAGE = "StudyQAPage";
-
+			//internal const string QUIZ_ATTEMPTS = "QuizAttemptsListPage";
+			//internal const string ALTQUIZ_PAGE = "AltQuizPage";
+			//internal const string ALTCHOOSEQUIZ_PAGE = "AltChooseQuizSectionPage";
         }
 
         internal static NavigationService ConfigureNavigationService()
@@ -43,7 +44,9 @@ namespace AZED.CivicsApp
             navigationService.Configure(PageConstants.S2INFO_PAGE, typeof(SectionTwoInfoPage));
             navigationService.Configure(PageConstants.S3INFO_PAGE, typeof(SectionThreeInfoPage));
             navigationService.Configure(PageConstants.STUDYQA_PAGE, typeof(StudyQAPage));
-
+			//navigationService.Configure(PageConstants.ALTQUIZ_PAGE, typeof(AltQuizPage));
+			//navigationService.Configure(PageConstants.ALTCHOOSEQUIZ_PAGE, typeof(AltChooseQuizSectionPage));
+			//navigationService.Configure(PageConstants.QUIZ_ATTEMPTS, typeof(QuizAttemptsListPage));
 
             SimpleIoc.Default.Register<INavigationService>(() => navigationService);
 
@@ -65,9 +68,10 @@ namespace AZED.CivicsApp
             SimpleIoc.Default.Register<SectionThreeInfoViewModel>();
             SimpleIoc.Default.Register<StudyQAViewModel>();
             SimpleIoc.Default.Register<ImageDetailViewModel>();
-
+			//SimpleIoc.Default.Register<AltChooseQuizSectionViewModel>();
+			//SimpleIoc.Default.Register<AltQuizViewModel>();
         }
-
+        
         internal static void ConfigureServices()
         {
             //register all data services
@@ -75,6 +79,8 @@ namespace AZED.CivicsApp
             SimpleIoc.Default.Register<IStudyDataService, StudyDataService>();
             SimpleIoc.Default.Register<ISectionDataService, SectionDataService>();
             SimpleIoc.Default.Register<ISubsectionDataService, SubsectionDataService>();
+			//SimpleIoc.Default.Register<IQuizAttemptDataService, QuizAttemptDataService>();
+			//SimpleIoc.Default.Register<IQAQuizAttemptDataService, QAQuizAttemptDataService>();
         }
     }
 }

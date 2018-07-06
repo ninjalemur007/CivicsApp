@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              x:Class="AZED.CivicsApp.Views.TestPage"
              Title="{Binding PageTitle}">
 
@@ -23,8 +24,7 @@
            <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -68,7 +68,10 @@
             <Button
                     Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"
                     Text="Begin Test" />
+
+
         </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

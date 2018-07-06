@@ -54,9 +54,9 @@ namespace AZED.CivicsApp.Controls
             get { return (string)GetValue(LabelTextProperty); }
             set { SetValue(LabelTextProperty, value); }
         }
+        
 
-        public static readonly BindableProperty IsCheckedProperty = BindableProperty.Create(nameof(IsChecked), typeof(bool), typeof(CheckBoxLabelControl), false,
-                                                                        propertyChanged: OnIsCheckedPropertyChanged);
+        public static readonly BindableProperty IsCheckedProperty = BindableProperty.Create(nameof(IsChecked), typeof(bool), typeof(CheckBoxLabelControl), false, propertyChanged: OnIsCheckedPropertyChanged);
 
         public bool IsChecked
         {

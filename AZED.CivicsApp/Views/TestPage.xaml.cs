@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
+
 namespace AZED.CivicsApp.Views
 {
 	public partial class TestPage : ContentPage
@@ -17,12 +18,14 @@ namespace AZED.CivicsApp.Views
 			InitializeComponent ();
             BindingContext = App.Locator.GetViewModel(this);
             On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
+         
         }
 
         async void infoTest(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new InfoTestPage());
         }
+        
 
     }
 }

@@ -7,21 +7,16 @@
         <StackLayout x:Name="checkBoxLabelPanel" Orientation="Horizontal">
             
 
-            <Image 
-                x:Name="checkboxImage" 
-                WidthRequest="16" 
-                HeightRequest="16" 
-                Aspect="AspectFit"
-                />
+            <Image x:Name="checkboxImage" WidthRequest="15" HeightRequest="15" Aspect="AspectFit"/>
 
-            <Label 
-                x:Name="checkboxLabel" 
-                Text="{Binding LabelText, Source={x:Reference this}}" 
+                
+            <Label x:Name="checkboxLabel" Text="{Binding LabelText, Source={x:Reference this}}" 
                 HorizontalTextAlignment="Start" />
+
+
             
             <StackLayout.GestureRecognizers>
             </StackLayout.GestureRecognizers>
-            
         </StackLayout>
     </ContentView.Content>
 </ContentView>

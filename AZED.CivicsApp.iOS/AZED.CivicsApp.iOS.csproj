@@ -101,6 +101,7 @@
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
+    <Compile Include="LocalFileHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -160,6 +161,15 @@
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.3.0.0.446417\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLiteNetExtensions">
+      <HintPath>..\packages\SQLiteNetExtensions.2.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\SQLiteNetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLiteNetExtensionsAsync">
+      <HintPath>..\packages\SQLiteNetExtensions.Async.2.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\SQLiteNetExtensionsAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -385,6 +395,14 @@
     <ImageAsset Include="Assets.xcassets\FadedFlagStar.imageset\Artboard 1%403x.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\fullflagstarArtboard 1%402x.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\fullflagstarArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AnswerCorrect.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AnswerCorrect.imageset\answercorrectArtboard 1%401.5x.png" />
+    <ImageAsset Include="Assets.xcassets\AnswerCorrect.imageset\answercorrectArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AnswerCorrect.imageset\answercorrectArtboard 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AnswerWrong.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AnswerWrong.imageset\answerwrongArtboard 1%401.5x.png" />
+    <ImageAsset Include="Assets.xcassets\AnswerWrong.imageset\answerwrongArtboard 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AnswerWrong.imageset\answerwrongArtboard 1%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\TimothyMatlockCARD.imageset\" />
@@ -414,6 +432,8 @@
     <Folder Include="Assets.xcassets\FlagStarBright.imageset\" />
     <Folder Include="Assets.xcassets\FlagStarWhiteCopper.imageset\" />
     <Folder Include="Assets.xcassets\FadedFlagStar.imageset\" />
+    <Folder Include="Assets.xcassets\AnswerCorrect.imageset\" />
+    <Folder Include="Assets.xcassets\AnswerWrong.imageset\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.3.0.0.446417\build\netstandard2.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.0.0.446417\build\netstandard2.0\Xamarin.Forms.targets')" />

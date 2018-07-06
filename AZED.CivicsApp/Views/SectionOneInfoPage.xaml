@@ -24,7 +24,7 @@
 
                 <ScrollView>
 
-                    <StackLayout Padding="16,0">
+                    <StackLayout Padding="0,0">
 
 
 

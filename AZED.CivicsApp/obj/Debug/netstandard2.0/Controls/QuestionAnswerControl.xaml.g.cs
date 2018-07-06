@@ -38,6 +38,9 @@ namespace AZED.CivicsApp.Controls {
         private global::AZED.CivicsApp.Controls.CheckBoxLabelControl checkBoxLabelD;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Label givenAnswerLabel;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Button resultsButton;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
@@ -56,6 +59,7 @@ namespace AZED.CivicsApp.Controls {
             checkBoxLabelB = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::AZED.CivicsApp.Controls.CheckBoxLabelControl>(this, "checkBoxLabelB");
             checkBoxLabelC = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::AZED.CivicsApp.Controls.CheckBoxLabelControl>(this, "checkBoxLabelC");
             checkBoxLabelD = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::AZED.CivicsApp.Controls.CheckBoxLabelControl>(this, "checkBoxLabelD");
+            givenAnswerLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "givenAnswerLabel");
             resultsButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "resultsButton");
             previousButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "previousButton");
             nextButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "nextButton");

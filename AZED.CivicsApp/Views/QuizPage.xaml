@@ -131,15 +131,15 @@
                                             SectionText="{Binding CurrentSection.DisplayText}"
                                             QuestionNumberText="{Binding CurrentQuestionNumberText}"
                                             QuestionText="{Binding CurrentQuestionAnswer.AdeQuestion}"
-                                            AnswerChoiceAText="{Binding CurrentQuestionAnswer.AdeChoiceA}"
-                                            AnswerChoiceBText="{Binding CurrentQuestionAnswer.AdeChoiceB}"
-                                            AnswerChoiceCText="{Binding CurrentQuestionAnswer.AdeChoiceC}"
-                                            AnswerChoiceDText="{Binding CurrentQuestionAnswer.AdeChoiceD}"
+                                            AnswerChoiceAText="{Binding CurrentQuestionAnswer.AdeChoiceA}" AnswerChoiceAIsChecked="{Binding CurrentQuestionAnswer.AnswerChoiceASelected}"
+                                            AnswerChoiceBText="{Binding CurrentQuestionAnswer.AdeChoiceB}" AnswerChoiceBIsChecked="{Binding CurrentQuestionAnswer.AnswerChoiceBSelected}"
+                                            AnswerChoiceCText="{Binding CurrentQuestionAnswer.AdeChoiceC}" AnswerChoiceCIsChecked="{Binding CurrentQuestionAnswer.AnswerChoiceCSelected}"
+                                            AnswerChoiceDText="{Binding CurrentQuestionAnswer.AdeChoiceD}" AnswerChoiceDIsChecked="{Binding CurrentQuestionAnswer.AnswerChoiceDSelected}"
                                             NextQuestionCommand="{Binding NextQuestionCommand}"
                                             PreviousQuestionCommand="{Binding PreviousQuestionCommand}"
                                             ViewResultsCommand="{Binding ViewResultsCommand}"
                                             />
-
+<!--                                            ViewResultsVisible="{Binding CanShowViewResultsButton}"-->
 
             <FlexLayout x:Name="viewResultsPanel" 
                         VerticalOptions="FillAndExpand"
@@ -196,6 +196,81 @@
 
             </FlexLayout>
 
+
+            <Grid Padding="10" 
+                  x:Name="reviewAnswersPanel" 
+                  VerticalOptions="FillAndExpand" 
+                  HorizontalOptions="FillAndExpand" 
+                  IsVisible="{Binding CanShowReviewAnswers}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="{Binding CurrentSection.DisplayText}" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.ColumnSpan="2" />
+                <Label Text="Quiz Review"  FontSize="Medium" HorizontalTextAlignment="Start"  Grid.Row="1" Grid.Column="0" />
+                <Label Text="{Binding ScorePercent}" 
+                       FontSize="Large" 
+                       HorizontalTextAlignment="End" 
+                       VerticalTextAlignment="Center"
+                       FontAttributes="Bold"
+                       TextColor="{Binding ScorePercentColor}"
+                       Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
+
+                <ListView Grid.Row="2" Grid.ColumnSpan="2" x:Name="reviewAnswerListView" ItemsSource="{Binding QuestionsAnswerList}"
+                          VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                          HasUnevenRows="true"
+                          SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid VerticalOptions="FillAndExpand" 
+                                      HorizontalOptions="FillAndExpand"
+                                      RowSpacing="0">
+                                <Grid.RowDefinitions>
+                                        <RowDefinition Height="5" />
+                                        <RowDefinition Height="auto" />
+                                        <RowDefinition Height="auto" />
+                                        <RowDefinition Height="auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="36" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <BoxView 
+                                        WidthRequest="300"
+                                        HeightRequest="1" 
+                                        Color="{StaticResource colorDarkGray}"
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                                    <control:CorrectIncorrectImageControl 
+                                        IsCorrect="{Binding IsAnswerCorrect}" 
+                                        HorizontalOptions="Start"  
+                                        VerticalOptions="Start" 
+                                        Grid.Row="1" Grid.Column="0" Grid.RowSpan="3"/>
+                                    <Label Text="{Binding AdeQuestion}" 
+                                           Style="{StaticResource labelReviewQuestionText}"
+                                           Grid.Row="1" Grid.Column="1" />
+                                    <control:CorrectAnswerControl
+                                        IsCorrect="{Binding IsAnswerCorrect}"
+                                            Grid.Row="2" Grid.Column="1"/>
+                                    <control:WrongAnswerControl
+                                        IsCorrect="{Binding IsAnswerCorrect}"
+                                            Grid.Row="3" Grid.Column="1"/>
+                                </Grid>
+                            </ViewCell>
+                            
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </Grid>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

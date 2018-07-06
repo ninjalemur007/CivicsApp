@@ -8,12 +8,12 @@
 <ContentView.Content>
 <Grid>
         <Grid.RowDefinitions>
-        <RowDefinition Height="30" />
+        <RowDefinition Height="24" />
         <RowDefinition Height="111" />
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
-        <ColumnDefinition Width="36" />
+        <ColumnDefinition Width="30" />
     </Grid.ColumnDefinitions>
 
 

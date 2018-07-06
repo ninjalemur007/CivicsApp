@@ -45,6 +45,7 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -80,8 +81,15 @@
                                                   IsChecked="{Binding AnswerChoiceDIsChecked, Source={x:Reference this}, Mode=TwoWay}"
                                                   Style="labelQuizAnswerChoice"
                                                   Grid.Row="4" Grid.Column="0" />
+                    
+                    <Label x:Name="givenAnswerLabel" 
+                           Text="{Binding GivenAnswerText, Source={x:Reference this}}"
+                           Style="{StaticResource labelQuizQuestionNumber}" 
+                           Grid.Row="5" Grid.Column="0" />
 
                 </Grid>
+
+
             </Frame>
 
 <Grid HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Grid.Row="8"   >

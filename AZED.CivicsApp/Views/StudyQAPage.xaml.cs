@@ -7,7 +7,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 using Xamarin.Forms.Xaml;
 using AZED.CivicsApp.ViewModels;
-using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
+
 
 namespace AZED.CivicsApp.Views
 {

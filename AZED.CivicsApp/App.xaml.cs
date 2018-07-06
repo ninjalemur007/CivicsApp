@@ -1,13 +1,15 @@
 ﻿using AZED.CivicsApp.ViewModels;
 using AZED.CivicsApp.Views;
 using Xamarin.Forms;
+using AZED.CivicsApp.Services;
+
 
 namespace AZED.CivicsApp
 {
     public partial class App : Application
     {
 
-        //static QuizAttemptsDatabase database;
+		//static QuizAttemptDataService database;
 
         public App()
         {
@@ -31,7 +33,7 @@ namespace AZED.CivicsApp
 
 
             //ONLY FOR DATABASE TEST
-            //MainPage = new NavigationPage(new QuizAttemptsListPage());
+			//MainPage = new NavigationPage(new AltChooseQuizSectionPage());
         }
 
 
@@ -44,15 +46,15 @@ namespace AZED.CivicsApp
                 return _locator ?? (_locator = new ViewModelLocator());
             }
         }
+        
 
-
-        //public static QuizAttemptsDatabase Database
-        //{
-        //    get
-        //    {
-        //        if (database == null)
-        //        {
-        //            database = new QuizAttemptsDatabase(DependencyService.Get<ILocalFileHelper>().GetLocalFilePath("QuizAttempts.db3"));
+     //   public static QuizAttemptDataService Database
+     //   {
+     //       get
+     //       {
+     //           if (database == null)
+     //           {
+					//database = new QuizAttemptDataService(DependencyService.Get<ILocalFileHelper>().GetLocalFilePath("QuizAttempts.db3"));
         //        }
         //        return database;
         //    }

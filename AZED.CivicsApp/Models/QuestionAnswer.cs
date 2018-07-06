@@ -1,14 +1,21 @@
-﻿// Updated 5/7/18 to Britto's last checked-in version dated 3/8/18 
-
-using GalaSoft.MvvmLight;
+﻿using GalaSoft.MvvmLight;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using SQLite;
+
 
 namespace AZED.CivicsApp.Models
 {
     public class QuestionAnswer : ObservableObject
     {
+
+		[PrimaryKey, AutoIncrement]
+        public int ID { get; set; }
+
+
+            
+
         private string adeID;
         public string AdeID
         {
@@ -247,6 +254,64 @@ namespace AZED.CivicsApp.Models
             }
         }
 
+		private string givenAnswer;
+        public string GivenAnswer
+        {
+            get
+            {
+				return givenAnswer;
+            }
+            set
+            {
+				if (Set(() => GivenAnswer, ref givenAnswer, value))
+                {
+					RaisePropertyChanged(() => GivenAnswer);
+                }
+            }
+        }
+
+		private string givenAnswerText = "skipped";
+        public string GivenAnswerText
+		{
+			get
+			{
+				return givenAnswerText;
+			}
+			set
+			{
+				if (Set(() => GivenAnswerText, ref givenAnswerText, value))
+                {
+                    RaisePropertyChanged(() => GivenAnswerText);
+                }
+			}
+		}
+
+		private string correctAnswerText;
+		public string CorrectAnswerText
+		{
+            get
+            {
+				//return correctAnswerText;
+				if (AdeAnswer == "A")
+					return AdeChoiceA;
+				else if (AdeAnswer == "B")
+					return AdeChoiceB;
+				else if (AdeAnswer == "C")
+					return AdeChoiceC;
+				else if (AdeAnswer == "D")
+					return AdeChoiceD;
+				else return "no answer given";
+
+            }
+            set
+            {            
+				if (Set(() => CorrectAnswerText, ref correctAnswerText, value))
+                {
+					RaisePropertyChanged(() => CorrectAnswerText);
+                }
+            }
+        }
+
 
         private bool answerChoiceASelected;
         public bool AnswerChoiceASelected
@@ -257,14 +322,18 @@ namespace AZED.CivicsApp.Models
             }
             set
             {
+				givenAnswer = "A";
                 userSelectedAnswer = "A";
+				givenAnswerText = AdeChoiceA;
 
-                if (Set(() => AnswerChoiceASelected, ref answerChoiceASelected, value))
-                {
-                    RaisePropertyChanged(() => AnswerChoiceASelected);
-                    RaisePropertyChanged(() => IsAnswerCorrect);
-                    RaisePropertyChanged(() => AnswerChoiceAStatus);
-                }
+				if (Set(() => AnswerChoiceASelected, ref answerChoiceASelected, value))
+				{
+					RaisePropertyChanged(() => AnswerChoiceASelected);
+					RaisePropertyChanged(() => IsAnswerCorrect);
+					RaisePropertyChanged(() => AnswerChoiceAStatus);
+					RaisePropertyChanged(() => GivenAnswer);
+					RaisePropertyChanged(() => GivenAnswerText);
+				}
             }
         }
 
@@ -278,13 +347,19 @@ namespace AZED.CivicsApp.Models
             }
             set
             {
+				givenAnswer = "B";
                 userSelectedAnswer = "B";
+				givenAnswerText = AdeChoiceB;
+
 
                 if (Set(() => AnswerChoiceBSelected, ref answerChoiceBSelected, value))
                 {
                     RaisePropertyChanged(() => AnswerChoiceBSelected);
                     RaisePropertyChanged(() => IsAnswerCorrect);
                     RaisePropertyChanged(() => AnswerChoiceBStatus);
+					RaisePropertyChanged(() => GivenAnswer);
+					RaisePropertyChanged(() => GivenAnswerText);
+
                 }
             }
         }
@@ -298,13 +373,18 @@ namespace AZED.CivicsApp.Models
             }
             set
             {
+				givenAnswer = "C";
                 userSelectedAnswer = "C";
+				givenAnswerText = AdeChoiceC;
 
                 if (Set(() => AnswerChoiceCSelected, ref answerChoiceCSelected, value))
                 {
                     RaisePropertyChanged(() => AnswerChoiceCSelected);
                     RaisePropertyChanged(() => IsAnswerCorrect);
                     RaisePropertyChanged(() => AnswerChoiceCStatus);
+					RaisePropertyChanged(() => GivenAnswer);
+					RaisePropertyChanged(() => GivenAnswerText);
+
                 }
             }
         }
@@ -318,17 +398,28 @@ namespace AZED.CivicsApp.Models
             }
             set
             {
+				givenAnswer = "D";
                 userSelectedAnswer = "D";
+				givenAnswerText = AdeChoiceD;
 
                 if (Set(() => AnswerChoiceDSelected, ref answerChoiceDSelected, value))
                 {
                     RaisePropertyChanged(() => AnswerChoiceDSelected);
                     RaisePropertyChanged(() => IsAnswerCorrect);
                     RaisePropertyChanged(() => AnswerChoiceDStatus);
+					RaisePropertyChanged(() => GivenAnswer);
+					RaisePropertyChanged(() => GivenAnswerText);
+
                 }
             }
         }
 
+
+
+
+
+
+        
         public AnswerChoiceStatus AnswerChoiceAStatus
         {
             get
@@ -390,6 +481,7 @@ namespace AZED.CivicsApp.Models
 
         private string userSelectedAnswer = string.Empty;
 
+
         public bool IsAnswerCorrect
         {
             get
@@ -397,6 +489,8 @@ namespace AZED.CivicsApp.Models
                 return userSelectedAnswer.Equals(adeAnswer, StringComparison.CurrentCultureIgnoreCase);
             }
         }
+
+                
     }
 
 }

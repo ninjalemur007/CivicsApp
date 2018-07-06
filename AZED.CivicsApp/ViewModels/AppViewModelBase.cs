@@ -9,7 +9,7 @@ namespace AZED.CivicsApp.ViewModels
     {
         public AppViewModelBase()
         {
-            this.AppTitle = "AZ Study";
+            this.AppTitle = "AZ Civics Test";
         }
 
         private string _appTitle;

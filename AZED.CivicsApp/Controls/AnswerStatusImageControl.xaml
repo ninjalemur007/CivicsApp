@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AZED.CivicsApp.Controls.AnswerStatusImageControl"
+             x:Name="this">
+    <ContentView.Content>
+        <StackLayout>
+            <Image x:Name="answerStatusImage" WidthRequest="15" HeightRequest="15" Aspect="AspectFit" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

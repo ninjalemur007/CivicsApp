@@ -73,28 +73,6 @@ namespace AZED.CivicsApp.Controls
         }
 
 
-        private double width = 0;
-        private double height = 0;
-
-        protected override void OnSizeAllocated(double width, double height)
-        {
-            base.OnSizeAllocated(width, height);
-            if (width != this.width || height != this.height)
-            {
-                this.width = width;
-                this.height = height;
-                double product = height / width;
-                //if (width > height)
-                if (product > .5)
-                {
-                    labelTitle.FontSize = 18;
-                }
-                else
-                {
-                    labelTitle.FontSize = 22;
-                }
-            }
-        }
 
     }
 }

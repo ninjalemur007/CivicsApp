@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using System.Collections.ObjectModel;
 
 namespace AZED.CivicsApp.ViewModels
 {
@@ -15,8 +16,9 @@ namespace AZED.CivicsApp.ViewModels
         private readonly IQuestionAnswerDataService questionAnswerDataService;
         private readonly ISectionDataService sectionDataService;
 
-        private List<QuestionAnswer> questionsAnswers = new List<QuestionAnswer>();
-        private int currentQuestionIndex = 0;
+		//private List<QuestionAnswer> questionsAnswers = new List<QuestionAnswer>();
+		private ObservableCollection<QuestionAnswer> questionsAnswers = new ObservableCollection<QuestionAnswer>();
+		private int currentQuestionIndex = 0;
 
         #region properties
 
@@ -24,10 +26,10 @@ namespace AZED.CivicsApp.ViewModels
         {
             get
             {
-                return 2;
+                return 10;
             }
         }
-
+        
         public int CorrectNumberOfQuestions
         {
             get
@@ -40,10 +42,37 @@ namespace AZED.CivicsApp.ViewModels
         {
             get
             {
-                return string.Format("You answered {0} of the {1} questions correctly", this.CorrectNumberOfQuestions, this.MaxNumberOfQuestions);
+				//return string.Format("You answered {0} of the {1} questions correctly", this.CorrectNumberOfQuestions, this.MaxNumberOfQuestions);
+				return string.Format("{0} of {1} correct", this.CorrectNumberOfQuestions, this.MaxNumberOfQuestions);
             }
         }
 
+        public string ScorePercent
+		{
+			get
+			{
+				int correct = this.CorrectNumberOfQuestions;
+				int max = this.MaxNumberOfQuestions;
+				double perc = (double)(correct * 100) / max;
+
+				return string.Format("{0}%", perc);
+			}
+		}
+
+        public string ScorePercentColor
+		{
+			get
+			{
+				int correct = this.CorrectNumberOfQuestions;
+                int max = this.MaxNumberOfQuestions;
+                double perc = (double)(correct * 100) / max;
+
+				if (perc >= 60)
+					return "green";
+				else return "red";
+			}
+		}
+        
         private Section currentSection;
         public Section CurrentSection
         {
@@ -140,6 +169,53 @@ namespace AZED.CivicsApp.ViewModels
             }
         }
 
+		private bool canShowViewResultsButton;
+        public bool CanShowViewResultsButton
+		{
+			get
+			{
+				return canShowViewResultsButton;
+			}
+			set
+			{
+				if (Set(() => CanShowViewResultsButton, ref canShowViewResultsButton, value))
+				{
+					RaisePropertyChanged(() => CanShowViewResultsButton);
+				}
+			}
+		}
+
+		private bool canShowReviewAnswers;
+        public bool CanShowReviewAnswers
+        {
+            get
+            {
+                return canShowReviewAnswers;
+            }
+            set
+            {
+                if (Set(() => CanShowReviewAnswers, ref canShowReviewAnswers, value))
+                {
+                    RaisePropertyChanged(() => CanShowReviewAnswers);
+                }
+            }
+        }
+
+
+        public ObservableCollection<QuestionAnswer> QuestionsAnswerList
+        {
+            get
+            {
+                return questionsAnswers;
+            }
+            set
+            {
+                if (Set(() => QuestionsAnswerList, ref questionsAnswers, value))
+                {
+                    RaisePropertyChanged(() => QuestionsAnswerList);
+                }
+            }
+        }
 
         #endregion
 
@@ -160,7 +236,8 @@ namespace AZED.CivicsApp.ViewModels
             this.BeginQuizCommand = new RelayCommand<string>((s) => this.BeginQuiz(s));
             this.NextQuestionCommand = new RelayCommand(this.NextQuestion, () => this.CanExecuteNextQuestion);
             this.PreviousQuestionCommand = new RelayCommand(this.PreviousQuestion, () => this.CanExecutePreviousQuestion);
-            this.ViewResultsCommand = new RelayCommand(this.ViewResults, () => this.CanShowViewResultsButton);
+			//this.ViewResultsCommand = new RelayCommand(this.ViewResults, () => this.CanShowViewResultsButton);
+			this.ViewResultsCommand = new RelayCommand(this.ViewResults);
             this.CloseQuizCommand = new RelayCommand(this.CloseQuiz);
             this.ReviewAnswersCommand = new RelayCommand(this.ReviewAnswers);
         }
@@ -168,7 +245,8 @@ namespace AZED.CivicsApp.ViewModels
         public void Initialize()
         {
             this.ShowBeginQuizStep();
-            this.questionsAnswers = new List<QuestionAnswer>();
+			//this.questionsAnswers = new List<QuestionAnswer>();
+			this.questionsAnswers = new ObservableCollection<QuestionAnswer>();
         }
 
         #endregion
@@ -180,7 +258,15 @@ namespace AZED.CivicsApp.ViewModels
         private void BeginQuiz(string sectionId)
         {
             this.SetCurrentSection(sectionId);
-            this.questionsAnswers = this.questionAnswerDataService.GetRandomQuestionsAnswersFromSection(sectionId, MaxNumberOfQuestions);
+
+			//this.questionsAnswers = this.questionAnswerDataService.GetRandomQuestionsAnswersFromSection(sectionId, MaxNumberOfQuestions);
+
+			var qaList = this.questionAnswerDataService.GetRandomQuestionsAnswersFromSection(sectionId, MaxNumberOfQuestions);
+
+			foreach (var item in qaList)
+			{
+				this.questionsAnswers.Add(item);
+			}
 
             this.ResetCurrentQuestionAnswer();
             this.SetCurrentQuestionNumberText();
@@ -198,8 +284,8 @@ namespace AZED.CivicsApp.ViewModels
             this.SetCurrentQuestionNumberText();
             this.SetCurrentQuestionAnswer();
             this.EnableDisableNextPreviousCommands();
-            this.ShowHideViewResultsButton();
-            this.ShowQuizStep();
+			this.ShowQuizStep();
+			this.ShowHideViewResultsButton();
         }
 
 
@@ -244,21 +330,11 @@ namespace AZED.CivicsApp.ViewModels
 
         private void ViewResults()
         {
-            ShowHideViewResultsButton();
             RaisePropertyChanged(() => CorrectNumberOfQuestions);   //raise event so the property can be reevaluated now
             RaisePropertyChanged(() => ScoreText);                  //raise event so the property can be reevaluated now
+			RaisePropertyChanged(() => ScorePercent);
+			RaisePropertyChanged(() => ScorePercentColor);
             this.ShowViewResultsStep();
-        }
-
-        private bool canShowViewResultsButton;
-        public bool CanShowViewResultsButton
-        {
-            get { return canShowViewResultsButton; }
-            set {
-                canShowViewResultsButton = value;
-                RaisePropertyChanged();
-                ViewResultsCommand.RaiseCanExecuteChanged();
-            }
         }
 
 
@@ -266,12 +342,19 @@ namespace AZED.CivicsApp.ViewModels
 
         private void ReviewAnswers()
         {
+			this.ShowReviewAnswersStep();
         }
 
         public RelayCommand CloseQuizCommand { get; private set; }
 
         private void CloseQuiz()
         {
+			this.CanExecuteNextQuestion = true;
+
+			if (this.currentQuestionIndex <= 0)
+				this.CanExecutePreviousQuestion = false;
+			else
+				this.CanExecutePreviousQuestion = true;
             this.navigationService.GoBack();
         }
 
@@ -324,7 +407,7 @@ namespace AZED.CivicsApp.ViewModels
                 this.CanExecuteNextQuestion = true;
 
 
-            if (this.currentQuestionIndex <= 0)
+            if (this.currentQuestionIndex <=0)
                 this.CanExecutePreviousQuestion = false;
             else
                 this.CanExecutePreviousQuestion = true;
@@ -338,11 +421,12 @@ namespace AZED.CivicsApp.ViewModels
 
         private void ShowHideViewResultsButton()
         {
-            //show the button on the last question
-            if (this.currentQuestionIndex + 1 == MaxNumberOfQuestions)
-                this.CanShowViewResultsButton = true;
-            else 
-                this.CanShowViewResultsButton = false;
+			//show the button on the last question
+			//if (this.currentQuestionIndex + 1 == MaxNumberOfQuestions)
+			//    this.CanShowViewResultsButton = true;
+			//else 
+			//this.CanShowViewResultsButton = false;
+			this.CanShowViewResultsButton = this.currentQuestionIndex + 1 == MaxNumberOfQuestions;
         }
 
         private void ShowBeginQuizStep()
@@ -350,6 +434,7 @@ namespace AZED.CivicsApp.ViewModels
             this.CanShowBeginQuiz = true;
             this.CanShowQuiz = false;
             this.CanShowViewResults = false;
+			this.CanShowReviewAnswers = false;
         }
 
         private void ShowQuizStep()
@@ -357,6 +442,7 @@ namespace AZED.CivicsApp.ViewModels
             this.CanShowBeginQuiz = false;
             this.CanShowQuiz = true;
             this.CanShowViewResults = false;
+			this.CanShowReviewAnswers = false;
         }
 
         private void ShowViewResultsStep()
@@ -364,8 +450,16 @@ namespace AZED.CivicsApp.ViewModels
             this.CanShowBeginQuiz = false;
             this.CanShowQuiz = false;
             this.CanShowViewResults = true;
+			this.CanShowReviewAnswers = false;
         }
 
+		private void ShowReviewAnswersStep()
+        {
+            this.CanShowBeginQuiz = false;
+            this.CanShowQuiz = false;
+			this.CanShowViewResults = false;
+			this.CanShowReviewAnswers = true;
+        }
 
         #endregion
     }

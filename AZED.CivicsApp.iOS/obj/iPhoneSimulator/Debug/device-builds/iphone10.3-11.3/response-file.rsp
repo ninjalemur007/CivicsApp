@@ -15,7 +15,10 @@
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/MvvmLightLibsStd10.5.4.1/lib/xamarin.ios10/GalaSoft.MvvmLight.dll
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/MvvmLightLibsStd10.5.4.1/lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
+-r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/Newtonsoft.Json.11.0.2/lib/netstandard2.0/Newtonsoft.Json.dll
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/sqlite-net-pcl.1.4.118/lib/netstandard1.1/SQLite-net.dll
+-r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/SQLiteNetExtensions.2.0.0/lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/SQLiteNetExtensions.dll
+-r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/SQLiteNetExtensions.Async.2.0.0/lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/SQLiteNetExtensionsAsync.dll
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/SQLitePCL.raw.0.9.3/lib/Xamarin.iOS10/SQLitePCL.raw.dll
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/SQLitePCLRaw.bundle_green.1.1.11/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/SQLitePCLRaw.bundle_green.1.1.11/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll
@@ -173,7 +176,10 @@
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/AZED.CivicsApp/bin/Debug/netstandard2.0/AZED.CivicsApp.dll
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/MvvmLightLibsStd10.5.4.1/lib/xamarin.ios10/GalaSoft.MvvmLight.dll
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/MvvmLightLibsStd10.5.4.1/lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll
+-r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/Newtonsoft.Json.11.0.2/lib/netstandard2.0/Newtonsoft.Json.dll
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/sqlite-net-pcl.1.4.118/lib/netstandard1.1/SQLite-net.dll
+-r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/SQLiteNetExtensions.2.0.0/lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/SQLiteNetExtensions.dll
+-r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/SQLiteNetExtensions.Async.2.0.0/lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/SQLiteNetExtensionsAsync.dll
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/SQLitePCL.raw.0.9.3/lib/Xamarin.iOS10/SQLitePCL.raw.dll
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/SQLitePCLRaw.bundle_green.1.1.11/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll
 -r=/Users/NinjaLemur/Documents/CodeFun/CivicsApp/packages/SQLitePCLRaw.bundle_green.1.1.11/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll

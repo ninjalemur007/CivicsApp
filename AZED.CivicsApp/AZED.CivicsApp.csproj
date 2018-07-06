@@ -20,6 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="Views\AltQuizPage.xaml" />
+    <EmbeddedResource Remove="Views\QuizAttemptDetailPage.xaml" />
+    <EmbeddedResource Remove="Views\QuizAttemptsListPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="Data\QuestionsAnswers.xml" />
     <EmbeddedResource Include="Data\SectionsOutline.xml" />
     <EmbeddedResource Include="Data\study.json" />
@@ -32,9 +37,27 @@
     <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.4.0" />
     <PackageReference Include="MvvmLightLibsStd10" Version="5.4.1" />
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
+    <PackageReference Include="SQLiteNetExtensions" Version="2.0.0" />
+    <PackageReference Include="SQLiteNetExtensions.Async" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
 
+  <ItemGroup>
+    <Compile Remove="ViewModels\AltQuizViewModel.cs" />
+    <Compile Remove="ViewModels\AltChooseQuizSectionViewModel.cs" />
+    <Compile Remove="ViewModels\FAKEQuizAttemptViewModel.cs" />
+    <Compile Remove="Contracts\IQuizAttemptDataService.cs" />
+    <Compile Remove="Contracts\IQAQuizAttemptDataService.cs" />
+    <Compile Remove="Models\QAQuizAttempt.cs" />
+    <Compile Remove="Models\QuizAttempt.cs" />
+    <Compile Remove="Services\QAQuizAttemptDataService.cs" />
+    <Compile Remove="Services\QuizAttemptDataService.cs" />
+    <Compile Remove="Views\AltChooseQuizSectionPage.xaml.cs" />
+    <Compile Remove="Views\AltQuizPage.xaml.cs" />
+    <Compile Remove="Views\QuizAttemptDetailPage.xaml.cs" />
+    <Compile Remove="Views\QuizAttemptsListPage.xaml.cs" />
+  </ItemGroup>
     <ItemGroup>
     <Compile Update="Controls\IconTitleDescriptionControl.xaml.cs">
       <DependentUpon>IconTitleDescriptionControl.xaml</DependentUpon>
@@ -127,6 +150,15 @@
 
   <ItemGroup>
     <None Include="AZED.CivicsApp.csproj" />
+    <None Include="ViewModels\AltQuizViewModel.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="ViewModels\AltChooseQuizSectionViewModel.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="ViewModels\FAKEQuizAttemptViewModel.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="Contracts\IQuizAttemptDataService.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="Contracts\IQAQuizAttemptDataService.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="Models\QAQuizAttempt.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="Models\QuizAttempt.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="Services\QAQuizAttemptDataService.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="Services\QuizAttemptDataService.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Win32.Primitives">

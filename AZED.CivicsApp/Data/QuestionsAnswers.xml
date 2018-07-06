@@ -7,12 +7,12 @@
   <QuestionAnswer
     AdeID="ade2" AdeNumber="2" AdeQuestion="Who was the first President of the United States?" AdeAnswer="D" AdeStandard="S3.C1.04, S1.C4.O1" AdeGrade="K" AdeSubject="US History"
     UscisSection="II" UscisSubsection="A" UscisNumber="70"
-    AdeChoiceA="John Hancock" AdeChoiceB="James Madison" AdeChoiceC="Benjamin Franklin" AdeChoiceD="GeorgeWashington"
+    AdeChoiceA="John Hancock" AdeChoiceB="James Madison" AdeChoiceC="Benjamin Franklin" AdeChoiceD="George Washington"
   />
   <QuestionAnswer
     AdeID="ade3" AdeNumber="3" AdeQuestion="What was one important thing that Abraham Lincoln did?" AdeAnswer="A" AdeStandard="S3.C1.O4" AdeGrade="K" AdeSubject="US History"
     UscisSection="II" UscisSubsection="B" UscisNumber="75"
-    AdeChoiceA="led the U.S. during the CivilWar" AdeChoiceB="led the U.S. during theWar of 1812" AdeChoiceC="led the U.S. during the American Revolution" AdeChoiceD="led the U.S. during the Mexican-AmericanWar"
+    AdeChoiceA="led the U.S. during the Civil War" AdeChoiceB="led the U.S. during the War of 1812" AdeChoiceC="led the U.S. during the American Revolution" AdeChoiceD="led the U.S. during the Mexican-American War"
   />
   <QuestionAnswer
     AdeID="ade4" AdeNumber="4" AdeQuestion="When is Independence Day celebrated?" AdeAnswer="B" AdeStandard="S1.C4.O2," AdeGrade="K" AdeSubject="Government"
@@ -47,7 +47,7 @@
   <QuestionAnswer
     AdeID="ade10" AdeNumber="10" AdeQuestion="Why did the colonists fight the British?" AdeAnswer="A" AdeStandard="S1.C4.O2" AdeGrade="2" AdeSubject="US History"
     UscisSection="II" UscisSubsection="A" UscisNumber="61"
-    AdeChoiceA="because of high taxes" AdeChoiceB="because the British invaded France" AdeChoiceC="because the colonists wanted a new king" AdeChoiceD="because the colonists wanted religious freedom"
+    AdeChoiceA="Because of high taxes" AdeChoiceB="Because the British invaded France" AdeChoiceC="Because the colonists wanted a new king" AdeChoiceD="Because the colonists wanted religious freedom"
   />
   <QuestionAnswer
     AdeID="ade11" AdeNumber="11" AdeQuestion="Who wrote the Declaration of Independence?" AdeAnswer="C" AdeStandard="S1.C4.O4" AdeGrade="2" AdeSubject="US History"
@@ -64,7 +64,7 @@
     UscisSection="III" UscisSubsection="B" UscisNumber="96"
       AdeChoiceA="They represent the 13 original colonies."
       AdeChoiceB="They represent the 13 signatures on the U.S. Constitution."
-      AdeChoiceC="They represent the 13 military heroes of the RevolutionaryWar."
+      AdeChoiceC="They represent the 13 military heroes of the Revolutionary War."
       AdeChoiceD="They represent the 13 members of the Second Continental Congress."
   />
   <QuestionAnswer
@@ -88,12 +88,12 @@
     AdeChoiceA="education" AdeChoiceB="better health" AdeChoiceC="elect a new king" AdeChoiceD="religious freedom"
   />
   <QuestionAnswer
-    AdeID="ade18" AdeNumber="18" AdeQuestion="What was the name of the U.S. war between the North and the South?" AdeAnswer="A" AdeStandard="S1.C6.O1" AdeGrade="3" AdeSubject="US History"
+    AdeID="ade18" AdeNumber="18" AdeQuestion="What was the name of the U.S.  War between the North and the South?" AdeAnswer="A" AdeStandard="S1.C6.O1" AdeGrade="3" AdeSubject="US History"
     UscisSection="II" UscisSubsection="B" UscisNumber="73"
-    AdeChoiceA="CivilWar" AdeChoiceB="WorldWar II" AdeChoiceC="War of 1812" AdeChoiceD="RevolutionaryWar"
+    AdeChoiceA="Civil War" AdeChoiceB="World War II" AdeChoiceC=" War of 1812" AdeChoiceD="Revolutionary War"
   />
   <QuestionAnswer
-    AdeID="ade19" AdeNumber="19" AdeQuestion="Which of the following reasons led to the Civil War?" AdeAnswer="B" AdeStandard="S1.C6.O1" AdeGrade="3" AdeSubject="US History"
+    AdeID="ade19" AdeNumber="19" AdeQuestion="Which of the following reasons led to the Civil  War?" AdeAnswer="B" AdeStandard="S1.C6.O1" AdeGrade="3" AdeSubject="US History"
     UscisSection="II" UscisSubsection="B" UscisNumber="74"
     AdeChoiceA="taxes" AdeChoiceB="slavery" AdeChoiceC="oil rights" AdeChoiceD="religious freedom"
   />
@@ -113,14 +113,14 @@
     AdeChoiceA="April 15" AdeChoiceB="June 30" AdeChoiceC="September 15" AdeChoiceD="December 31"
   />
   <QuestionAnswer
-    AdeID="ade23" AdeNumber="23" AdeQuestion="Who did the United States fight in World War II?" AdeAnswer="A" AdeStandard="S1.C8.O2" AdeGrade="4" AdeSubject="US History"
+    AdeID="ade23" AdeNumber="23" AdeQuestion="Who did the United States fight in World  War II?" AdeAnswer="A" AdeStandard="S1.C8.O2" AdeGrade="4" AdeSubject="US History"
     UscisSection="II" UscisSubsection="C" UscisNumber="81"
     AdeChoiceA="Japan, Germany, and Italy" AdeChoiceB="Japan, Germany, and France" AdeChoiceC="Russia, China, and Japan" AdeChoiceD="Russia, France, and Great Britain"
   />
   <QuestionAnswer
-    AdeID="ade24" AdeNumber="24" AdeQuestion="Which of the following wars was fought by the United States in the 1800s?" AdeAnswer="C" AdeStandard="S1.C5.O3, S1.C5.O1, S1.C6.O1, S1.C6.O1, S1.C7.O10" AdeGrade="4, 5, 7" AdeSubject="US History"
+    AdeID="ade24" AdeNumber="24" AdeQuestion="Which of the following  Wars was fought by the United States in the 1800s?" AdeAnswer="C" AdeStandard="S1.C5.O3, S1.C5.O1, S1.C6.O1, S1.C6.O1, S1.C7.O10" AdeGrade="4, 5, 7" AdeSubject="US History"
     UscisSection="II" UscisSubsection="B" UscisNumber="72"
-    AdeChoiceA="KoreanWar" AdeChoiceB="WorldWar I" AdeChoiceC="Spanish-AmericanWar" AdeChoiceD="French and IndianWar"
+    AdeChoiceA="Korean War" AdeChoiceB="World War I" AdeChoiceC="Spanish-American War" AdeChoiceD="French and Indian War"
   />
   <QuestionAnswer
     AdeID="ade25" AdeNumber="25" AdeQuestion="Who is in charge of the executive branch?" AdeAnswer="A" AdeStandard="S3.C2.O1, S3.C2.O2" AdeGrade="4, 8" AdeSubject="Government"
@@ -165,7 +165,7 @@
   <QuestionAnswer
     AdeID="ade33" AdeNumber="33" AdeQuestion="What is one thing Benjamin Franklin is famous for?" AdeAnswer="D" AdeStandard="S3.C1.O2" AdeGrade="5" AdeSubject="US History"
     UscisSection="II" UscisSubsection="A" UscisNumber="68"
-    AdeChoiceA="decorated war general" AdeChoiceB="inventor of the telegraph" AdeChoiceC="fourth president of the United States" AdeChoiceD="oldest member of the Constitutional Convention"
+    AdeChoiceA="decorated  War general" AdeChoiceB="inventor of the telegraph" AdeChoiceC="fourth president of the United States" AdeChoiceD="oldest member of the Constitutional Convention"
   />
   <QuestionAnswer
     AdeID="ade34" AdeNumber="34" AdeQuestion="What territory did the United States buy from France in 1803?" AdeAnswer="D" AdeStandard="S1.C5.O1" AdeGrade="5" AdeSubject="US History"
@@ -185,12 +185,12 @@
   <QuestionAnswer
     AdeID="ade37" AdeNumber="37" AdeQuestion="What did the Emancipation Proclamation do?" AdeAnswer="D" AdeStandard="S1.C6.O2" AdeGrade="7" AdeSubject="US History"
     UscisSection="II" UscisSubsection="B" UscisNumber="76"
-    AdeChoiceA="called for an end to the CivilWar" AdeChoiceB="called for the creation of state borders" AdeChoiceC="called for an end to Southern Secession" AdeChoiceD="called for the freeing of slaves in the Confederate States"
+    AdeChoiceA="called for an end to the Civil War" AdeChoiceB="called for the creation of state borders" AdeChoiceC="called for an end to Southern Secession" AdeChoiceD="called for the freeing of slaves in the Confederate States"
   />
   <QuestionAnswer
-    AdeID="ade38" AdeNumber="38" AdeQuestion="Who was the President during World War I?" AdeAnswer="B" AdeStandard="S1.C7.O13" AdeGrade="7" AdeSubject="US History"
+    AdeID="ade38" AdeNumber="38" AdeQuestion="Who was the President during World  War I?" AdeAnswer="B" AdeStandard="S1.C7.O13" AdeGrade="7" AdeSubject="US History"
     UscisSection="II" UscisSubsection="C" UscisNumber="79"
-    AdeChoiceA="Warren Harding" AdeChoiceB="WoodrowWilson" AdeChoiceC="Franklin Roosevelt" AdeChoiceD="Theodore Roosevelt"
+    AdeChoiceA="Warren Harding" AdeChoiceB="Woodrow Wilson" AdeChoiceC="Franklin Roosevelt" AdeChoiceD="Theodore Roosevelt"
   />
   <QuestionAnswer
     AdeID="ade39" AdeNumber="39" AdeQuestion="What stops one branch of government from becoming too powerful?" AdeAnswer="C" AdeStandard="S3.C2.O1, S3.C2.O1" AdeGrade="7,8" AdeSubject="Government"
@@ -208,9 +208,9 @@
     AdeChoiceA="freedom to work and freedom of speech" AdeChoiceB="freedom to work and freedom to make laws" AdeChoiceC="freedom of speech and freedom of assembly" AdeChoiceD="freedom to make laws and freedom of assembly"
   />
   <QuestionAnswer
-    AdeID="ade42" AdeNumber="42" AdeQuestion="Which war was fought by the United States in the 1900s?" AdeAnswer="B" AdeStandard="S1.C7.O12, S1.C8.O2, S1.C8.O3, S1.C8.O4, S1.C8.O5" AdeGrade="7,8" AdeSubject="US History"
+    AdeID="ade42" AdeNumber="42" AdeQuestion="Which  War was fought by the United States in the 1900s?" AdeAnswer="B" AdeStandard="S1.C7.O12, S1.C8.O2, S1.C8.O3, S1.C8.O4, S1.C8.O5" AdeGrade="7,8" AdeSubject="US History"
     UscisSection="II" UscisSubsection="C" UscisNumber="78"
-    AdeChoiceA="CivilWar" AdeChoiceB="WorldWar I" AdeChoiceC="RevolutionaryWar" AdeChoiceD="Mexican-AmericanWar"
+    AdeChoiceA="Civil War" AdeChoiceB="World War I" AdeChoiceC="Revolutionary War" AdeChoiceD="Mexican-American War"
   />
   <QuestionAnswer
     AdeID="ade43" AdeNumber="43" AdeQuestion="What is the supreme law of the land?" AdeAnswer="A" AdeStandard="S3.C2.O1" AdeGrade="8" AdeSubject="Government"
@@ -240,7 +240,7 @@
   <QuestionAnswer
     AdeID="ade48" AdeNumber="48" AdeQuestion="What did the Declaration of Independence do?" AdeAnswer="C" AdeStandard="S3.C1.O1" AdeGrade="8" AdeSubject="Government"
     UscisSection="I" UscisSubsection="A" UscisNumber="8"
-    AdeChoiceA="declared freedom for the slaves" AdeChoiceB="declared equal rights for women" AdeChoiceC="declared freedom from Great Britain" AdeChoiceD="declared an end to the war with Great Britain"
+    AdeChoiceA="declared freedom for the slaves" AdeChoiceB="declared equal rights for women" AdeChoiceC="declared freedom from Great Britain" AdeChoiceD="declared an end to the  War with Great Britain"
   />
   <QuestionAnswer
     AdeID="ade49" AdeNumber="49" AdeQuestion="Which of the following includes two rights stated in the Declaration of Independence?" AdeAnswer="A" AdeStandard="S3.C1.O1" AdeGrade="8" AdeSubject="Government"
@@ -328,17 +328,17 @@
     AdeChoiceA="John Adams" AdeChoiceB="James Madison" AdeChoiceC="Thomas Jefferson" AdeChoiceD="GeorgeWashington"
   />
   <QuestionAnswer
-    AdeID="ade66" AdeNumber="66" AdeQuestion="Who was President during both the Great Depression and World War II?" AdeAnswer="D" AdeStandard="S1.C8.O7" AdeGrade="8" AdeSubject="US History"
+    AdeID="ade66" AdeNumber="66" AdeQuestion="Who was President during both the Great Depression and World  War II?" AdeAnswer="D" AdeStandard="S1.C8.O7" AdeGrade="8" AdeSubject="US History"
     UscisSection="II" UscisSubsection="C" UscisNumber="80"
     AdeChoiceA="Harry Truman" AdeChoiceB="Calvin Coolidge" AdeChoiceC="WoodrowWilson" AdeChoiceD="Franklin Roosevelt"
   />
   <QuestionAnswer
-    AdeID="ade67" AdeNumber="67" AdeQuestion="Before he was President, Eisenhower was a general. What war was he in?" AdeAnswer="C" AdeStandard="S1.C8.O7" AdeGrade="8" AdeSubject="US History"
+    AdeID="ade67" AdeNumber="67" AdeQuestion="Before he was President, Eisenhower was a general. What  War was he in?" AdeAnswer="C" AdeStandard="S1.C8.O7" AdeGrade="8" AdeSubject="US History"
     UscisSection="II" UscisSubsection="C" UscisNumber="82"
-    AdeChoiceA="CivilWar" AdeChoiceB="KoreanWar" AdeChoiceC="WorldWar II" AdeChoiceD="Spanish-AmericanWar"
+    AdeChoiceA="Civil War" AdeChoiceB="Korean War" AdeChoiceC="World War II" AdeChoiceD="Spanish-American War"
   />
   <QuestionAnswer
-    AdeID="ade68" AdeNumber="68" AdeQuestion="During the Cold War, what was the main concern of the United States?" AdeAnswer="B" AdeStandard="S1.C9.O1" AdeGrade="8" AdeSubject="US History"
+    AdeID="ade68" AdeNumber="68" AdeQuestion="During the Cold  War, what was the main concern of the United States?" AdeAnswer="B" AdeStandard="S1.C9.O1" AdeGrade="8" AdeSubject="US History"
     UscisSection="II" UscisSubsection="C" UscisNumber="83"
     AdeChoiceA="colonialism" AdeChoiceB="communism" AdeChoiceC="imperialism" AdeChoiceD="sectionalism"
   />
@@ -466,76 +466,79 @@
       AdeID="ade93"
       AdeNumber="93"
       AdeQuestion="Who is the current President of the United States?"
-      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeAnswer="C"
       AdeStandard="S3.C2.O1, S3.C2.O2"
       AdeGrade="K, 8"
       AdeSubject="Government"
       UscisSection="I" UscisSubsection="B" UscisNumber="28"
-      AdeChoiceA="Donald J. Trump" AdeChoiceB="Trump" AdeChoiceC="Donald Trump" AdeChoiceD=""
+      AdeChoiceA="George W. Bush" AdeChoiceB="Barack Obama" AdeChoiceC="Donald J. Trump" AdeChoiceD="George Washington"
   />
   <QuestionAnswer
-    AdeID="ade94" AdeNumber="94" AdeQuestion="Who is the current Governor of Arizona?" AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally" AdeStandard="S3.C2.O1, S3.C3.O4" AdeGrade="K, 8" AdeSubject="Government"
+    AdeID="ade94" AdeNumber="94" AdeQuestion="Who is the current Governor of Arizona?" 
+        AdeAnswer="B" 
+        AdeStandard="S3.C2.O1, S3.C3.O4" AdeGrade="K, 8" AdeSubject="Government"
     UscisSection="I" UscisSubsection="B" UscisNumber="43"
-    AdeChoiceA="Douglas Anthony Ducey" AdeChoiceB="Ducey" AdeChoiceC="Doug Ducey" AdeChoiceD=""
+    AdeChoiceA="Jan Brewer" AdeChoiceB="Douglas A. Ducey" AdeChoiceC="John McCain" AdeChoiceD="Sam Houston"
   />
   <QuestionAnswer
-    AdeID="ade95" AdeNumber="95" AdeQuestion="Who is the current Vice President of the United States?" AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally" AdeStandard="S3.C2.O5" AdeGrade="8" AdeSubject="Government"
+    AdeID="ade95" AdeNumber="95" AdeQuestion="Who is the current Vice President of the United States?" 
+        AdeAnswer="D" AdeStandard="S3.C2.O5" AdeGrade="8" AdeSubject="Government"
     UscisSection="I" UscisSubsection="B" UscisNumber="29"
-    AdeChoiceA="Michael R. Pence" AdeChoiceB="Pence" AdeChoiceC="Mike Pence" AdeChoiceD=""
+    AdeChoiceA="Joe Biden" AdeChoiceB="Paul Ryan" AdeChoiceC="Hilary Clinton" AdeChoiceD="Michael R. Pence"
   />
   <QuestionAnswer
       AdeID="ade96"
       AdeNumber="96"
       AdeQuestion="Name one of the two current U.S. Senators for the state of Arizona."
-      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeAnswer="B"
       AdeStandard="S3.C3.O1, S3.C2.O2"
       AdeGrade="8, 12"
       AdeSubject="Government"
       UscisSection="I" UscisSubsection="B" UscisNumber="20"
-      AdeChoiceA="John McCain" AdeChoiceB="Jeff Flake" AdeChoiceC="" AdeChoiceD=""
+      AdeChoiceA="Kyrsten Sinema" AdeChoiceB="Jeff Flake" AdeChoiceC="Doug Ducey" AdeChoiceD="Alexander Hamilton"
       />
   <QuestionAnswer
       AdeID="ade97"
       AdeNumber="97"
       AdeQuestion="Who is the current Chief Justice of the United States? "
-      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeAnswer="A"
       AdeStandard="S3.C2.O2, S3.C2.O7"
       AdeGrade="8, 12"
       AdeSubject="Government"
       UscisSection="I" UscisSubsection="B" UscisNumber="40"
-      AdeChoiceA="John Roberts" AdeChoiceB="John G. Roberts" AdeChoiceC="Roberts" AdeChoiceD=""
+      AdeChoiceA="John G. Roberts" AdeChoiceB="Sandra Day O'Connor" AdeChoiceC="Clarence Thomas" AdeChoiceD="Samuel A. Alito"
       />
   <QuestionAnswer
       AdeID="ade98"
       AdeNumber="98"
       AdeQuestion="What is the political party of the current President?"
-      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeAnswer="B"
       AdeStandard="S3.C2.O3, S3.C4.O5"
       AdeGrade="8, 12"
       AdeSubject="Government"
       UscisSection="I" UscisSubsection="B" UscisNumber="46"
-      AdeChoiceA="Republican" AdeChoiceB="" AdeChoiceC="" AdeChoiceD=""
+      AdeChoiceA="Democrat" AdeChoiceB="Republican" AdeChoiceC="Whig" AdeChoiceD="Progressive"
       />
   <QuestionAnswer
       AdeID="ade99"
       AdeNumber="99"
       AdeQuestion="Who is the current Speaker of the House of Representatives?"
-      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeAnswer="D"
       AdeStandard="S3.C2.O2, S3.C2.O5"
       AdeGrade="8, 12"
       AdeSubject="Government"
       UscisSection="I" UscisSubsection="B" UscisNumber="47"
-      AdeChoiceA="Paul D. Ryan" AdeChoiceB="Paul Ryan" AdeChoiceC="Ryan" AdeChoiceD=""
+      AdeChoiceA="Dianne Feinstein" AdeChoiceB="Steve Scalise" AdeChoiceC="Nancy Pelosi" AdeChoiceD="Paul D. Ryan"
       />
   <QuestionAnswer
       AdeID="ade100"
       AdeNumber="100"
       AdeQuestion="Name one of the nine current U.S. Representatives for the state of Arizona."
-      AdeAnswer="Short answer questions -  correct answerSubject to change -  determine correct answer locally"
+      AdeAnswer="C"
       AdeStandard="S3.C2.O2"
       AdeGrade="12"
       AdeSubject="Government"  
       UscisSection="I" UscisSubsection="B" UscisNumber="23"
-      AdeChoiceA="" AdeChoiceB="" AdeChoiceC="" AdeChoiceD=""
+      AdeChoiceA="Doug Ducey" AdeChoiceB="Michele Reagan" AdeChoiceC="Ruben Gallego" AdeChoiceD="John McCain"
   />
  </QuestionsAnswers>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AZED.CivicsApp.Controls.CorrectIncorrectImageControl">
+  <ContentView.Content>
+      <StackLayout>
+            <Image x:Name="correctIncorrectImage" WidthRequest="36" HeightRequest="36" Aspect="AspectFit" />
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

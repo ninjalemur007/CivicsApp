@@ -65,6 +65,14 @@ namespace AZED.CivicsApp.Controls
             get { return (string)GetValue(AnswerChoiceDTextProperty); }
             set { SetValue(AnswerChoiceDTextProperty, value); }
         }
+        
+
+		public static readonly BindableProperty GivenAnswerTextProperty = BindableProperty.Create(nameof(GivenAnswerText), typeof(string), typeof(QuestionAnswerControl));
+		public string GivenAnswerText
+        {
+			get { return (string)GetValue(GivenAnswerTextProperty); }
+			set { SetValue(GivenAnswerTextProperty, value); }
+        }
 
 
         public static readonly BindableProperty AnswerChoiceAIsCheckedProperty = BindableProperty.Create(nameof(AnswerChoiceAIsChecked), typeof(bool), typeof(QuestionAnswerControl), false,
@@ -75,6 +83,7 @@ namespace AZED.CivicsApp.Controls
             get { return (bool)GetValue(AnswerChoiceAIsCheckedProperty); }
             set { SetValue(AnswerChoiceAIsCheckedProperty, value); }
         }
+              
 
         private static void OnIsCheckedAPropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
@@ -85,7 +94,8 @@ namespace AZED.CivicsApp.Controls
                 control.AnswerChoiceBIsChecked = false;
                 control.AnswerChoiceCIsChecked = false;
                 control.AnswerChoiceDIsChecked = false;
-            }
+			}
+
         }
 
         public static readonly BindableProperty AnswerChoiceBIsCheckedProperty = BindableProperty.Create(nameof(AnswerChoiceBIsChecked), typeof(bool), typeof(QuestionAnswerControl), false,
@@ -104,8 +114,9 @@ namespace AZED.CivicsApp.Controls
             {
                 control.AnswerChoiceAIsChecked = false;
                 control.AnswerChoiceCIsChecked = false;
-                control.AnswerChoiceDIsChecked = false;
+                control.AnswerChoiceDIsChecked = false;            
             }
+
         }
 
         public static readonly BindableProperty AnswerChoiceCIsCheckedProperty = BindableProperty.Create(nameof(AnswerChoiceCIsChecked), typeof(bool), typeof(QuestionAnswerControl), false,
@@ -120,12 +131,12 @@ namespace AZED.CivicsApp.Controls
         {
             //set all other answers to unchecked after this property is checked
             QuestionAnswerControl control = (QuestionAnswerControl)bindable;
-            if ((bool)newValue == true)
-            {
-                control.AnswerChoiceAIsChecked = false;
-                control.AnswerChoiceBIsChecked = false;
-                control.AnswerChoiceDIsChecked = false;
-            }
+			if ((bool)newValue == true)
+			{
+				control.AnswerChoiceAIsChecked = false;
+				control.AnswerChoiceBIsChecked = false;
+				control.AnswerChoiceDIsChecked = false;
+			}
         }
 
         public static readonly BindableProperty AnswerChoiceDIsCheckedProperty = BindableProperty.Create(nameof(AnswerChoiceDIsChecked), typeof(bool), typeof(QuestionAnswerControl), false,
@@ -145,8 +156,9 @@ namespace AZED.CivicsApp.Controls
                 control.AnswerChoiceAIsChecked = false;
                 control.AnswerChoiceBIsChecked = false;
                 control.AnswerChoiceCIsChecked = false;
-            }
+            } 
         }
+        
 
 
         public static readonly BindableProperty NextQuestionCommandProperty = BindableProperty.Create(nameof(NextQuestionCommand), typeof(ICommand), typeof(QuestionAnswerControl));

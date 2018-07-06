@@ -67,6 +67,7 @@
         <!-- Titles -->
             <Style x:Key="labelSectionTitle" TargetType="Label" BasedOn="{StaticResource baseTitle}">
                 <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="TextColor" Value="{StaticResource colorDarkBlue}" />
             </Style>
 
              <Style x:Key="labelSectionNumber" TargetType="Label" BasedOn="{StaticResource labelSectionTitle}">
@@ -121,8 +122,8 @@
         <!-- Subtitles -->
 
             <Style x:Key="labelQuizQuestionNumber" TargetType="Label" BasedOn="{StaticResource baseSubtitle}">
-                <Setter Property="HorizontalTextAlignment" Value="Center" />
-                <Setter Property="Margin" Value="0,16,0,8" />
+                <Setter Property="TextColor" Value="{StaticResource colorDarkGray}" />
+                <Setter Property="Margin" Value="24,16,0,8" />
             </Style>
 
             <Style x:Key="labelStudyQASubsectionTitle" TargetType="Label" BasedOn="{StaticResource baseSubtitle}">
@@ -213,7 +214,17 @@
                 <Setter Property="Margin" Value="0,8,0,0" />
             </Style>
 
-            
+            <Style x:Key="labelReviewQuestionText" TargetType="Label" BasedOn="{StaticResource baseSubtext}">
+            </Style>
+
+            <Style x:Key="labelReviewAnswerText" TargetType="Label" BasedOn="{StaticResource baseSubtext}">
+                <Setter Property="Margin" Value="16,0,0,0" />
+            </Style>
+
+            <Style x:Key="labelReviewWrongAnswerText" TargetType="Label" BasedOn="{StaticResource labelReviewAnswerText}">
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="TextColor" Value="{StaticResource colorDarkGray}" />
+            </Style>
         <!-- Buttons -->
 
             <Style x:Key="buttonSolid" TargetType="Button" BasedOn="{StaticResource baseButton}">

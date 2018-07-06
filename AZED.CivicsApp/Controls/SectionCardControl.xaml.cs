@@ -48,28 +48,6 @@ namespace AZED.CivicsApp.Controls
             set { SetValue(InfoPageProperty, value); }
         }
 
-        private double width = 0;
-        private double height = 0;
-
-        protected override void OnSizeAllocated(double width, double height)
-        {
-            base.OnSizeAllocated(width, height);
-            if (width != this.width || height != this.height)
-            {
-                this.width = width;
-                this.height = height;
-                double product = height / width;
-                //if (width > height)
-                if (product > .5)
-                {
-                    labelTitle.FontSize = 20;
-                }
-                else
-                {
-                    labelTitle.FontSize = 22;
-                }
-            }
-        }
 
     }
 }

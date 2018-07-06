@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:control="clr-namespace:AZED.CivicsApp.Controls"
+             x:Class="AZED.CivicsApp.Views.AltQuizPage"
+             x:Name="this">
+    
+    <ContentPage.Content>
+
+        <StackLayout
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+
+            <StackLayout
+                IsVisible="{Binding CanShowBeginQuiz}">
+            
+                <Label
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    Text="Click below to Begin Quiz" />
+
+                <Button Text="Begin Quiz"
+                    Command="{Binding PassSectionDesignatorCommand}" 
+                    CommandParameter="{Binding Source={x:Reference this}, Path=SectionNumber}" 
+                    Style="{StaticResource buttonSolid}" />
+
+            </StackLayout>
+
+
+            <StackLayout IsVisible="{Binding CanShowQuiz}">  
+                     <control:QuestionAnswerControl x:Name="questionAnswerControl" Padding="10"  
+                           VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                            SectionText="{Binding CurrentSection.DisplayText}"
+                            QuestionNumberText="{Binding CurrentQuestionNumberText}"
+                            QuestionText="{Binding CurrentQuestionAnswer.AdeQuestion}"
+                            AnswerChoiceAText="{Binding CurrentQuestionAnswer.AdeChoiceA}" AnswerChoiceAIsChecked="{Binding CurrentQuestionAnswer.AnswerChoiceASelected}"
+                            AnswerChoiceBText="{Binding CurrentQuestionAnswer.AdeChoiceB}" AnswerChoiceBIsChecked="{Binding CurrentQuestionAnswer.AnswerChoiceBSelected}"
+                            AnswerChoiceCText="{Binding CurrentQuestionAnswer.AdeChoiceC}" AnswerChoiceCIsChecked="{Binding CurrentQuestionAnswer.AnswerChoiceCSelected}"
+                            AnswerChoiceDText="{Binding CurrentQuestionAnswer.AdeChoiceD}" AnswerChoiceDIsChecked="{Binding CurrentQuestionAnswer.AnswerChoiceDSelected}"
+                            NextQuestionCommand="{Binding NextQuestionCommand}"
+                            PreviousQuestionCommand="{Binding PreviousQuestionCommand}"
+                            ViewResultsCommand="{Binding ViewResultsCommand}"
+                            GivenAnswerText="{Binding CurrentQuestionAnswer.GivenAnswer}"
+                            />
+
+            </StackLayout>  
+
+            <FlexLayout x:Name="viewResultsPanel" 
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Direction="Column" 
+                        JustifyContent="SpaceBetween"
+                        IsVisible="{Binding CanShowViewResults}">
+
+                <Frame Style="{StaticResource frameBaseStyle}" FlexLayout.Basis="15%">
+                    <FlexLayout
+                        Direction="Row"
+                        JustifyContent="Start" >
+                
+                        <Image 
+                                Source="QUIZicon"
+                                HeightRequest="50"
+                                VerticalOptions="Center"
+                                Aspect="AspectFit"
+                               FlexLayout.Basis="25%"/>
+                            
+                        <Label x:Name="sectionLabel" 
+                               Text="{Binding CurrentSection.DisplayText}"
+                               Style="{StaticResource labelSectionTitle}"
+                               VerticalTextAlignment="Start"
+                               HorizontalOptions="FillAndExpand" />
+
+                    </FlexLayout>
+                </Frame>
+
+                <Label Text="Quiz Results" Style="{StaticResource labelAboutTitle}" />
+                
+                <Label Text="{Binding CorrectNumberOfQuestions}" Style="{StaticResource labelMainTitle}"/>
+                <BoxView WidthRequest="50" HeightRequest="3" FlexLayout.AlignSelf="Center" Color="Black" />
+                <Label Text="{Binding MaxNumberOfQuestions}" Style="{StaticResource labelMainTitle}"  />
+                
+                <Label Text="{Binding ScoreText}" 
+                       Style="{StaticResource labelAboutText}" 
+                       FlexLayout.AlignSelf="Center" 
+                       Margin="0,16,0,0"/>
+
+
+                <Frame Style="{StaticResource frameBaseStyle}" FlexLayout.Grow="1" />
+                <Button Text="Review Answers"  
+                        WidthRequest="200" 
+                        FlexLayout.AlignSelf="Center" 
+                        VerticalOptions="Center" 
+                        Command="{Binding ReviewAnswersCommand}" />
+                
+                <Button Text="All Done"  Clicked="GoToList"
+                        WidthRequest="200" 
+                        FlexLayout.AlignSelf="Center"
+                        VerticalOptions="Center"  />
+
+                <Button Text="Save to Database" Clicked="Save_Clicked" />
+
+            </FlexLayout>
+
+
+
+             <FlexLayout x:Name="reviewResultsPanel" 
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Direction="Column" 
+                        JustifyContent="SpaceBetween"
+                        IsVisible="{Binding CanShowReviewAnswers}">
+
+                <Frame Style="{StaticResource frameBaseStyle}" FlexLayout.Basis="25%">
+                    <FlexLayout
+                        Direction="Row"
+                        JustifyContent="Start" >
+                
+                        <Image 
+                                Source="QUIZicon"
+                                HeightRequest="50"
+                                VerticalOptions="Center"
+                                Aspect="AspectFit"
+                                FlexLayout.Basis="25%"/>
+
+                        <Label 
+                               Text="{Binding CurrentSection.DisplayText}"
+                               Style="{StaticResource labelSectionTitle}"
+                               VerticalTextAlignment="Start"
+                               HorizontalOptions="FillAndExpand" />
+
+                    </FlexLayout>
+                </Frame>
+
+                <ListView ItemsSource="{Binding QuizAttemptsList}"
+                          VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <FlexLayout Direction="Row" JustifyContent="SpaceBetween">
+                                    <control:CorrectIncorrectImageControl IsCorrect="{Binding IsAnswerCorrect}" />
+                                    <Label Text="{Binding Q1_AdeID}"  />
+                                    <Label Text="{Binding Q1_UscisNumber}"  />
+                                    <Label Text="{Binding Q1_GivenAnswer}"   />
+                                    <Label Text="{Binding Q1_AdeAnswer}"   />
+                                    </FlexLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </FlexLayout>
+
+
+
+        </StackLayout>
+
+
+
+   </ContentPage.Content>
+</ContentPage>
